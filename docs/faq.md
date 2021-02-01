@@ -1,6 +1,6 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
-Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browser cache, simply open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that does work, but the normal way didn't, then learn how to clear your cache you retard.A
+Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browser cache, simply open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that does work, but the normal way didn't, then learn how to clear your cache you retard.
 
 
 ## Media stream buffering/glitching?
