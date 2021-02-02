@@ -57,6 +57,7 @@ For another example, here is "I Am Legend (2007)" with a optional Alternate Endi
 
 ## Media storage info?
 Over 16 terabytes as of 01/28/2021. Three words for you, Google Drive and eBay. Total cost = $4 * 3 for redundancy.
+![Google Drive Storage](/_media/gdrive-storageused.png)
 > Google Cloud Console API Metrics for Google Drive
 ![Google Cloud API rates](/_media/gcloud-01.png)
 ![Google Cloud API rates](/_media/gcloud-02.png)
