@@ -72,9 +72,9 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 
 
 ## Can I donate money?
-Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
-<div id="gobtc-widget-price" style="" data-cur="usd"></div>
+Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.<div id="gobtc-widget-price" style="background-color: #fcfcfc; border: 1px solid #ccc;" data-cur="usd"></div>
 <script type="text/javascript" src="https://widgets.gobitcoin.io/price.js"></script>
+
 * Opex for travisflix.com is only $10/mo
   * but I don't pay myself
   * and if I were to pay for cloud storage the legitimate way, it would be at least $150-200/mo or $1800-2400/yr.
