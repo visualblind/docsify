@@ -75,7 +75,7 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
 
 <!--Bitcoin current price: <iframe src="https://travisflix.com/web/html/btc.txt" width="100%" height="25px"></iframe> -->
-Bitcoin current price: <iframe src="https://btc.travisflix.com" width="100%" height="25px"></iframe>
+Bitcoin current price: <iframe src="https://btc.travisflix.com" width="100%" height="35px"></iframe>
 <iframe src="gobitcoin.io_price.html" width="100%" style="border:0px;"></iframe>
 
 * Opex for travisflix.com is only $10/mo
