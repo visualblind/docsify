@@ -74,8 +74,10 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 ## Can I donate money?
 Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
 
-<script type="text/javascript" src="https://widgets.gobitcoin.io/price.js"></script>
 <div id="gobtc-widget-price" style="background-color: #fcfcfc; border: 1px solid #ccc;" data-cur="usd"></div>
+<script type="text/javascript" src="https://widgets.gobitcoin.io/price.js"></script>
+
+<iframe src="gobitcoin.io_price.html" width="100%" height="300" style="border:1px solid black;"></iframe>
 
 * Opex for travisflix.com is only $10/mo
   * but I don't pay myself
