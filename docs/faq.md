@@ -74,7 +74,7 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 ## Can I donate money?
 Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
 
-!> Bitcoin current price: <iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
+> Bitcoin current price: <iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
 
 <!--<iframe src="gobitcoin.io_price.html" width="100%" style="border:0px;"></iframe> -->
 
@@ -82,22 +82,20 @@ Bitcoin (₿) would be preferred over USD at the address below. Any denomination
   * however, I don't pay myself...
   * if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
 
-> ***Option #1***
-> [![GreenAddress Permanent Payment URL](/_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
-> bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4
->
-> Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":
-> ![BTC](_media/bitcoin_32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
->
+>> ***Option #1***<br>
+>>
+>> [![GreenAddress Permanent Payment URL](/_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)<br>
+>> bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4
+>>
+>> Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":<br>
+>> ![BTC](_media/bitcoin_32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
 > ---
->
-> ***Option #2***
-> bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g
-> 
-> Here is the related QR code associated with my BTC address beginning with "bc1q690":
-> ![BTC](_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
->
-> ---
+>> ***Option #2***<br>
+>>
+>> bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g
+>> 
+>> Here is the related QR code associated with my BTC address beginning with "bc1q690":<br>
+>> ![BTC](_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
 
 ## Still have questions?
 Send me an email at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix). My contact information is also available online at [travisyard.run](https://travisyard.run/).
