@@ -83,7 +83,7 @@ Bitcoin (₿) would be preferred over USD at the address below. Any denomination
   * if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
 
 > ***Option #1***
-> [![GreenAddress Wallet](/_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
+> [![GreenAddress Permanent Payment URL](/_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
 > bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4
 >
 > Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":
