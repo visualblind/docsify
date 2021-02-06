@@ -81,7 +81,7 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 * (Overall status)
   ![Overall Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields)
 
-> <iframe src="https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
+<https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json>
 
 
 ## Can I donate money?
