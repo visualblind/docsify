@@ -35,12 +35,12 @@ The server actually does have logic which determines that your network's ingress
 
 
 ## What is transcoding?
-Transcoding is a compute-resource-heavy procedure the media server can choose to run which converts the source video or audio codec of a media file to be as compatibile as possible with whatever device you're watching on. Jellyfin tends to not like Apple products, so avoid those if you can. Chrome works fine on every single device I've tried it on, in addition to the official Jellyfin app for Amazon Fire TV Stick.
+Transcoding is a compute-resource-heavy procedure the media server can choose to run which converts the source video or audio codec of a media file to be as compatibile as possible with whatever device you're watching on. Jellyfin tends to not like ***OLD*** Apple products, so avoid those if you can. Newer Apple devices are fine. Chrome/Chromium works fine on every device I've tried it on in addition to the official Jellyfin app for Amazon Fire TV Stick.
 
 There are only 3 posible status' for what the server is doing to your video.
-  1. Direct play
-  2. Direct stream (very fast operation dealing with media containers and not codec conversions)
-  3. HLS (codec transcoding - compute-heavy process taking ~99% cputime)
+  1. Direct Play
+  2. Direct Stream (quick media container re-packaging task/not even noticeable)
+  3. HLS (video/audio codec decoding and re-encoding (transcoding) task---compute-intensive process consuming ~50-99% cputime)
 
 
 ## How to stream multiple versions of a film?
@@ -74,20 +74,32 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 ## Can I donate money?
 Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
 
-<!--Bitcoin current price: <iframe src="https://travisflix.com/web/html/btc.txt" width="100%" height="35px"></iframe> -->
-Bitcoin current price: <iframe src="https://btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
+!> Bitcoin current price: <iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
+
 <!--<iframe src="gobitcoin.io_price.html" width="100%" style="border:0px;"></iframe> -->
 
-* Opex for travisflix.com is only $10/mo
-  * but I don't pay myself
-  * and if I were to pay for cloud storage the legitimate way, it would be at least $150-200/mo or $1800-2400/yr.
+* Operating expense to run travisflix.com on Linode PaaS = $10 per month
+  * however, I don't pay myself...
+  * if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
 
-> bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g
-
-![BTC](_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
-
+> ***Option #1***
+> [![GreenAddress Wallet](/_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
+> bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4
+>
+> Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":
+> ![BTC](_media/bitcoin_32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
+>
+> ---
+>
+> ***Option #2***
+> bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g
+> 
+> Here is the related QR code associated with my BTC address beginning with "bc1q690":
+> ![BTC](_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
+>
+> ---
 
 ## Still have questions?
-Feel free to shoot me an email at travisrunyard at gmail dot com or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).
+Send me an email at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix). My contact information is also available online at [travisyard.run](https://travisyard.run/).
 
 ---
