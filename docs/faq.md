@@ -88,14 +88,14 @@ Bitcoin (₿) would be preferred over USD at the address below. Any denomination
 >> bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4
 >>
 >> Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":<br>
->> ![BTC](_media/bitcoin_32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
+>> ![BTC](/_media/bitcoin_32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
 > ---
 >> ***Option #2***<br>
 >>
 >> bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g
 >> 
 >> Here is the related QR code associated with my BTC address beginning with "bc1q690":<br>
->> ![BTC](_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
+>> ![BTC](/_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
 
 ## Still have questions?
 Send me an email at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix). My contact information is also available online at [travisyard.run](https://travisyard.run/).
