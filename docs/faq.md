@@ -82,7 +82,7 @@ The badges below show a real-time representation of the media encryption and syn
   ![Overall Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields)
 
 ~~~ json
-<https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json>
+https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json
 ~~~
 
 
