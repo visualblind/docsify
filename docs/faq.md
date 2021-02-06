@@ -71,6 +71,18 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 [status.travisflix.com](https://status.travisflix.com/)
 
 
+## Status of the media sync processes?
+
+    The badges below show a real-time representation of the media encryption and syncing processes between the datasource and multiple Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
+
+* (Media > Encrypt > Sync > Google Drive)
+  ![Sync Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FF-VXXpPQ%2Frclone%25252Ffreenas.shields)
+
+* (Overall status)
+  ![Overall Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields)
+
+<pre>https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json</pre>
+
 ## Can I donate money?
 Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
 
