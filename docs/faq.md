@@ -74,9 +74,10 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 ## Can I donate money?
 Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
 
-```
+~~~ html
 Bitcoin current price: <iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
-```
+~~~
+
 <!--<iframe src="gobitcoin.io_price.html" width="100%" style="border:0px;"></iframe> -->
 
 * Operating expense to run travisflix.com on Linode PaaS = $10 per month
