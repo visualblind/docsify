@@ -100,14 +100,14 @@ Bitcoin (₿) would be preferred over USD at the address below. Any denomination
 > ***Option #1***<br>
 >
 > [![GreenAddress Permanent Payment URL](/_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)<br>
-> bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4
+> [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)
 >
 > Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":<br>
 > ![BTC](/_media/bitcoin_32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
 ---
 > ***Option #2***<br>
 >
-> bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g
+> [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
 > 
 > Here is the related QR code associated with my BTC address beginning with "bc1q690":<br>
 > ![BTC](/_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
