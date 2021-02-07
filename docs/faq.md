@@ -50,7 +50,7 @@ You'll notice for the movie, Avatar (2009), it has 4 different versions availabl
 
 ![Avatar](/_media/avatar.png) ![Avatar2](/_media/avatar2.png)
 
-For another example, here is "I Am Legend (2007)" with a optional Alternate Ending which you may or may not like. But the choice is there, and going forward there will only be more films with more than a single version.
+Another example is `I Am Legend (2007)` with an optional ***Alternate Ending***.
 
 ![Alternate_Ending](_media/alternate_ending.png)
 
