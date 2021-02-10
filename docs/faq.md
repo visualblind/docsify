@@ -35,12 +35,12 @@ The server actually does have logic which determines that your network's ingress
 
 
 ## What is transcoding?
-Transcoding is a compute-resource-heavy procedure the media server can choose to run which converts the source video or audio codec of a media file to be as compatibile as possible with whatever device you're watching on. Jellyfin tends to not like Apple products, so avoid those if you can. Chrome works fine on every single device I've tried it on, in addition to the official Jellyfin app for Amazon Fire TV Stick.
+Transcoding is a compute-resource-heavy procedure the media server can choose to run which converts the source video or audio codec of a media file to be as compatibile as possible with whatever device you're watching on. Jellyfin tends to not like ***OLD*** Apple products, so avoid those if you can. Newer Apple devices are fine. Chrome/Chromium works fine on every device I've tried it on in addition to the official Jellyfin app for Amazon Fire TV Stick.
 
 There are only 3 posible status' for what the server is doing to your video.
-  1. Direct play
-  2. Direct stream (very fast operation dealing with media containers and not codec conversions)
-  3. HLS (codec transcoding - compute-heavy process taking ~99% cputime)
+  1. Direct Play
+  2. Direct Stream (quick media container re-packaging task/not even noticeable)
+  3. HLS (video/audio codec decoding and re-encoding (transcoding) task---compute-intensive process consuming ~50-99% cputime)
 
 
 ## How to stream multiple versions of a film?
@@ -50,7 +50,7 @@ You'll notice for the movie, Avatar (2009), it has 4 different versions availabl
 
 ![Avatar](/_media/avatar.png) ![Avatar2](/_media/avatar2.png)
 
-For another example, here is "I Am Legend (2007)" with a optional Alternate Ending which you may or may not like. But the choice is there, and going forward there will only be more films with more than a single version.
+Another example is `I Am Legend (2007)` with an optional ***Alternate Ending***.
 
 ![Alternate_Ending](_media/alternate_ending.png)
 
@@ -71,18 +71,49 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 [status.travisflix.com](https://status.travisflix.com/)
 
 
+## Status of the media sync processes?
+
+The badges below show a real-time representation of the media encryption and syncing processes between the datasource and multiple Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
+
+* Media > Encrypt > Sync > Google Drive<br>
+  ![Sync Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FF-VXXpPQ%2Frclone%25252Ffreenas.shields)
+
+* Overall status<br>
+  ![Overall Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields)
+
+~~~ json
+https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json
+~~~
+
+
 ## Can I donate money?
-Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated. 
-* Opex for travisflix.com is only $10/mo
-  * but I don't pay myself
-  * and if I were to pay for cloud storage the legitimate way, it would be at least $150-200/mo or $1800-2400/yr.
+Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
 
-> bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g
+> Bitcoin current price: ***<iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>***
 
-![BTC](_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
+<!--<iframe src="gobitcoin.io_price.html" width="100%" style="border:0px;"></iframe> -->
+
+* Operating expense to run travisflix.com on Linode PaaS = $10 per month
+  * however, I don't pay myself...
+  * if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
+
+> ***Option #1***<br>
+>
+> [![GreenAddress Permanent Payment URL](/_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)<br>
+> [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)
+>
+> Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":<br>
+> ![BTC](/_media/bitcoin_32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
+---
+> ***Option #2***<br>
+>
+> [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
+> 
+> Here is the related QR code associated with my BTC address beginning with "bc1q690":<br>
+> ![BTC](/_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
 
 
 ## Still have questions?
-Feel free to shoot me an email at travisrunyard at gmail dot com or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).
+Send me an email at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix). My contact information is also available online at [travisyard.run](https://travisyard.run/).
 
 ---
