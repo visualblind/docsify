@@ -25,6 +25,11 @@ The server (the web UI) actually does have logic which determines that your netw
 The server actually does have logic which determines that your network's ingress bandwidth is insufficient to play the video and will automatically start trying to transcode the file from it's original form into a format which is more compatible with your device. When this does happen, video's will have a delay of a second or two before playing normally. Often more reasons for the server deciding to transcode the media is found under `Play method:` discussed fruther above. If it's actively transcoding, the Play method will state `HLS` and not `DirectPlay`.
 
 
+## Subtitles not loading?
+🎬 This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, ***wait about 30-45 seconds and try selecting the same subtitle again.***
+The root issue results from the server having to retrieve the entire media file from the data source before the subtitle stream can be extracted and pushed out to the client. Most of the TV episodes are large files so it takes about 30 seconds to pull it down at between 250-1000 Mbps.
+
+
 ## Supported devices or platforms?
 * PC & Mac with modern browser such as Google Chrome/Chromium, Firefox, Microsoft Edge, or Safari
   * This includes Windows 7/8/10, Linux 2.4+, MacOS
@@ -86,7 +91,7 @@ https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252
 ~~~
 
 
-## Can I donate money?
+## Looking for a way to donate?
 Bitcoin (₿) would be preferred over USD at the address below. Any denomination would be greatly appreciated.
 
 > Bitcoin current price: ***<iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>***
