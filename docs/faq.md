@@ -31,8 +31,8 @@ The root issue results from the server having to retrieve the entire media file 
 
 
 ## Supported devices or platforms?
-* PC & Mac with modern browser such as Google Chrome/Chromium, Firefox, Microsoft Edge, or Safari
-  * This includes Windows 7/8/10, Linux 2.4+, MacOS
+* PC, Mac, Linux with modern browser such as Google Chrome/Chromium, Firefox, Microsoft Edge, or Safari
+  * Windows (7/8/10), Linux kernel 2.4 or higher, MacOS
 * All modern smartphones/tablets with HTML5 supported browsers listed above
 * Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
 * Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
