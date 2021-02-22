@@ -75,7 +75,7 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 ## Where is the status page?
 [status.travisflix.com](https://status.travisflix.com/)
 
-As of 2-21-2021 the uptime is over 99.95%
+Uptime over the standard 30 day time period is: 99.989%
 
 ![TravisFlix Uptime](_media/travisflix_uptime.png)
 
