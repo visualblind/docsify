@@ -4,15 +4,14 @@ Almost 100% of the time, the root cause of this is something not right in your l
 
 
 ## Media stream buffering/glitching?
-![fas-wifi](/_media/fas-wifi.svg)
 In your browser, click the settings cog button in the lower screen underneith the progress bar, ensure the `QUALITY` dropdown menu is set to `AUTO`, and click `Playback Data`. Under Playback Info, determine the play type displayed next to `Play method:`.
 If it's `DirectPlay`, this means the server is streaming the direct media file to your computer without a problem, however the culript causing intermittent buffering/glitching is most likely due to you not having enough bandwidth to support the playback of the media file.
 
-![Settings](/_media/cog.png) ... ![](/_media/playbackdata.png)
+![Settings](/_media/cog.png) ... ![](_media/playbackdata.png)
 
 You can also get a sense for how much bandwidth is required by looking at the video's bitrate info which is available by clicking on the ellipsis of the media's image poster, then clicking `Media Info`.
 
-![ellipsis](/_media/ellipsis.png) ... ![bitrate](/_media/bitrate.png)
+![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
 The server (the web UI) actually does have logic which determines that your network's ingress bandwidth is insufficient to play the video and will automatically start trying to transcode the file from it's original form into a format which is more compatible with your device. When this does happen, video's will have a delay of a second or two before playing normally. Often more reasons for the server deciding to transcode the media is found under `Play method:` discussed fruther above. If it's actively transcoding, the Play method will state `HLS` and not `DirectPlay`.
 
@@ -58,7 +57,7 @@ You'll notice for the movie, Avatar (2009), it has 4 different versions availabl
 
 Another example is `I Am Legend (2007)` with an optional ***Alternate Ending***.
 
-![Alternate_Ending](/_media/alternate_ending.png)
+![Alternate_Ending](_media/alternate_ending.png)
 
 
 ## Media storage info?
@@ -78,35 +77,22 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 
 Uptime over the standard 30 day time period is: 99.989%
 
-![TravisFlix Uptime](/_media/travisflix_uptime.png)
+![TravisFlix Uptime](_media/travisflix_uptime.png)
 
 
 ## Status of the media sync processes?
 
-The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
+The badges below show a real-time representation of the media encryption and syncing processes between the datasource and multiple Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
 
-  1) OVERALL STATUS
-  2) `rclone-sync-video`: Rclone media sync operation which encrypts media and pushes to Google Drive aka--"GCrypt"
-  3) `rclone-sync-p0ds0smb`: Rclone data sync operation to push/pull encrypted **NON**-media data to GCrypt (FreeNAS pools > Encrypt > Google Drive)
-  4) `rclone-servercopy`: Rclone server-side sync job from gdrive-usmba:gcrypt to gdrive-gdrive01dvecs:gcrypt and gdrive-gdrive02dvecs:gcrypt
-  5) `rclone-servercopy-media`: Server-side media-only rclone sync operation which pushes changes to multiple GDrive accounts for redundancy
+* Media > Encrypt > Sync > Google Drive<br>
+  ![Sync Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FF-VXXpPQ%2Frclone%25252Ffreenas.shields)
 
-      | Type    | Up, late, or down | Up, down |
-      |------------------------|------------------------|------------------------|
-      | 1. Overall status | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields) | ![Custom badge](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8-2.svg) | 
-      | 2. rclone-sync-video | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fgp7x30yH%2Frclone-sync-video.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fgp7x30yH-2%2Frclone-sync-video.shields) |
-      | 3. rclone-sync-p0ds0smb | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FF-VXXpPQ%2Frclone%25252Ffreenas.shields) | ![Custom badge](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ-2/rclone%252Ffreenas.svg) |
-      4. rclone-servercopy | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj%2Frclone-servercopy.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj-2%2Frclone-servercopy.shields) |
-      5. rclone-servercopy-media | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3%2Frclone-servercopy-media.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3-2%2Frclone-servercopy-media.shields) |
+* Overall status<br>
+  ![Overall Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields)
 
-      ~~~ json
-      Overall status:
-      https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8.json
-      rclone-video-sync:
-      https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/gp7x30yH/rclone-sync-video.json
-      rclone-sync-p0ds0smb:
-      https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json
-      ~~~
+~~~ json
+https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json
+~~~
 
 
 ## Looking for a way to donate?
