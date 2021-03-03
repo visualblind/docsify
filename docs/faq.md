@@ -4,7 +4,7 @@ Almost 100% of the time, the root cause of this is something not right in your l
 
 
 ## Media stream buffering/glitching?
-![fas-wifi](/_media/wifi.svg)
+![wifi](/_media/wifi_25x20.png) blah blah test test abc 123 the blahlblahlbalhllh llg l gf dlgdfl fdlg fdl gfdgldfglfdlg fdl gfdlgfldg ldfglfdgl dflgfdlgdflgdflgdflgldfglfdgldflfldsflsdfldslfdslf dlsfdsl lds  ldsl fds dsl lds dls lds lds ldsl fdslf dsl lds sdl dsl dslf d.
 In your browser, click the settings cog button in the lower screen underneith the progress bar, ensure the `QUALITY` dropdown menu is set to `AUTO`, and click `Playback Data`. Under Playback Info, determine the play type displayed next to `Play method:`.
 If it's `DirectPlay`, this means the server is streaming the direct media file to your computer without a problem, however the culript causing intermittent buffering/glitching is most likely due to you not having enough bandwidth to support the playback of the media file.
 
