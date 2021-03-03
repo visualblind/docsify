@@ -76,7 +76,9 @@ If you have multiple Google Drive accounts, server-side copy/sync operations are
 ## Where is the status page?
 [status.travisflix.com](https://status.travisflix.com/)
 
-Uptime over the standard 30 day time period is: 99.989%
+Uptime over the standard 30 day time period is currently: **99.997%**
+
+> ![info-circle](/_media/info-circle_22x22.png) This percentage figure is often referred to within SLA (service level agreements). For instance, the SLA for the "Google Workspace Service Level Agreement" which includes service like Gmail, Docs, Drive, Chat, Voice etc is 99.9% however being a corporate cocksuck, they include needless jargon words to make it so convoluted you just want to close the page and stay in the fetus posistion for the next 4 days.
 
 ![TravisFlix Uptime](/_media/travisflix_uptime.png)
 
