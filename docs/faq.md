@@ -4,7 +4,9 @@ Almost 100% of the time, the root cause of this is something not right in your l
 
 
 ## Media stream buffering/glitching?
-![wifi](/_media/wifi_25x20.png) blah blah test test abc 123 the blahlblahlbalhllh llg l gf dlgdfl fdlg fdl gfdgldfglfdlg fdl gfdlgfldg ldfglfdgl dflgfdlgdflgdflgdflgldfglfdgldflfldsflsdfldslfdslf dlsfdsl lds  ldsl fds dsl lds dls lds lds ldsl fdslf dsl lds sdl dsl dslf d.
+![wifi](/_media/wifi_25x20.png) I wanted to include the following tip at the very top of this section because I had this expact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire in with the standard `Cat5e/6` ethernet cable. If you only have `Cat5` throw that shit away. If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11AC** (5 Ghz freq.) and is using a wide band such as 80 or 160.
+> The 802.11N wireless protocol/standard can also use the 5 Ghz freq., so just because you know you're on 5 Ghz (or a SSID with "-5G" appended in its name) that doesn't mean you're on 802.11AC.
+
 In your browser, click the settings cog button in the lower screen underneith the progress bar, ensure the `QUALITY` dropdown menu is set to `AUTO`, and click `Playback Data`. Under Playback Info, determine the play type displayed next to `Play method:`.
 If it's `DirectPlay`, this means the server is streaming the direct media file to your computer without a problem, however the culript causing intermittent buffering/glitching is most likely due to you not having enough bandwidth to support the playback of the media file.
 
