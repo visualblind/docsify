@@ -76,9 +76,9 @@ The root issue results from the server having to retrieve the entire media file 
 * :iphone: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
-## Allowed Countries (VPN users)
+## Allowed Countries (VPN users)?
 
-:fire: :lock: The following countries are allowed through the Cloudflare firewall.
+:closed_lock_with_key: The following countries are allowed through the Cloudflare firewall :fire:.
 Another way of phrasing this is--If you are using a VPN, make sure that you are VPN'ing to one of the following countries or else you will be blocked.
 
 1. United States :us:
