@@ -78,15 +78,16 @@ The root issue results from the server having to retrieve the entire media file 
 
 ## Allowed Countries (VPN users)?
 
-:closed_lock_with_key: The following countries are allowed through the Cloudflare firewall :fire:.
-Another way of phrasing this is--If you are using a VPN, make sure that you are VPN'ing to one of the following countries or else you will be blocked.
+:us: The following countries are allowed through the :fire: (firewall).
 
-1. United States :us:
-2. Canada :turtle:
-3. Switzerland :panda_face:
-4. Sweeden :panda_face:
-5. Netherlands :snake:
-6. Singapore :tiger2:
+> Another way of phrasing this is---VPN Users make sure that you are VPN'ing to one of the following countries or be blocked.
+
+  1. United States :toilet:
+  2. Canada :mute:
+  3. Switzerland :turtle:
+  4. Sweeden :black_square_button:
+  5. Netherlands :syringe:
+  6. Singapore :tiger2:
 
 If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).<br>My contact information is also available online at [travisyard.run](https://travisyard.run/). 
 
