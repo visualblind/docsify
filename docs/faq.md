@@ -76,11 +76,9 @@ The root issue results from the server having to retrieve the entire media file 
 * :iphone: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
-## Allowed Countries (VPN users)?
+## VPN Remote Users: Allowed Countries?
 
-:us: The following countries are allowed through the :fire: (firewall).
-
-> Another way of phrasing this is---VPN Users make sure that you are VPN'ing to one of the following countries or be blocked.
+:triangular_flag_on_post: The following list of countries are allowed to access TravisFlix. **VPN Users make sure that you are VPN'ing to one of the following countries or be blocked.**
 
   1. United States :toilet:
   2. Canada :mute:
