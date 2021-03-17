@@ -8,7 +8,7 @@
 
 ### ![wifi-users](_media/wifi_20x16.png) Wireless Users
 
-I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire in with the standard `Cat5e/6` ethernet cable. If you only have `Cat5` throw that shit away. If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11AC** (5 Ghz freq.) and is using a wide band such as 80 or 160.
+:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire in with the standard `Cat5e/6` ethernet cable. If you only have `Cat5` throw that shit away. If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11AC** (5 Ghz freq.) and is using a wide band such as 80 or 160.
 > The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**...So just because you assume you're on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you're on 802.11AC.<br><br>
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
@@ -37,7 +37,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ## Media won't play?
 
-First, try to eliminate the obvious reasons such as using a device so old that it really should be thrown away. If you're using old shit, I can't help.
+:game_die: First, try to eliminate the obvious reasons such as using a device so old that it really should be thrown away. If you're using old shit, I can't help.
 1. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate
 2. Go to [librespeed.org](https://librespeed.org/) or [fast.com](https://fast.com/) and run a couple of tests
 3. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor)
@@ -133,7 +133,7 @@ Uptime over the standard 30 day time period is currently: **99.954%**
 
 ## Status of the media sync processes?
 
-:bar_chart: The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
+:black_joker: The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
 
   1) OVERALL STATUS
   2) `rclone-sync-video`: Rclone media sync operation which encrypts media and pushes to Google Drive aka--"GCrypt"
@@ -185,6 +185,6 @@ Uptime over the standard 30 day time period is currently: **99.954%**
 
 ## Still have questions?
 
-:question: Send me an email at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix). My contact information is also available online at [travisyard.run](https://travisyard.run/).
+:incoming_envelope: Send me an email at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix). My contact information is also available online at [travisyard.run](https://travisyard.run/).
 
 ---
