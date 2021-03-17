@@ -1,7 +1,7 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
 
-:no_entry_sign: :shit: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browser cache, simply open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that does work, but the normal way didn't, then learn how to clear your cache you retard.
+:shit: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browser cache, simply open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that does work, but the normal way didn't, then learn how to clear your cache you retard.
 
 
 ## Media stream buffering/glitching?
@@ -39,7 +39,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 :game_die: First, try to eliminate the obvious reasons such as using a device so old that it really should be thrown away. If you're using old shit...you're on your own.
 1. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate
-2. Go to [speedtest.travisflix.com](http://speedtest.travisflix.com/) or [netflix_fast.com](https://fast.com/) and run a few tests
+2. Go to [speedtest.travisflix.com](http://speedtest.travisflix.com/) or [fast.com](https://fast.com/) and run a few tests
 3. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor)
 4. As a generic guideline you should have at least 25 Mbps download banwdidth available at your disposal, however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps
 5. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
