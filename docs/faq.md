@@ -68,12 +68,12 @@ The root issue results from the server having to retrieve the entire media file 
 
 ## Supported devices or platforms?
 
-* PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
-  * Windows 7-10, Linux kernel 2.4+, MacOS (not recommended to use Apple devices with TravisFlix)
-* All modern smartphones/tablets with HTML5 supported browsers listed above
-* Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
-* Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
-* Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
+* :computer: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
+  * Windows 7-10, Linux kernel 2.4+, MacOS (**not recommended to use :apple: devices with TravisFlix**)
+* :phone: All modern smartphones/tablets with HTML5 supported browsers listed above
+* :iphone: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
+* :iphone: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
+* :iphone: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
 ## Allowed Countries (VPN users)
