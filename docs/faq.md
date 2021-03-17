@@ -101,7 +101,7 @@ Films with an **aspect ratio of less than 1.78:1 will have black bars displayed 
 
 ## How to stream multiple versions of a film?
 
-:x: For some movies and tv shows there are multiple versions of the same film available to stream. Additionally for other films, there are multiple versions of the same film but with a distinctive difference, such as REMASTERED EDITION, Alternate Ending, Director's Cut, Theatrical Edition etc..There are also multiple versions of films in which the only difference is movie quality/aspect size like 720p vs 1080p vs 2160p (4K).
+:signal_strength: For some movies and tv shows there are multiple versions of the same film available to stream. Additionally for other films, there are multiple versions of the same film but with a distinctive difference, such as REMASTERED EDITION, Alternate Ending, Director's Cut, Theatrical Edition etc..There are also multiple versions of films in which the only difference is movie quality/aspect size like 720p vs 1080p vs 2160p (4K).
 
 You'll notice for the movie *Avatar (2009)* there are 4 different versions available, as can be noted from the yellow number 4 in the **top left corner of the movie poster**.
 
@@ -167,8 +167,8 @@ Uptime over the standard 30 day time period is currently: **99.954%**
 ###### REALTIME BITCOIN PRICE: **<iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>**
 
 * Operating expense to run travisflix.com on Linode PaaS = $10 per month
-  * however, I don't pay myself...
-  * if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
+  * :x: however, I don't pay myself...
+  * :x: if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
 
 > **Option #1**
 > [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)<br>
