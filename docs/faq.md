@@ -76,6 +76,21 @@ The root issue results from the server having to retrieve the entire media file 
 * Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
+## Allowed Countries (VPN users)
+
+The following countries are allowed through the Cloudflare firewall. :firewall:
+Another way of phrasing this is--If you are using a VPN, make sure that you are VPN'ing to one of the following countries or else you will be blocked.
+
+1. United States
+2. Canada
+3. Switzerland
+4. Sweeden
+5. Netherlands
+6. Singapore
+
+If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).<br>My contact information is also available online at [travisyard.run](https://travisyard.run/). 
+
+
 ## Video not filling the screen?
 
 > :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
