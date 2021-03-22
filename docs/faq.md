@@ -18,7 +18,7 @@ If you insist on using WiFi, then you're going to need to ensure that you're con
 
 ### ![wired-users](_media/network-wired_20x16.png) Hardwire Users
 
-1) While playing a video--in your browser click the Settings/Gear button underneith the progress bar to the right of the video controls
+1) While playing a video--in your browser click the :fa fa-cog: settings/cog button underneith the progress bar to the right of the video controls
 2) Ensure **QUALITY** is set to **AUTO**
 3) Click `PLAYBACK DATA`
 4) Under Playback Info--Determine the play type displayed next to **Play method:**
@@ -29,7 +29,7 @@ If you insist on using WiFi, then you're going to need to ensure that you're con
     * There's probably many more, I just can't think of any right now
     * See [Media won't play?](https://help.travisflix.com/#/faq?id=media-won39t-play) below for help running a bandwidth test
 
-![Settings](_media/cog.png) ... ![](_media/playbackdata.png)
+![Playback](_media/playbackdata.png)
 
 You can also get a sense for how much bandwidth is required by looking at the video's bitrate info which is available by clicking on the ellipsis of the media's image poster, then clicking `Media Info`.
 
@@ -109,7 +109,7 @@ If you would like to request another country be allowed, contact me at <travisru
 
 ![Avatar](_media/avatar.png) ![Avatar2](_media/avatar2.png)
 
-Another example is *I Am Legend* with an **ALTERNATE ENDING**:
+Another example is "I Am Legend" with the **ALTERNATE ENDING**:
 
 ![Alternate_Ending](_media/alternate_ending.png)
 
@@ -169,9 +169,9 @@ Uptime over the standard 30 day time period is currently: **99.954%**
 
 ###### REALTIME BITCOIN PRICE: **<iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>**
 
-* Operating expense to run travisflix.com on Linode PaaS = $10 per month
-  * :heavy_dollar_sign: however, I don't pay myself...
-  * :heavy_dollar_sign: if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
+* :fa fa-linode: Linode Platform-as-a-Service (PaaS) operating cost is $10/mo
+  * :heavy_dollar_sign: However I don't pay myself
+  * :heavy_dollar_sign: The cost to run cloud data storage legitimately would range from $150-200/mo or $1800-2400/yr
 
 > **Option #1**
 > [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)<br>
