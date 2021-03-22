@@ -100,7 +100,7 @@ If you would like to request another country be allowed, contact me at <travisru
 
 ## How to stream multiple versions of a film?
 
-:signal_strength: For some movies and tv shows there are multiple versions of the same film available to stream. Additionally for other films, there are multiple versions of the same film but with a distinctive difference, such as REMASTERED EDITION, Alternate Ending, Director's Cut, Theatrical Edition etc..There are also multiple versions of films in which the only difference is movie quality/aspect size like 720p vs 1080p vs 2160p (4K).
+:fas fa-signal: For some movies and tv shows there are multiple versions of the same film available to stream. Additionally for other films, there are multiple versions of the same film but with a distinctive difference, such as REMASTERED EDITION, Alternate Ending, Director's Cut, Theatrical Edition etc..There are also multiple versions of films in which the only difference is movie quality/aspect size like 720p vs 1080p vs 2160p (4K).
 
 You'll notice for the movie *Avatar (2009)* there are 4 different versions available, as can be noted from the yellow number 4 in the **top left corner of the movie poster**.
 
@@ -113,16 +113,16 @@ Another example is *I Am Legend* with an **ALTERNATE ENDING**:
 
 ## Media storage info?
 
-:hammer: Over 16 terabytes as of 01/28/2021. Three words--Google Drive and eBay. Total cost: $4*3=$12.
-![Google Drive Storage](_media/gdrive-storageused.png)
-> Google Cloud Console API Metrics for Google Drive
+:fab fa-google-drive: **17+ TB**
+![Google Drive Storage](_media/gdrive-storageused_2021-03-22.png)
+Google Cloud Console API Metrics for Google Drive
 ![Google Cloud API rates](_media/gcloud-01.png)
 ![Google Cloud API rates](_media/gcloud-02.png)
 
 
 ## Where is the status page?
 
-:link: [status.travisflix.com](https://status.travisflix.com/)
+:fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
 
 Uptime over the standard 30 day time period is currently: **99.954%**
 
