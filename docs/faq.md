@@ -8,8 +8,11 @@
 
 ### ![wifi-users](_media/wifi_20x16.png) Wireless Users
 
-:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire in with the standard `Cat5e/6` :fas fa-ethernet: ethernet cable. If you only have `Cat5` throw that shit away. If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11AC** (5 Ghz freq.) and is using a wide band such as 80 or 160.
-> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**...So just because you assume you're on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you're on 802.11AC.<br><br>
+:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire in with the standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5 throw that shit away.
+
+If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11AC** (5 Ghz freq.) and is using a wide band such as 80 or 160.
+> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**...So just because you assume you're on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you're on 802.11AC.
+
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
 
