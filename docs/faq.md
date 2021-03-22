@@ -82,8 +82,8 @@ The root issue results from the server having to retrieve the entire media file 
 
   1. United States :toilet:
   2. Canada :mute:
-  3. Switzerland :turtle:
-  4. Sweeden :black_square_button:
+  3. Switzerland :children_crossing:
+  4. Sweeden :no_smoking:
   5. Netherlands :syringe:
   6. Singapore :tiger2:
 
@@ -92,9 +92,9 @@ If you would like to request another country be allowed, contact me at <travisru
 
 ## Video not filling the screen?
 
-> :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
-A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
-Films with an **aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom.** :+1:<br>
+* :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
+* A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
+* Films with an **aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom.** :left_right_arrow:<br>
 
 
 
@@ -166,8 +166,8 @@ Uptime over the standard 30 day time period is currently: **99.954%**
 ###### REALTIME BITCOIN PRICE: **<iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>**
 
 * Operating expense to run travisflix.com on Linode PaaS = $10 per month
-  * :x: however, I don't pay myself...
-  * :x: if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
+  * :heavy_dollar_sign: however, I don't pay myself...
+  * :heavy_dollar_sign: if I were to pay for cloud storage legitimately, that cost would easily hit $200/month---$2400/year
 
 > **Option #1**
 > [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)<br>
