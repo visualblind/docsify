@@ -8,7 +8,7 @@
 
 ### ![wifi-users](_media/wifi_20x16.png) Wireless Users
 
-:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire in with the standard `Cat5e/6` ethernet cable. If you only have `Cat5` throw that shit away. If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11AC** (5 Ghz freq.) and is using a wide band such as 80 or 160.
+:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire in with the standard `Cat5e/6` :fas fa-ethernet: ethernet cable. If you only have `Cat5` throw that shit away. If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11AC** (5 Ghz freq.) and is using a wide band such as 80 or 160.
 > The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**...So just because you assume you're on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you're on 802.11AC.<br><br>
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
@@ -62,18 +62,18 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ## Subtitles not loading?
 
-🎬 This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, ***wait about 30-45 seconds and try selecting the same subtitle again.***
+:far fa-closed-captioning: This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, ***wait about 30-45 seconds and try selecting the same subtitle again.***
 The root issue results from the server having to retrieve the entire media file from the data source before the subtitle stream can be extracted and pushed out to the client. Most of the TV episodes are large files so it takes about 30 seconds to pull it down at between 250-1000 Mbps.
 
 
 ## Supported devices or platforms?
 
-* :computer: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
-  * Windows 7-10, Linux kernel 2.4+, MacOS (**not recommended to use :apple: devices with TravisFlix**)
-* :phone: All modern smartphones/tablets with HTML5 supported browsers listed above
-* :iphone: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
-* :iphone: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
-* :iphone: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
+* :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
+  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.4+, :fab fa-apple: MacOS (**not recommended to use :apple: devices with TravisFlix**)
+* :fas fa-mobile-alt: All modern smartphones/tablets with HTML5 supported browsers listed above
+* :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
+* :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
+* :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
 ## VPN Remote Users: Allowed Countries?
@@ -102,7 +102,7 @@ If you would like to request another country be allowed, contact me at <travisru
 
 :fas fa-signal: For some movies and tv shows there are multiple versions of the same film available to stream. Additionally for other films, there are multiple versions of the same film but with a distinctive difference, such as REMASTERED EDITION, Alternate Ending, Director's Cut, Theatrical Edition etc..There are also multiple versions of films in which the only difference is movie quality/aspect size like 720p vs 1080p vs 2160p (4K).
 
-You'll notice for the movie *Avatar (2009)* there are 4 different versions available, as can be noted from the yellow number 4 in the **top left corner of the movie poster**.
+> :fas fa-info-circle: Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.
 
 ![Avatar](_media/avatar.png) ![Avatar2](_media/avatar2.png)
 
@@ -113,8 +113,8 @@ Another example is *I Am Legend* with an **ALTERNATE ENDING**:
 
 ## Media storage info?
 
-:fab fa-google-drive:
-17+ TB
+:fab fa-google-drive: **17+ TB**<br>
+
 ![Google Drive Storage](_media/gdrive-storageused_2021-03-22.png)
 Google Cloud Console API Metrics for Google Drive
 ![Google Cloud API rates](_media/gcloud-01.png)
