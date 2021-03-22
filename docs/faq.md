@@ -65,7 +65,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ## Subtitles not loading?
 
-:far fa-closed-captioning: This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, ***wait about 30-45 seconds and try selecting the same subtitle again.***
+:far fa-closed-captioning: This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, **WAIT ~30 SECONDS** then select the same subtitle again.
 The root issue results from the server having to retrieve the entire media file from the data source before the subtitle stream can be extracted and pushed out to the client. Most of the TV episodes are large files so it takes about 30 seconds to pull it down at between 250-1000 Mbps.
 
 
@@ -88,7 +88,7 @@ The root issue results from the server having to retrieve the entire media file 
   3. Switzerland :children_crossing:
   4. Sweeden :no_smoking:
   5. Netherlands :syringe:
-  6. Singapore :tiger2:
+  6. Singapore :fas fa-transgender-alt:
 
 If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).<br>My contact information is also available online at [travisyard.run](https://travisyard.run/). 
 
