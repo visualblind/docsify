@@ -42,7 +42,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 :game_die: First, try to eliminate the obvious reasons such as using a device so old that it really should be thrown away. If you're using old shit...you're on your own.
 1. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate
-2. Go to [speedtest.travisflix.com](http://speedtest.travisflix.com/) or [fast.com](https://fast.com/) and run a few tests
+2. Open [speedtest.travisflix.com](http://speedtest.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests
 3. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor)
 4. As a generic guideline you should have at least 25 Mbps download banwdidth available at your disposal, however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps
 5. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
