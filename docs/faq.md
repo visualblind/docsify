@@ -18,7 +18,7 @@ If you insist on using WiFi, then you're going to need to ensure that you're con
 
 ### ![wired-users](_media/network-wired_20x16.png) Hardwire Users
 
-1) While playing a video--in your browser click the :fa fa-cog: settings/cog button underneith the progress bar to the right of the video controls
+1) During video playback---In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
 2) Ensure **QUALITY** is set to **AUTO**
 3) Click `PLAYBACK DATA`
 4) Under Playback Info--Determine the play type displayed next to **Play method:**
