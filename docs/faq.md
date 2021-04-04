@@ -118,7 +118,7 @@ Another example is "I Am Legend" with the **ALTERNATE ENDING**:
 
 :fab fa-google-drive: **17+ TB**<br>
 
-![Google Drive Storage](_media/gdrive-storageused_2021-03-22.png)
+![Google Drive Storage](_media/gdrive-storageused.png)
 Google Cloud Console API Metrics for Google Drive
 ![Google Cloud API rates](_media/gcloud-01.png)
 ![Google Cloud API rates](_media/gcloud-02.png)
