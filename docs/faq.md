@@ -44,7 +44,6 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
     * Versions with **RARBG** in the suffix is recommended if the other is not working for you.
-
       ![multiple versions](_media/multiple_vers.png)
 
 2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
