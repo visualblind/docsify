@@ -41,7 +41,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 ## Media won't play?
 
 :game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
-1. [Check if multiple versions are available](#/faq?id=how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
+1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
     * Versions with **RARBG** in the suffix is recommended if the other is not working for you.
 ![multiple versions](_media/multiple_vers.png)
