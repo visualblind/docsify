@@ -40,13 +40,17 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ## Media won't play?
 
-:game_die: First, try to eliminate the obvious reasons such as using a device so old that it really should be thrown away. If you're using old shit...you're on your own.
-1. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate
-2. Open [speedtest.travisflix.com](http://speedtest.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests
-3. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor)
-4. As a generic guideline you should have at least 25 Mbps download banwdidth available at your disposal, however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps
-5. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
-6. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
+:game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
+1. [Check if multiple versions are available](#/faq?id=how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
+    * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
+    * Versions with **RARBG** in the suffix is recommended if the other is not working for you.
+    ![multiple versions](_media/multiple_vers.png)
+2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
+3. Open [speedtest.travisflix.com](http://speedtest.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
+4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
+5. As a generic guideline you should have at least 25 Mbps download banwdidth available at your disposal, however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps.
+6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
+7. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
     ~~~bash
     visualblind$ speedtest
     Retrieving speedtest.net configuration...
@@ -72,7 +76,7 @@ The root issue results from the server having to retrieve the entire media file 
 ## Supported devices or platforms?
 
 * :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
-  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.4+, :fab fa-apple: MacOS (**not recommended to use :apple: devices with TravisFlix**)
+  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.4+, :fab fa-apple: MacOS (**legacy iOS :apple: versions NOT recommended**)
 * :fas fa-mobile-alt: All modern smartphones/tablets with HTML5 supported browsers listed above
 * :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
 * :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
