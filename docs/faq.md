@@ -44,7 +44,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 1. [Check if multiple versions are available](#/faq?id=how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
     * Versions with **RARBG** in the suffix is recommended if the other is not working for you.
-    ![multiple versions](_media/multiple_vers.png)
+![multiple versions](_media/multiple_vers.png)
 2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
 3. Open [speedtest.travisflix.com](http://speedtest.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
 4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
