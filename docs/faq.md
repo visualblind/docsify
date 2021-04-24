@@ -1,7 +1,7 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
 
-:shit: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browser cache, simply open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that does work, but the normal way didn't, then learn how to clear your cache you retard.
+:shit: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browsers cache, open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that works, but the normal way didn't, then learn how to clear your cache.
 
 
 ## Media stream buffering/glitching?
@@ -51,6 +51,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 5. As a generic guideline you should have at least 25 Mbps download banwdidth available at your disposal, however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps.
 6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 7. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
+
     ~~~bash
     $ speedtest-cli
     Retrieving speedtest.net configuration...
@@ -69,7 +70,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ## Subtitles not loading?
 
-:far fa-closed-captioning: This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, **WAIT ~30 SECONDS** then select the same subtitle again.
+:far fa-closed-captioning: This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, wait ~30 seconds then select the same subtitle again.
 The root issue results from the server having to retrieve the entire media file from the data source before the subtitle stream can be extracted and pushed out to the client. Most of the TV episodes are large files so it takes about 30 seconds to pull it down at between 250-1000 Mbps.
 
 
@@ -93,6 +94,10 @@ The root issue results from the server having to retrieve the entire media file 
   4. Sweeden :no_smoking:
   5. Netherlands :syringe:
   6. Singapore :fas fa-transgender-alt:
+
+You will see Cloudflare error 1020 if you do not connect from these countries.
+
+![error 1020](_media/error1020.jpg)
 
 If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).<br>My contact information is also available online at [travisyard.run](https://travisyard.run/). 
 
