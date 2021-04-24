@@ -109,7 +109,7 @@ If you would like to request another country be allowed, contact me at <travisru
 
 :fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
 
->> :fas fa-info-circle: Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.
+> :fas fa-info-circle: Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.
 
 ![Avatar](_media/avatar3.png)
 
