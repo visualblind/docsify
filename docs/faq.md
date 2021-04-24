@@ -31,11 +31,11 @@ If you insist on using WiFi, then you're going to need to ensure that you're con
 
 ![Playback](_media/playbackdata.png)
 
-You can also get a sense for how much bandwidth is required by looking at the video's bitrate info which is available by clicking on the ellipsis of the media's image poster, then clicking `Media Info`.
+You can also get a sense for how much bandwidth is required by looking at the video's bitrate info which is available by clicking on the ellipsis of the media's image poster, then clicking Media Info.
 
 ![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
-:signal_strength: The server actually does have logic which determines that your network's ingress bandwidth is insufficient to play the video and will automatically start trying to transcode the file from it's original form into a format which is more compatible with your device. When this does happen, video's will have a delay of a second or two before playing normally. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed fruther above. If it's actively transcoding, the Play method will state **HLS** and not **DirectPlay**.
+> The server actually does have logic which determines that your network's ingress bandwidth is insufficient to play the video and will automatically start trying to transcode the file from it's original form into a format which is more compatible with your device. When this does happen, video's will have a delay of a second or two before playing normally. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed fruther above. If it's actively transcoding, the Play method will state **HLS** and not **DirectPlay**.
 
 
 ## Media won't play?
@@ -52,9 +52,9 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 7. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
     ~~~bash
-    visualblind$ speedtest
+    $ speedtest-cli
     Retrieving speedtest.net configuration...
-    Testing from Frontier Communications (!!REDACTED!!)...
+    Testing from Frontier Communications.
     Retrieving speedtest.net server list...
     Selecting best server based on ping...
     Hosted by Whitesky Communications LLC (Los Angeles, CA) [29.64 km]: 16.822 ms
@@ -64,7 +64,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
     Upload: 122.33 Mbit/s
     ~~~
 
-:signal_strength: The server actually does have logic which determines that your network's ingress bandwidth is insufficient to play the video and will automatically start trying to transcode the file from it's original form into a format which is more compatible with your device. When this does happen, video's will have a delay of a second or two before playing normally. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed fruther above. If it's actively transcoding, the Play method will state **HLS** and not **DirectPlay**.
+> The server actually does have logic which determines that your network's ingress bandwidth is insufficient to play the video and will automatically start trying to transcode the file from it's original form into a format which is more compatible with your device. When this does happen, video's will have a delay of a second or two before playing normally. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed fruther above. If it's actively transcoding, the Play method will state **HLS** and not **DirectPlay**.
 
 
 ## Subtitles not loading?
@@ -107,15 +107,15 @@ If you would like to request another country be allowed, contact me at <travisru
 
 ## How to stream multiple versions of a film?
 
-:fas fa-signal: For some movies and tv shows there are multiple versions of the same film available to stream. Additionally for other films, there are multiple versions of the same film but with a distinctive difference, such as REMASTERED EDITION, Alternate Ending, Director's Cut, Theatrical Edition etc..There are also multiple versions of films in which the only difference is movie quality/aspect size like 720p vs 1080p vs 2160p (4K).
+:fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
 
-> :fas fa-info-circle: Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.
+>> :fas fa-info-circle: Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.
 
-![Avatar](_media/avatar.png) ![Avatar2](_media/avatar2.png)
+![Avatar](_media/avatar3.png)
 
-Another example is "I Am Legend" with the **ALTERNATE ENDING**:
+Apocolypse Now has 3 distinct editions available:
 
-![Alternate_Ending](_media/alternate_ending.png)
+![versions](_media/versions.png)
 
 
 ## Media storage info?
