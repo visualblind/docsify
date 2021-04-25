@@ -1,7 +1,8 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
 
-:shit: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browsers cache, open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that works, but the normal way didn't, then learn how to clear your cache.
+:shit: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browsers cache, open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that works, but the normal way didn't, then [clear your browser cache](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en).
+If you feel that the issue is the server, [check the status page](#where-is-the-status-page).
 
 
 ## Media stream buffering/glitching?
