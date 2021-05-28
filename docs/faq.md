@@ -150,6 +150,8 @@ Uptime over the standard 30 day time period is currently: **99.954%**
 
 :fas fa-server: [netdata.travisflix.com](https://netdata.travisflix.com/)
 
+> Click any white space within the iframe below:
+
 <iframe src="//netdata.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
 
