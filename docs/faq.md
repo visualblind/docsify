@@ -148,7 +148,9 @@ Uptime over the standard 30 day time period is currently: **99.954%**
 
 ## Do you have server statistics?
 
-<iframe src="https://travisflix.com/netdata/netdata.html" width="100%" height="900px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
+:fas fa-server: [netdata.travisflix.com](https://netdata.travisflix.com/)
+
+<iframe src="//netdata.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
 
 ## Status of the media sync processes?
