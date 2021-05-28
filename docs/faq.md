@@ -146,6 +146,11 @@ Uptime over the standard 30 day time period is currently: **99.954%**
 ![TravisFlix Uptime](_media/travisflix_uptime.png)
 
 
+## Do you have server statistics?
+
+<iframe src="http://travisflix.com/netdata/netdata.html" width="600px" height="100%" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
+
+
 ## Status of the media sync processes?
 
 :black_joker: The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
