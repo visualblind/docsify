@@ -53,7 +53,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 7. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
 
-    ~~~bash
+    ```bash
     $ speedtest-cli
     Retrieving speedtest.net configuration...
     Testing from Frontier Communications.
@@ -64,15 +64,15 @@ You can also get a sense for how much bandwidth is required by looking at the vi
     Download: 79.41 Mbit/s
     Testing upload speed ........................................................................................
     Upload: 122.33 Mbit/s
-    ~~~
+    ```
 
 > The Jellyfin streaming software on the server does have logic which determines that your networks ingress bandwidth is insufficient to play the video and will automatically start trying to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original form into a format that is more compatible with your device. When this happens videos will have a delay of a few seconds before playback. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed further above. If it's actively transcoding, the play method will state **HLS** and not **DirectPlay**.
 
 
 ## Subtitles not loading?
 
-:far fa-closed-captioning: This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, wait about 60 seconds and re-select the same subtitle again.
-The root cause results from the server needing to retrieve the entire media file from the data source before the subtitle stream can be extracted and pushed out to the client. Most TV episodes are large media files and so it will take roughly 30-60 seconds to download the entire episode. In rare cases it may take even longer than 60 seconds, especially if the server is heavily loaded.
+:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 60 seconds and re-select the same subtitle again.
+The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client. Most TV episodes are large media files and so it will take roughly 30-60 seconds to download the entire episode. In rare cases it may take even longer than 60 seconds, especially if the server is heavily loaded.
 
 
 ## Supported devices or platforms?
@@ -111,7 +111,6 @@ If you would like to request another country be allowed, contact me at <travisru
 * Films with an **aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom.** :left_right_arrow:<br>
 
 
-
 ## How to stream multiple versions of a film?
 
 :fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
@@ -123,6 +122,53 @@ If you would like to request another country be allowed, contact me at <travisru
 Apocolypse Now has 3 distinct editions available:
 
 ![versions](_media/versions.png)
+
+
+## Links to plain-text media index
+
+:fas fa-list: These plain-text files contain an index of all media for which it corresponds. The files are re-generated every hour 24/7/365 for the most up-to-date media info.
+
+- [travisflix.com/movies.txt](https://travisflix.com/movies.txt)
+- [travisflix.com/shows.txt](https://travisflix.com/shows.txt)
+- [travisflix.com/standup.txt](https://travisflix.com/standup.txt)
+- [travisflix.com/motogp.txt](https://travisflix.com/motogp.txt)
+- [travisflix.com/tech.txt](https://travisflix.com/tech.txt)
+- [travisflix.com/tennis.txt](https://travisflix.com/tennis.txt)
+- [travisflix.com/podcasts.txt](https://travisflix.com/podcasts.txt)
+- [travisflix.com/starcraft.txt](https://travisflix.com/starcraft.txt)
+
+This is the bash script on the cron schedule that generates the above text files:
+
+```bash
+#!/usr/bin/env bash
+
+nginx_www='/usr/local/linuxserver-nginx/config/www'
+
+if [[ -d /usr/local/jellyfin/media && -f /usr/local/jellyfin/media/scriptcheck ]]; then
+    # rclone mount exists, no need to remount
+
+    # exit script if variable is empty
+    [ -z "$nginx_www" ] && { echo "Error: variable nginx_www is not set or empty"; exit 1; }
+
+    # refresh public text files with media index
+    cd /usr/local/jellyfin/media
+    find /usr/local/jellyfin/media/video-movies -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/movies.txt
+    find /usr/local/jellyfin/media/video-shows -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/shows.txt
+    tree --noreport -d --charset=en_US.utf8 video-shows >> $nginx_www/shows.txt
+    find /usr/local/jellyfin/media/video-standup -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/standup.txt
+    find /usr/local/jellyfin/media/video-tennis -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/tennis.txt
+    find /usr/local/jellyfin/media/video-starcraft -mindepth 1 -maxdepth 1 -type f -printf '%f\n' | sort > $nginx_www/starcraft.txt
+    find /usr/local/jellyfin/media/video-tech -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/tech.txt
+    find /usr/local/jellyfin/media/podcasts -mindepth 1 -maxdepth 2 -type d -printf '%f\n' | sort > $nginx_www/podcasts.txt
+    tree --noreport --charset=en_US.utf8 podcasts >> $nginx_www/podcasts.txt
+    # following two sort reversed
+    find /usr/local/jellyfin/media/video-uncategorized -mindepth 1 -maxdepth 2 -type d -printf '%f\n' | sort --reverse > $nginx_www/motogp.txt
+    tree --noreport --charset=en_US.utf8 -r video-uncategorized >> $nginx_www/motogp.txt
+else
+    exit 1
+
+fi
+```
 
 
 ## Media storage info?
