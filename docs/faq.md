@@ -98,6 +98,7 @@ The root cause results from the server needing to retrieve the entire media file
   6. Singapore :fas fa-transgender-alt:
 
 check_circle - :check_circle:<br>
+mi-two-tone check_circle green - :mi-two-tone check_circle green:<br>
 mi md-18|home - :mi md-18|home:<br>
 mi-outlined red|check_circle - :mi-outlined red|check_circle:<br>
 mi-outlined red - :mi-outlined red:<br>
