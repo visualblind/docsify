@@ -139,20 +139,22 @@ Google Cloud Console API Metrics for Google Drive
 
 :fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
 
-Uptime over the standard 30 day time period is currently: **99.954%**
+30 day HTTP uptime is currently as of 06-04-2021: **99.95%**
 
-> ![info-circle](_media/info-circle_22x22.png) This percentage figure is often referred to within SLA (service level agreements). For instance, the SLA for the "Google Workspace Service Level Agreement" which includes service like Gmail, Docs, Drive, Chat, Voice etc is 99.9% however being a corporate cocksuck, they include needless jargon words to make it so convoluted you just want to close the page and stay in the fetus posistion for the next 4 days.
+> ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the SLA is 99.9% for the Google Workspace (Search, Gmail, Docs, Drive, Chat, Voice, etc.).
 
-![TravisFlix Uptime](_media/travisflix_uptime.png)
+![TravisFlix Uptime](_media/travisflix_status_06042021.png)
+
+![TravisFlix Uptime](_media/travisflix_status_all_06042021.png)
 
 
 ## Do you have server statistics?
 
-:fas fa-server: [netdata.travisflix.com](https://netdata.travisflix.com/)
+:fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
 > Click any white space within the iframe below:
 
-<iframe src="//netdata.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
+<iframe src="//statistics.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
 
 ## Status of the media sync processes?
