@@ -144,6 +144,7 @@ Google Cloud Console API Metrics for Google Drive
 30 day HTTP uptime is currently as of 06-04-2021: **99.95%**
 
 > ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the SLA is 99.9% for the Google Workspace (Search, Gmail, Docs, Drive, Chat, Voice, etc.).
+> [google.com/appstatus](https://www.google.com/appsstatus)
 
 ![TravisFlix Uptime](_media/travisflix_status_06042021.png)
 
