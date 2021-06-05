@@ -36,7 +36,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
-> The server actually does have logic which determines that your network's ingress bandwidth is insufficient to play the video and will automatically start trying to transcode the file from it's original form into a format which is more compatible with your device. When this does happen, video's will have a delay of a second or two before playing normally. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed fruther above. If it's actively transcoding, the Play method will state **HLS** and not **DirectPlay**.
+> The Jellyfin streaming software on the server does have logic which determines that your networks ingress bandwidth is insufficient to play the video and will automatically start trying to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original form into a format that is more compatible with your device. When this happens videos will have a delay of a few seconds before playback. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed further above. If it's actively transcoding, the play method will state **HLS** and not **DirectPlay**.
 
 
 ## Media won't play?
@@ -66,7 +66,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
     Upload: 122.33 Mbit/s
     ~~~
 
-> The server actually does have logic which determines that your network's ingress bandwidth is insufficient to play the video and will automatically start trying to transcode the file from it's original form into a format which is more compatible with your device. When this does happen, video's will have a delay of a second or two before playing normally. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed fruther above. If it's actively transcoding, the Play method will state **HLS** and not **DirectPlay**.
+> The Jellyfin streaming software on the server does have logic which determines that your networks ingress bandwidth is insufficient to play the video and will automatically start trying to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original form into a format that is more compatible with your device. When this happens videos will have a delay of a few seconds before playback. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed further above. If it's actively transcoding, the play method will state **HLS** and not **DirectPlay**.
 
 
 ## Subtitles not loading?
