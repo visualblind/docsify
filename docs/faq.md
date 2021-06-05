@@ -90,7 +90,7 @@ The root cause results from the server needing to retrieve the entire media file
 
 :triangular_flag_on_post: The following list of countries are allowed to access TravisFlix. **VPN Users make sure that you are VPN'ing to one of the following countries or be blocked.**
 
-  1. United States :toilet:
+  1. United States :toilet: :mi-two-tone check_circle green:
   2. Canada :mute:
   3. Switzerland :children_crossing:
   4. Sweeden :no_smoking:
