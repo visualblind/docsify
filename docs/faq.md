@@ -97,16 +97,12 @@ The root cause results from the server needing to retrieve the entire media file
   5. Netherlands :syringe:
   6. Singapore :fas fa-transgender-alt:
 
-:mat-icon check_circle:
-:check:
-
-:mi md-18|home:
-:mi-outlined red|check_circle:
-:mi-round md-36 blue|check_circle:
-:mi-two-tone md-48 green-svg|check_circle:
-:mi-two-tone md-48 blue-svg|chrome_reader_mode
-:mi-sharp green-svg md-48|chrome_reader_mode:
-
+check_circle - :check_circle:<br>
+mi md-18|home - :mi md-18|home:<br>
+mi-outlined red|check_circle - :mi-outlined red|check_circle:<br>
+mi-round md-36 blue|check_circle - :mi-round md-36 blue|check_circle:<br>
+mi-sharp green-svg md-48|chrome_reader_mode - :mi-sharp green-svg md-48|chrome_reader_mode:<br>
+chrome_reader_mode - :chrome_reader_mode:
 
 You will see Cloudflare error 1020 if you do not connect from these countries.
 
