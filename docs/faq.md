@@ -53,18 +53,18 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 7. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
 
-    ```bash
-    $ speedtest-cli
-    Retrieving speedtest.net configuration...
-    Testing from Frontier Communications.
-    Retrieving speedtest.net server list...
-    Selecting best server based on ping...
-    Hosted by Whitesky Communications LLC (Los Angeles, CA) [29.64 km]: 16.822 ms
-    Testing download speed ......................................................................................
-    Download: 79.41 Mbit/s
-    Testing upload speed ........................................................................................
-    Upload: 122.33 Mbit/s
-    ```
+```shell-session
+$ speedtest-cli
+Retrieving speedtest.net configuration...
+Testing from Frontier Communications.
+Retrieving speedtest.net server list...
+Selecting best server based on ping...
+Hosted by Whitesky Communications LLC (Los Angeles, CA) [29.64 km]: 16.822 ms
+Testing download speed ......................................................................................
+Download: 79.41 Mbit/s
+Testing upload speed ........................................................................................
+Upload: 122.33 Mbit/s
+```
 
 > The Jellyfin streaming software on the server does have logic which determines that your networks ingress bandwidth is insufficient to play the video and will automatically start trying to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original form into a format that is more compatible with your device. When this happens videos will have a delay of a few seconds before playback. Often more reasons for the server deciding to transcode the media is found under **"Play method:"** discussed further above. If it's actively transcoding, the play method will state **HLS** and not **DirectPlay**.
 
@@ -124,9 +124,9 @@ Apocolypse Now has 3 distinct editions available:
 ![versions](_media/versions.png)
 
 
-## Links to plain-text media index
+## Plain-text media list/index
 
-:fas fa-list: These plain-text files contain an index of all media for which it corresponds. The files are re-generated every hour 24/7/365 for the most up-to-date media info.
+:fas fa-list: These plain-text files contain an index of all media for which it corresponds. The files are regenerated every hour 24/7/365 for the most up-to-date media info.
 
 - [travisflix.com/movies.txt](https://travisflix.com/movies.txt)
 - [travisflix.com/shows.txt](https://travisflix.com/shows.txt)
