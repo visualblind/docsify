@@ -126,7 +126,7 @@ Apocolypse Now has 3 distinct editions available:
 
 ## Media storage info?
 
-:fab fa-google-drive: **18.4 TB** as of 04-13-2021<br>
+:fab fa-google-drive: **19.32 TB** as of 06-04-2021<br>
 
 ![Google Drive Storage](_media/gdrive_storage.png)
 
