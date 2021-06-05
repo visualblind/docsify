@@ -97,6 +97,8 @@ The root cause results from the server needing to retrieve the entire media file
   5. Netherlands :syringe:
   6. Singapore :fas fa-transgender-alt:
 
+:mi-two-tone check_circle green:
+
 You will see Cloudflare error 1020 if you do not connect from these countries.
 
 ![error 1020](_media/error1020.jpg)
