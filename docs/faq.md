@@ -100,9 +100,12 @@ The root cause results from the server needing to retrieve the entire media file
 check_circle - :check_circle:<br>
 mi md-18|home - :mi md-18|home:<br>
 mi-outlined red|check_circle - :mi-outlined red|check_circle:<br>
+mi-outlined red - :mi-outlined red:<br>
 mi-round md-36 blue|check_circle - :mi-round md-36 blue|check_circle:<br>
+mi-round md-36 blue - :mi-round md-36 blue:<br>
 mi-sharp green-svg md-48|chrome_reader_mode - :mi-sharp green-svg md-48|chrome_reader_mode:<br>
-chrome_reader_mode - :chrome_reader_mode:
+mi-sharp green-svg md-48 - :mi-sharp green-svg md-48:<br>
+chrome_reader_mode - :chrome_reader_mode:<br>
 
 You will see Cloudflare error 1020 if you do not connect from these countries.
 
