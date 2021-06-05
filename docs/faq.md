@@ -71,8 +71,8 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ## Subtitles not loading?
 
-:far fa-closed-captioning: This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, wait ~30 seconds then select the same subtitle again.
-The root issue results from the server having to retrieve the entire media file from the data source before the subtitle stream can be extracted and pushed out to the client. Most of the TV episodes are large files so it takes about 30 seconds to pull it down at between 250-1000 Mbps.
+:far fa-closed-captioning: This problem mostly occurs with episodes of TV shows/series, but could happen to some movies as well. After you have selected the subtitle and it fails, wait about 60 seconds and re-select the same subtitle again.
+The root cause results from the server needing to retrieve the entire media file from the data source before the subtitle stream can be extracted and pushed out to the client. Most TV episodes are large media files and so it will take roughly 30-60 seconds to download the entire episode. In rare cases it may take even longer than 60 seconds, especially if the server is heavily loaded.
 
 
 ## Supported devices or platforms?
