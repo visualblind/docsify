@@ -101,14 +101,14 @@ You will see Cloudflare error 1020 if you do not connect from these countries.
 
 ![error 1020](_media/error1020.jpg)
 
-If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).<br>My contact information is also available online at [travisyard.run](https://travisyard.run/). 
+If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).<br>My contact information is also available online at [travisyard.run](https://travisyard.run/) or [quad0.com](https://quad0.com/about/). 
 
 
 ## Video not filling the screen?
 
 * :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
 * A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
-* Films with an **aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom.** :left_right_arrow:<br>
+* Films with an **aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom.** :left_right_arrow:
 
 
 ## How to stream multiple versions of a film?
@@ -128,13 +128,13 @@ Apocolypse Now has 3 distinct editions available:
 
 These plain-text files contain an index of all media for which it corresponds. The files are regenerated every hour 24/7/365 for the most up-to-date media info.
 
-:fas fa-list: [travisflix.com/movies.txt](https://travisflix.com/movies.txt)
-:fas fa-list: [travisflix.com/shows.txt](https://travisflix.com/shows.txt)
-:fas fa-list: [travisflix.com/standup.txt](https://travisflix.com/standup.txt)
-:fas fa-list: [travisflix.com/motogp.txt](https://travisflix.com/motogp.txt)
-:fas fa-list: [travisflix.com/tech.txt](https://travisflix.com/tech.txt)
-:fas fa-list: [travisflix.com/tennis.txt](https://travisflix.com/tennis.txt)
-:fas fa-list: [travisflix.com/podcasts.txt](https://travisflix.com/podcasts.txt)
+:fas fa-list: [travisflix.com/movies.txt](https://travisflix.com/movies.txt)<br>
+:fas fa-list: [travisflix.com/shows.txt](https://travisflix.com/shows.txt)<br>
+:fas fa-list: [travisflix.com/standup.txt](https://travisflix.com/standup.txt)<br>
+:fas fa-list: [travisflix.com/motogp.txt](https://travisflix.com/motogp.txt)<br>
+:fas fa-list: [travisflix.com/tech.txt](https://travisflix.com/tech.txt)<br>
+:fas fa-list: [travisflix.com/tennis.txt](https://travisflix.com/tennis.txt)<br>
+:fas fa-list: [travisflix.com/podcasts.txt](https://travisflix.com/podcasts.txt)<br>
 :fas fa-list: [travisflix.com/starcraft.txt](https://travisflix.com/starcraft.txt)
 
 This is the bash script on the cron schedule that generates the above text files:
