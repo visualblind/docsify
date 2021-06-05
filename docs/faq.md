@@ -84,6 +84,7 @@ The root issue results from the server having to retrieve the entire media file 
 * :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
+> You can see the official Jellyfin documentation for Clients here [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
 
 ## VPN Remote Users: Allowed Countries?
 
