@@ -130,6 +130,8 @@ Apocolypse Now has 3 distinct editions available:
 
 ![Google Drive Storage](_media/gdrive_storage.png)
 
+![Google Drive Storage](_media/gdrive_storage_front.png)
+
 Google Cloud Console API Metrics for Google Drive
 ![Google Cloud API rates](_media/gcloud-01.png)
 ![Google Cloud API rates](_media/gcloud-02.png)
