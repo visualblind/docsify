@@ -146,6 +146,8 @@ Google Cloud Console API Metrics for Google Drive
 > ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 > You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
 
+![TravisFlix Uptime](_media/travisflix_status_metrics_06042021.png)
+
 ![TravisFlix Uptime](_media/travisflix_status_06042021.png)
 
 ![TravisFlix Uptime](_media/travisflix_status_all_06042021.png)
