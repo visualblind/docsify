@@ -126,16 +126,16 @@ Apocolypse Now has 3 distinct editions available:
 
 ## Plain-text media list/index
 
-:fas fa-list: These plain-text files contain an index of all media for which it corresponds. The files are regenerated every hour 24/7/365 for the most up-to-date media info.
+These plain-text files contain an index of all media for which it corresponds. The files are regenerated every hour 24/7/365 for the most up-to-date media info.
 
-- [travisflix.com/movies.txt](https://travisflix.com/movies.txt)
-- [travisflix.com/shows.txt](https://travisflix.com/shows.txt)
-- [travisflix.com/standup.txt](https://travisflix.com/standup.txt)
-- [travisflix.com/motogp.txt](https://travisflix.com/motogp.txt)
-- [travisflix.com/tech.txt](https://travisflix.com/tech.txt)
-- [travisflix.com/tennis.txt](https://travisflix.com/tennis.txt)
-- [travisflix.com/podcasts.txt](https://travisflix.com/podcasts.txt)
-- [travisflix.com/starcraft.txt](https://travisflix.com/starcraft.txt)
+:fas fa-list: [travisflix.com/movies.txt](https://travisflix.com/movies.txt)
+:fas fa-list: [travisflix.com/shows.txt](https://travisflix.com/shows.txt)
+:fas fa-list: [travisflix.com/standup.txt](https://travisflix.com/standup.txt)
+:fas fa-list: [travisflix.com/motogp.txt](https://travisflix.com/motogp.txt)
+:fas fa-list: [travisflix.com/tech.txt](https://travisflix.com/tech.txt)
+:fas fa-list: [travisflix.com/tennis.txt](https://travisflix.com/tennis.txt)
+:fas fa-list: [travisflix.com/podcasts.txt](https://travisflix.com/podcasts.txt)
+:fas fa-list: [travisflix.com/starcraft.txt](https://travisflix.com/starcraft.txt)
 
 This is the bash script on the cron schedule that generates the above text files:
 
