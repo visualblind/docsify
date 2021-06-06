@@ -3,7 +3,7 @@
 
 :far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To bypass the browsers cache, open a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you're using and try logging in there. If that works but the normal way did not, then [clear your browser cache/cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
-> *Make sure that you checkmark ***cookies*** from the advanced section. Be aware that this action will delete cookies for all sites instead of only travisflix.com.*
+> *Make sure that you checkmark cookies from the advanced section. Be aware that this action will delete cookies for all sites instead of only travisflix.com.*
 
 ![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
