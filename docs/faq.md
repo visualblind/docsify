@@ -3,12 +3,12 @@
 
 :far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To bypass the browsers cache, open a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you're using and try logging in there. If that works but the normal way did not, then [clear your browser cache/cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
-> *Make sure that you checkmark cookies from the advanced section. Be aware that this action will delete cookies for all sites instead of only travisflix.com.*
+> Make sure that you checkmark cookies from the advanced section. Be aware that this action will delete cookies for all sites instead of only travisflix.com.
 
 ![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
 
-> If you feel that the issue resides with the streaming server, [check the status page](#where-is-the-status-page), and/or the [real-time server statistics](#do-you-have-server-statistics).
+> If you feel that the issue resides with the streaming server, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
 
 ## Media stream buffering/glitching?
@@ -94,9 +94,10 @@ The root cause results from the server needing to retrieve the entire media file
 
 ## VPN Remote Users: Allowed Countries?
 
-:triangular_flag_on_post: The following list of countries are allowed to access TravisFlix. **VPN Users make sure that you are VPN'ing to one of the following countries or be blocked.**
+:triangular_flag_on_post: The following list of countries are allowed to access TravisFlix.
+> :fas fa-globe-americas: VPN Users make sure that you are VPN'ing to one of these countries or you will be blocked.
 
-  1. United States :toilet: :fas fa-beer: :fas fa-cannabis: :fireworks:
+  1. United States :toilet: :fas fa-beer: :fas fa-cannabis: :fas fa-flag-usa:
   2. Canada :fas fa-cannabis: :mute:
   3. Switzerland :children_crossing:
   4. Sweeden :no_smoking:
@@ -215,7 +216,7 @@ Google Cloud Console API Metrics for Google Drive
 
 :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
-> Click any white space within the iframe below:
+> Click any white space within the iframe below for the dashboard to activate:
 
 <iframe src="//statistics.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
