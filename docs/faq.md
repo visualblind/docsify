@@ -1,7 +1,7 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
 
-:shit: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browsers cache, open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that works, but the normal way didn't, then [clear your browser cache](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en).
+:fas fa-exclamation-triangle: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browsers cache, open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that works, but the normal way didn't, then [clear your browser cache](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en).
 If you feel that the issue is the server, [check the status page](#where-is-the-status-page).
 
 
@@ -79,7 +79,7 @@ The root cause results from the server needing to retrieve the entire media file
 
 * :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
   * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.4+, :fab fa-apple: MacOS (no legacy versions)
-* :fas fa-mobile-alt: Smartphones & tablets with HTML5 supported browsers (:fab fa-android: :fab fa-apple: :fab fa-windows:)
+* :fas fa-mobile-alt: Smartphones (:fab fa-android:/:fab fa-apple:/:fab fa-windows:) and tablets with HTML5 supported browsers
 * :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
 * :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
