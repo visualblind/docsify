@@ -1,8 +1,14 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
 
-:fas fa-exclamation-triangle: Almost 100% of the time, the root cause of this is something not right in your local browser cache. To bypass your browsers cache, open a new Chrome incognito window or whatever the equivilent is called with the browser you're using and try logging in there. If that works, but the normal way didn't, then [clear your browser cache](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en).
-If you feel that the issue is the server, [check the status page](#where-is-the-status-page).
+:far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To bypass the browsers cache, open a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you're using and try logging in there. If that works but the normal way did not, then [clear your browser cache/cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
+
+> *Make sure that you checkmark ***cookies*** from the advanced section. Be aware that this action will delete cookies for all sites instead of only travisflix.com.*
+
+![browser-cache-01](_media/browser-cache-01.png)
+![browser-cache-02](_media/browser-cache-02.png)
+
+> If you feel that the issue resides with the streaming server, [check the status page](#where-is-the-status-page), and/or the [real-time server statistics](#do-you-have-server-statistics).
 
 
 ## Media stream buffering/glitching?
@@ -47,7 +53,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
     * Versions with **RARBG** in the suffix is recommended if the other is not working for you.<br>
 ![multiple versions](_media/multiple_vers.png)<br>
 2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
-3. Open [speedtest.travisflix.com](http://speedtest.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
+3. Open [speed.travisflix.com](http://speed.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
 4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
 5. As a generic guideline you should have at least 25 Mbps download banwdidth available at your disposal, however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps.
 6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
@@ -90,7 +96,7 @@ The root cause results from the server needing to retrieve the entire media file
 
 :triangular_flag_on_post: The following list of countries are allowed to access TravisFlix. **VPN Users make sure that you are VPN'ing to one of the following countries or be blocked.**
 
-  1. United States :toilet: :fas fa-beer:
+  1. United States :toilet: :fas fa-beer: :fas fa-cannabis: :fireworks:
   2. Canada :fas fa-cannabis: :mute:
   3. Switzerland :children_crossing:
   4. Sweeden :no_smoking:
