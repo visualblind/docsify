@@ -78,8 +78,8 @@ The root cause results from the server needing to retrieve the entire media file
 ## Supported devices or platforms?
 
 * :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
-  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.4+, :fab fa-apple: MacOS (**legacy iOS :apple: versions NOT recommended**)
-* :fas fa-mobile-alt: All modern smartphones/tablets with HTML5 supported browsers listed above
+  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.4+, :fab fa-apple: MacOS (no legacy versions)
+* :fas fa-mobile-alt: Smartphones & tablets with HTML5 supported browsers (:fab fa-android: :fab fa-apple: :fab fa-windows:)
 * :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
 * :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
@@ -90,23 +90,17 @@ The root cause results from the server needing to retrieve the entire media file
 
 :triangular_flag_on_post: The following list of countries are allowed to access TravisFlix. **VPN Users make sure that you are VPN'ing to one of the following countries or be blocked.**
 
-  1. United States :toilet:
-  2. Canada :mute:
+  1. United States :toilet: :fas fa-beer:
+  2. Canada :fas fa-cannabis: :mute:
   3. Switzerland :children_crossing:
   4. Sweeden :no_smoking:
-  5. Netherlands :syringe:
+  5. Netherlands :fas fa-cannabis: :syringe:
   6. Singapore :fas fa-transgender-alt:
 
-check_circle - :check_circle:<br>
-mi-two-tone check_circle green - :mi-two-tone check_circle green:<br>
 mi md-18|home - :mi md-18|home:<br>
 mi-outlined red|check_circle - :mi-outlined red|check_circle:<br>
-mi-outlined red - :mi-outlined red:<br>
 mi-round md-36 blue|check_circle - :mi-round md-36 blue|check_circle:<br>
-mi-round md-36 blue - :mi-round md-36 blue:<br>
 mi-sharp green-svg md-48|chrome_reader_mode - :mi-sharp green-svg md-48|chrome_reader_mode:<br>
-mi-sharp green-svg md-48 - :mi-sharp green-svg md-48:<br>
-chrome_reader_mode - :chrome_reader_mode:<br>
 
 You will see Cloudflare error 1020 if you do not connect from these countries.
 
