@@ -94,7 +94,7 @@ The root cause results from the server needing to retrieve the entire media file
 
 ## VPN Remote Users: Allowed Countries?
 
-:triangular_flag_on_post: The following list of countries are allowed to access TravisFlix.
+:triangular_flag_on_post: The following list of countries are allowed access to the site.
 > :fas fa-globe-americas: VPN Users make sure that you are VPN'ing to one of these countries or you will be blocked.
 
   1. United States :toilet: :fas fa-beer: :fas fa-cannabis: :fas fa-flag-usa:
@@ -103,17 +103,14 @@ The root cause results from the server needing to retrieve the entire media file
   4. Sweeden :no_smoking:
   5. Netherlands :fas fa-cannabis: :syringe:
   6. Singapore :fas fa-transgender-alt:
+  7. Mexico :fas fa-pepper-hot:
 
-mi md-18|home - :mi md-18|home:<br>
-mi-outlined red|check_circle - :mi-outlined red|check_circle:<br>
-mi-round md-36 blue|check_circle - :mi-round md-36 blue|check_circle:<br>
-mi-sharp green-svg md-48|chrome_reader_mode - :mi-sharp green-svg md-48|chrome_reader_mode:<br>
 
 You will see Cloudflare error 1020 if you do not connect from these countries.
 
 ![error 1020](_media/error1020.jpg)
 
-If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).<br>My contact information is also available online at [travisyard.run](https://travisyard.run/) or [quad0.com](https://quad0.com/about/). 
+If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).
 
 
 ## Video not filling the screen?
