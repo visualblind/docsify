@@ -99,7 +99,7 @@ The root cause results from the server needing to retrieve the entire media file
 
 1. In a new browser tab open [files.travisflix.com/pwndrop](https://files.travisflix.com/pwndrop).
 2. Create a new login (user/pass) that you'd like to use. Make sure that you remember it.
-3, In the same new browser tab, open [files.travisflix.com](https://files.travisflix.com).
+3. In the same new browser tab, open [files.travisflix.com](https://files.travisflix.com).
 4. You will be asked to login with the credentials you've just created.
 5. Click the 'Upload' button and select the files to upload.
     * Or drag and drop the files to upload from file explorer onto the page.
