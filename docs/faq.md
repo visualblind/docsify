@@ -3,7 +3,7 @@
 
 :far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you're using and try to login there. If that works but the normal way did not, then [clear your browser cache/cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
-> Make sure that you checkmark cookies from the advanced section. Be aware that this action will delete cookies for all sites instead of only travisflix.com.
+> Make sure that you checkmark cookies from the advanced section. Be aware that **this action will delete cookies for all sites instead of only travisflix.com**.
 
 ![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
@@ -90,12 +90,12 @@ The root cause results from the server needing to retrieve the entire media file
 * :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
-> You can see the official Jellyfin documentation for Clients here [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
+> Official Jellyfin documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
 
 
 ## Can I Upload files?
 
-:fas fa-cloud-upload-alt: Yes, indeed.
+:fas fa-cloud-upload-alt: Yes, indeed young gwrasshoppa.
 
 1. Go to [upload.travisflix.com](https://upload.travisflix.com)
 2. Either click where it says to, or use file explorer and drag-and-drop
