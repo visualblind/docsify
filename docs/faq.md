@@ -8,17 +8,18 @@
 ![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
 
-> If you feel that the issue resides with the streaming server, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
 
 ## Media stream buffering/glitching?
 
 ### ![wifi-users](_media/wifi_20x16.png) Wireless Users
 
-:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire in with the standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5 throw that shit away.
+:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, throw that shit away.
 
-If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11AC** (5 Ghz freq.) and is using a wide band such as 80 or 160.
-> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**...So just because you assume you're on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you're on 802.11AC.
+If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11ac** and is using a **wide band such as 80 or 160**.
+
+> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**. Just because you assume you're on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you're on 802.11ac.
 
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
@@ -95,7 +96,7 @@ The root cause results from the server needing to retrieve the entire media file
 
 ## Can I Upload files?
 
-:fas fa-cloud-upload-alt: Yes, indeed young gwrasshoppa.
+:fas fa-cloud-upload-alt: Yes, indeed young gwasshoppa.
 
 1. Go to [upload.travisflix.com](https://upload.travisflix.com)
 2. Either click where it says to, or use file explorer and drag-and-drop
@@ -142,7 +143,7 @@ If you would like to request another country be allowed, contact me at <travisru
 
 :fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
 
-> :fas fa-info-circle: Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.
+:fas fa-info-circle: *Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.*
 
 ![Avatar](_media/avatar3.png)
 
@@ -213,9 +214,9 @@ Google Cloud Console API Metrics for Google Drive
 
 ## Where is the status page?
 
-:fas fa-server: [status.travisflix.com](https://status.travisflix.com/){:target="_blank"}
+:fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
 
-30 day HTTP uptime is currently as of 06-04-2021: **99.95%**
+The 30 day cumulative HTTP uptime for travisflix.com has on average been between **99.90%** - **99.96**
 
 > ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 > You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
@@ -231,7 +232,7 @@ Google Cloud Console API Metrics for Google Drive
 
 :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
-> Click any white space within the iframe below for the dashboard to activate:
+**Click any white-space** within the iframe below in order for the Netdata Dashboard to activate:
 
 <iframe src="//statistics.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
