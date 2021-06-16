@@ -95,12 +95,20 @@ The root cause results from the server needing to retrieve the entire media file
 
 ## Can I Upload files?
 
-:fas fa-cloud-upload-alt: Yes, for now you can using the instructions below:
+:fas fa-cloud-upload-alt: Yes, indeed.
 
-1. Open in a new tab [upload.travisflix.com](https://upload.travisflix.com).
-2. Select the file(s) you want to upload.
-3. Click the 'Upload' button.
-4. Email me at <travisrunyard@gmail.com> to let me know what you have uploaded so I can add it to the library.
+1. Navigate to [upload.travisflix.com](https://upload.travisflix.com)
+2. Either click where it says to, or use file explorer and drag-and-drop
+    * You can select multiple files per upload session
+    * The maximum file size **upload limit is 5GB**
+    * All **uploaded files** are automatically **deleted after 24 hours**
+    ![upload main](_media/upload.travisflix.com-main.png)
+3. Sit back and wait
+4. Email me or else anything uploaded will be deleted in 24 hours
+5. When the upload is complete you can use the handy-dandy email form:
+    ![upload email](_media/upload.travisflix.com-email.png)
+    * In the image above, my email address should be entered under *"Your friend's email"*
+    * In the event you have a catastrophic case of trigger-finger and have skipped that step above, email me at **<travisrunyard@gmail.com>** to let me know what you have uploaded so I can add it to the library (date/time of upload would be helpful)
 
 
 ## VPN Remote Users: Allowed Countries?
