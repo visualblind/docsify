@@ -216,7 +216,7 @@ Google Cloud Console API Metrics for Google Drive
 
 :fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
 
-The 30 day cumulative HTTP uptime for travisflix.com has on average been between **99.90%** - **99.96**
+The 30 day cumulative HTTP uptime for travisflix.com has on average been between **99.90%** - **99.96%**
 
 > ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 > You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
