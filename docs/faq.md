@@ -97,18 +97,17 @@ The root cause results from the server needing to retrieve the entire media file
 
 :fas fa-cloud-upload-alt: Yes, indeed.
 
-1. Navigate to [upload.travisflix.com](https://upload.travisflix.com)
+1. Go to [upload.travisflix.com](https://upload.travisflix.com)
 2. Either click where it says to, or use file explorer and drag-and-drop
     * You can select multiple files per upload session
-    * The maximum file size **upload limit is 5GB** (combined¿?)
-    * *All uploaded files are automatically deleted after 24 hours*
+    * The **maximum file size upload limit is 5GB** (*combined¿?*)
+    * All uploaded files are automatically deleted after 24 hours<br>
     ![upload main](_media/upload.travisflix.com-main.png)
 3. Sit back and wait ¯\_(ツ)_/¯
-4. [Email me](mailto:travisrunyard@gmail.com) or else *anything uploaded will be deleted in 24 hours*
-5. When the upload is complete you can use the handy-dandy email form:
+4. When the upload is complete, use the handy-dandy email form presented to you
+    * In the image below, my email address (travisrunyard@gmail.com) should be entered under *"Your friend's email"*
+    * In the event you have a catastrophic case of trigger-finger and have skipped the step above, email <travisrunyard@gmail.com> to let me know what you have uploaded so I can add it to the library (*date/time of upload would be helpful if you feel like the Earth won't be a big smoking ball of shit in the near future*)<br>
     ![upload email](_media/upload.travisflix.com-email.png)
-    * In the image above, my email should be entered under *"Your friend's email"*
-    * In the event you have a catastrophic case of trigger-finger and have skipped that step above, email me at **<travisrunyard@gmail.com>** to let me know what you have uploaded so I can add it to the library (date/time of upload would be helpful)
 
 
 ## VPN Remote Users: Allowed Countries?
