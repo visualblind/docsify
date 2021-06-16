@@ -206,7 +206,7 @@ Google Cloud Console API Metrics for Google Drive
 
 ## Where is the status page?
 
-:fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
+:fas fa-server: [status.travisflix.com](https://status.travisflix.com/){:target="_blank"}
 
 30 day HTTP uptime is currently as of 06-04-2021: **99.95%**
 
