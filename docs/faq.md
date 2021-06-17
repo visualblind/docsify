@@ -123,6 +123,8 @@ The root cause results from the server needing to retrieve the entire media file
   5. Netherlands :fas fa-cannabis: :syringe:
   6. Singapore :fas fa-transgender-alt:
   7. Mexico :fas fa-pepper-hot:
+  8. Finland
+  9. Ireland
 
 
 You will see Cloudflare error 1020 if you do not connect from these countries.
