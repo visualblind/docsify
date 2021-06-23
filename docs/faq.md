@@ -26,10 +26,10 @@ If you insist on using WiFi, then you're going to need to ensure that you're con
 
 ### ![wired-users](_media/network-wired-20x16.png) Hardwire Users
 
-1) During video playback---In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
+1) During video playback‒In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
 2) Ensure **QUALITY** is set to **AUTO**
 3) Click `PLAYBACK DATA`
-4) Under Playback Info--Determine the play type displayed next to **Play method:**
+4) Under Playback Info‒Determine the play type displayed next to **Play method:**
 5) If it's **"DirectPlay"**, this means the server is streaming the direct media file to your computer without a problem, however the cause of intermittent buffering/glitching could be due to you not having enough bandwidth to support the playback of the media file. This doesn't necessarily mean your ISP connection doesn't have enough bandwidth, but could mean:
     * Your connection to your home router or switch has an issue
     * The available bandwidth is being consumed by another user (ie. Bittorrent without speed limits defined)
