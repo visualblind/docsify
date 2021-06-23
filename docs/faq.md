@@ -26,10 +26,10 @@ If you insist on using WiFi, then you're going to need to ensure that you're con
 
 ### ![wired-users](_media/network-wired-20x16.png) Hardwire Users
 
-1) During video playback‒In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
+1) During video playback—In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
 2) Ensure **QUALITY** is set to **AUTO**
 3) Click `PLAYBACK DATA`
-4) Under Playback Info‒Determine the play type displayed next to **Play method:**
+4) Under Playback Info—Determine the play type displayed next to **Play method:**
 5) If it's **"DirectPlay"**, this means the server is streaming the direct media file to your computer without a problem, however the cause of intermittent buffering/glitching could be due to you not having enough bandwidth to support the playback of the media file. This doesn't necessarily mean your ISP connection doesn't have enough bandwidth, but could mean:
     * Your connection to your home router or switch has an issue
     * The available bandwidth is being consumed by another user (ie. Bittorrent without speed limits defined)
@@ -71,12 +71,12 @@ You can also get a sense for how much bandwidth is required by looking at the vi
     tx       337.67 kbit/s           499 packets/s
     ```
 
-    * Further testing has shown that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4-7 Mbps (however about every 30s, the device downloads and buffers the video using a bandwidth of 30-50 Mbps)
+    * Further testing has shown that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4–7 Mbps (however about every 30s, the device downloads and buffers the video using a bandwidth of 30–50 Mbps)
 
     ![Video Stream Bandwidth Graph](_media/network-bandwidth-video-stream.png)
     ![Video Stream Bandwidth Graph 2](_media/network-bandwidth-video-stream2.png)
 
-6. General rule of thumb‒if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
+6. General rule of thumb—if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 
 ```shell-session
 $ speedtest-cli
@@ -95,7 +95,7 @@ Upload: 122.33 Mbit/s
 ## Subtitles not loading?
 
 :far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 60 seconds and re-select the same subtitle again.
-The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client. Most TV episodes are large media files and so it will take roughly 30-60 seconds to download the entire episode. In rare cases it may take even longer than 60 seconds, especially if the server is heavily loaded.
+The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client. Most TV episodes are large media files and so it will take roughly 30–60 seconds to download the entire episode. In rare cases it may take even longer than 60 seconds, especially if the server is heavily loaded.
 
 
 ## Supported devices or platforms?
@@ -103,7 +103,7 @@ The root cause results from the server needing to retrieve the entire media file
 > Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
 
 * :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
-  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.x+, :fab fa-apple: MacOS 10.12 - current
+  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.x+, :fab fa-apple: MacOS 10.12–current
 * :fas fa-mobile-alt: Smartphones (:fab fa-android:/:fab fa-apple:/:fab fa-windows:) and tablets with modern browsers
 * :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
 * :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
