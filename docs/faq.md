@@ -46,13 +46,16 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ## Video not streaming?
 
+:game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
+
 > The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under **"Play method:"** discussed further above. If it's transcoding, the play method will state **HLS** and not **DirectPlay**.
 
-:game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
-    * Versions with **RARBG** in the suffix is recommended if the other is not working for you.<br>
+    * Versions with **RARBG** in the suffix is recommended if the other is not working for you.
+    
     ![multiple versions](_media/multiple_vers.png)
+    
 2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
 3. Open [speed.travisflix.com](http://speed.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
 4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
@@ -68,9 +71,11 @@ You can also get a sense for how much bandwidth is required by looking at the vi
     tx       337.67 kbit/s           499 packets/s
     ```
 
-    * Further testing has shown that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4-7 Mbps (however about every 30s, the device downloads and buffers the video using a bandwidth of 30-50 Mbps)<br>
+    * Further testing has shown that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4-7 Mbps (however about every 30s, the device downloads and buffers the video using a bandwidth of 30-50 Mbps)
+
     ![Video Stream Bandwidth Graph](_media/network-bandwidth-video-stream.png)
     ![Video Stream Bandwidth Graph 2](_media/network-bandwidth-video-stream2.png)
+
 6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 7. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
 
