@@ -13,7 +13,7 @@
 
 ## Media stream buffering/glitching?
 
-### ![wifi-users](_media/wifi_20x16.png) Wireless Users
+### ![wifi-users](_media/wifi-20x16.png) Wireless Users
 
 :performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, throw that shit away.
 
@@ -24,7 +24,7 @@ If you insist on using WiFi, then you're going to need to ensure that you're con
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
 
-### ![wired-users](_media/network-wired_20x16.png) Hardwire Users
+### ![wired-users](_media/network-wired-20x16.png) Hardwire Users
 
 1) During video playback---In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
 2) Ensure **QUALITY** is set to **AUTO**
@@ -54,7 +54,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
     * Versions with **RARBG** in the suffix is recommended if the other is not working for you.
     
-    ![multiple versions](_media/multiple_vers.png)
+    ![multiple versions](_media/multiple-vers.png)
     
 2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
 3. Open [speed.travisflix.com](http://speed.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
@@ -225,9 +225,9 @@ fi
 
 :fab fa-google-drive: **19.32 TB** as of 06-04-2021<br>
 
-![Google Drive Storage](_media/gdrive_storage.png)
+![Google Drive Storage](_media/gdrive-storage.png)
 
-![Google Drive Storage](_media/gdrive_storage_front.png)
+![Google Drive Storage](_media/gdrive-storage-front.png)
 
 Google Cloud Console API Metrics for Google Drive
 ![Google Cloud API rates](_media/gcloud-01.png)
@@ -243,11 +243,11 @@ The 30 day cumulative HTTP uptime for travisflix.com has on average been between
 > ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 > You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
 
-![TravisFlix Uptime](_media/travisflix_status_metrics_06042021.png)
+![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png)
 
-![TravisFlix Uptime](_media/travisflix_status_06042021.png)
+![TravisFlix Uptime](_media/travisflix-status-06042021.png)
 
-![TravisFlix Uptime](_media/travisflix_status_all_06042021.png)
+![TravisFlix Uptime](_media/travisflix-status-all-06042021.png)
 
 
 ## Do you have server statistics?
@@ -300,7 +300,7 @@ The 30 day cumulative HTTP uptime for travisflix.com has on average been between
 > [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)
 >
 > Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":<br>
-> ![BTC](_media/bitcoin_32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
+> ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
 ---
 > **Option #2**
 > [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
