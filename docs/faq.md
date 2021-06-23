@@ -52,20 +52,22 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
     * Versions with **RARBG** in the suffix is recommended if the other is not working for you.<br>
-![multiple versions](_media/multiple_vers.png)<br>
+    ![multiple versions](_media/multiple_vers.png)
 2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
 3. Open [speed.travisflix.com](http://speed.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
 4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
 5. As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps.
     * Testing has showed that the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps
+
     ```shell-session
     vnstat -i enp4s0 -tr 30
-44816 packets sampled in 30 seconds
-Traffic average for enp4s0
+    44816 packets sampled in 30 seconds
+    Traffic average for enp4s0
 
-      rx        11.74 Mbit/s           993 packets/s
-      tx       337.67 kbit/s           499 packets/s
-      ```
+    rx        11.74 Mbit/s           993 packets/s
+    tx       337.67 kbit/s           499 packets/s
+    ```
+
     * Further testing has shown that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4-7 Mbps (however about every 30s, the device downloads and buffers the video using a bandwidth of 30-50 Mbps)<br>
     ![Video Stream Bandwidth Graph](_media/network-bandwidth-video-stream.png)
     ![Video Stream Bandwidth Graph 2](_media/network-bandwidth-video-stream2.png)
@@ -94,14 +96,14 @@ The root cause results from the server needing to retrieve the entire media file
 
 ## Supported devices or platforms?
 
+> Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
+
 * :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
   * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.4+, :fab fa-apple: MacOS (no legacy versions)
 * :fas fa-mobile-alt: Smartphones (:fab fa-android:/:fab fa-apple:/:fab fa-windows:) and tablets with HTML5 supported browsers
 * :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
 * :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
-
-> Official Jellyfin documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
 
 
 ## Can I Upload files?
@@ -114,7 +116,7 @@ The root cause results from the server needing to retrieve the entire media file
     * The **maximum file size upload limit is 5GB** (*combined¿?*)
     * All uploaded files are automatically deleted after 24 hours<br>
     ![upload main](_media/upload.travisflix.com-main.png)
-3. Sit back and wait ¯\_(ツ)_/¯
+3. Sit back and wait `¯\_(ツ)_/¯`
 4. When the upload is complete, use the handy-dandy email form presented to you
     * In the image below, my email address (travisrunyard@gmail.com) should be entered under *"Your friend's email"*
     * In the event you have a catastrophic case of trigger-finger and have skipped the step above, email <travisrunyard@gmail.com> to let me know what you have uploaded so I can add it to the library (*date/time of upload would be helpful if you feel like the Earth won't be a big smoking ball of shit in the near future*)<br>
