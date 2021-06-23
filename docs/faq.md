@@ -58,6 +58,14 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
 5. As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps.
     * Testing has showed that the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps
+    ```shell-session
+    vnstat -i enp4s0 -tr 30
+44816 packets sampled in 30 seconds
+Traffic average for enp4s0
+
+      rx        11.74 Mbit/s           993 packets/s
+      tx       337.67 kbit/s           499 packets/s
+      ```
 6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 7. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
 
