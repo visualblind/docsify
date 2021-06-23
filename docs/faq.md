@@ -104,8 +104,8 @@ The root cause results from the server needing to retrieve the entire media file
 > Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
 
 * :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
-  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.4+, :fab fa-apple: MacOS (no legacy versions)
-* :fas fa-mobile-alt: Smartphones (:fab fa-android:/:fab fa-apple:/:fab fa-windows:) and tablets with HTML5 supported browsers
+  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.x+, :fab fa-apple: MacOS 10.12 - current
+* :fas fa-mobile-alt: Smartphones (:fab fa-android:/:fab fa-apple:/:fab fa-windows:) and tablets with modern browsers
 * :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
 * :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
@@ -147,9 +147,7 @@ The root cause results from the server needing to retrieve the entire media file
   10. United Kingdom :fas fa-pound-sign:
 
 
-You will see Cloudflare error 1020 if you do not connect from these countries.
-
-![error 1020](_media/error1020.jpg)
+You will see [Cloudflare error 1020](_media/error1020.jpg) if you do not connect from these countries.
 
 If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).
 
