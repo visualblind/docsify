@@ -251,8 +251,6 @@ The 30 day cumulative HTTP uptime for travisflix.com has on average been between
 
 :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
-**Click any white-space** within the iframe below in order for the Netdata Dashboard to activate:
-
 <iframe src="//statistics.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
 
