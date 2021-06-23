@@ -43,10 +43,10 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
-> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under **"Play method:"** discussed further above. If it's transcoding, the play method will state **HLS** and not **DirectPlay**.
-
 
 ## Video not streaming?
+
+> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under **"Play method:"** discussed further above. If it's transcoding, the play method will state **HLS** and not **DirectPlay**.
 
 :game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
@@ -72,8 +72,6 @@ Download: 79.41 Mbit/s
 Testing upload speed ........................................................................................
 Upload: 122.33 Mbit/s
 ```
-
-> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under **"Play method:"** discussed further above. If it's transcoding, the play method will state **HLS** and not **DirectPlay**.
 
 
 ## Subtitles not loading?
