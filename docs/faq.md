@@ -115,6 +115,8 @@ The root cause results from the server needing to retrieve the entire media file
 
 :fas fa-cloud-upload-alt: Yes, indeed young gwasshoppa.
 
+> Login with these credentials: **username = travisflix / password = upload**
+
 1. Go to [upload.travisflix.com](https://upload.travisflix.com)
 2. Either click where it says to, or use file explorer and drag-and-drop
     * You can select multiple files per upload session
