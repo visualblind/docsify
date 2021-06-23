@@ -60,7 +60,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 3. Open [speed.travisflix.com](http://speed.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
 4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
 5. As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps.
-    * Testing has showed that the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps
+    * Testing has shown the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps
 
     ```shell-session
     vnstat -i enp4s0 -tr 30
@@ -76,8 +76,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
     ![Video Stream Bandwidth Graph](_media/network-bandwidth-video-stream.png)
     ![Video Stream Bandwidth Graph 2](_media/network-bandwidth-video-stream2.png)
 
-6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
-7. I have been a long-term Fios user, couldn't be happier with the service but I could be happier with the large bills past the first year "discounted rate" bullshit. If you might host stuff on your connection, look for their  symmetrical residential internet service such as 100 Mbps UP & DOWN.
+6. General rule of thumb‒if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 
 ```shell-session
 $ speedtest-cli
