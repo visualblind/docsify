@@ -66,7 +66,7 @@ Traffic average for enp4s0
       rx        11.74 Mbit/s           993 packets/s
       tx       337.67 kbit/s           499 packets/s
       ```
-    * Further testing has showed that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4-7 Mbps<br>
+    * Further testing has shown that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4-7 Mbps (however about every 30s, the device downloads and buffers the video using a bandwidth of 30-50 Mbps)<br>
     ![Video Stream Bandwidth Graph](_media/network-bandwidth-video-stream.png)
     ![Video Stream Bandwidth Graph 2](_media/network-bandwidth-video-stream2.png)
 6. General rule of thumb--if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
