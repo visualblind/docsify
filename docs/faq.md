@@ -125,7 +125,7 @@ The root cause results from the server needing to retrieve the entire media file
 3. Grab a cold margarita and wait `¯\_(ツ)_/¯`
 4. When the upload is complete, use the handy email form presented to you
     * Under *"Your friend's email"* enter the email address *travisrunyard@gmail.com*
-    * In the event you have a catastrophic case of trigger-finger and have skipped the step above, send me an email at <travisrunyard@gmail.com> to let me know what you have uploaded (date/time of upload would be helpful if you feel like the Earth isn't turning into a *big smoking ball of shit*)<br>
+    * In the event you have a catastrophic case of trigger-finger and have skipped the step above, send me an email at <travisrunyard@gmail.com> to let me know what you have uploaded (date/time of upload would be helpful if you feel like the Earth isn't turning into a big smoking ball of shit)<br>
     ![upload email](_media/upload.travisflix.com-email.png)
 
 
@@ -146,7 +146,7 @@ The root cause results from the server needing to retrieve the entire media file
   10. United Kingdom :fas fa-pound-sign:
 
 
-You will see [Cloudflare error 1020](_media/error1020.jpg) if you do not connect from these countries.
+You will see [Cloudflare error 1020](https://travisflix.com/help/_media/error1020.jpg) if you do not connect from these countries.
 
 If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).
 
