@@ -120,8 +120,7 @@ The root cause results from the server needing to retrieve the entire media file
 2. Either click where it says to, or use file explorer and drag-and-drop
     * You can select multiple files per upload session
     * The maximum file size **upload limit is 5 GB** (*combined¿?*)
-    * All uploaded files are automatically deleted after 24 hours<br>
-    ![upload main](_media/upload.travisflix.com-main.png)
+    * All uploaded files are automatically deleted after 24 hours
 3. Grab a cold margarita and wait `¯\_(ツ)_/¯`
 4. When the upload is complete, use the handy email form presented to you
     * Under "*Your friend's email*" enter the email address travisrunyard@gmail.com
