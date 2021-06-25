@@ -123,8 +123,8 @@ The root cause results from the server needing to retrieve the entire media file
     * All uploaded files are automatically deleted after 24 hours
 3. Grab a cold margarita and wait `¯\_(ツ)_/¯`
 4. When the upload is complete, use the handy email form presented to you
-    * Under "*Your friend's email*" enter the email address travisrunyard@gmail.com
-    * In the event you have a catastrophic case of trigger-finger and have skipped the step above, send me an email at <travisrunyard@gmail.com> to let me know what you have uploaded (date/time of upload would be helpful if you feel like the Earth isn't turning into a big smoking ball of shit)<br>
+    * Under "*Your friend's email*" enter the email address <travisrunyard@gmail.com>
+    * In the event you have a catastrophic case of trigger-finger and have skipped the step above, send me an email to let me know what you have uploaded (date/time of upload would be helpful if you feel like the Earth isn't turning into a big smoking ball of shit)<br>
     ![upload email](_media/upload.travisflix.com-email.png)
 
 
