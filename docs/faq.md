@@ -59,7 +59,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
 3. Open [speed.travisflix.com](http://speed.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
 4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
-5. As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 50+ Mbps.
+5. As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 40+ Mbps.
     * Testing has shown the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps
 
     ```shell-session
@@ -114,35 +114,35 @@ The root cause results from the server needing to retrieve the entire media file
 
 :fas fa-cloud-upload-alt: Yes, indeed young gwasshoppa.
 
-> Login with these credentials: **username** = **travisflix** / **password** = **upload**
+> Login with these credentials: **username = travisflix / password = upload**
 
 1. Go to [upload.travisflix.com](https://upload.travisflix.com)
 2. Either click where it says to, or use file explorer and drag-and-drop
     * You can select multiple files per upload session
-    * The maximum file size **upload limit is 5 GB** (*combined¿?*)
+    * The maximum file size **upload limit is 5 GB**
     * All uploaded files are automatically deleted after 24 hours
-3. Grab a cold margarita and wait `¯\_(ツ)_/¯`
+3. Have a beer and wait
 4. When the upload is complete, use the handy email form presented to you
     * Under "*Your friend's email*" enter the email address <travisrunyard@gmail.com>
-    * In the event you have a catastrophic case of trigger-finger and have skipped the step above, send me an email to let me know what you have uploaded (date/time of upload would be helpful if you feel like the Earth isn't turning into a big smoking ball of shit)<br>
+    * In the event you have a catastrophic case of trigger-finger and have skipped the step above, send me an email to let me know what you have uploaded (date/time of upload would be helpful)<br>
     ![upload email](_media/upload.travisflix.com-email.png)
 
 
 ## VPN Remote Users: Allowed Countries?
 
-:triangular_flag_on_post: The following list of countries are allowed access to the site.
-> :fas fa-globe-americas: VPN Users make sure that you are VPN'ing to one of these countries or you will be blocked.
+:triangular_flag_on_post: Countries allowed to access the site.
+> :fas fa-globe-americas: VPN users: make sure that you are connecting to one of these countries.
 
-  1. United States :toilet: :fas fa-beer: :fas fa-cannabis: :fas fa-flag-usa:
-  2. Canada :fas fa-cannabis: :mute:
-  3. Switzerland :children_crossing:
-  4. Sweeden :no_smoking:
-  5. Netherlands :fas fa-cannabis: :syringe:
-  6. Singapore :fas fa-transgender-alt:
-  7. Mexico :fas fa-pepper-hot:
-  8. Finland ![Finland flag](_media/finland-flag-sm.png)
-  9. Ireland ![Ireland flag](_media/ireland-flag-sm.png)
-  10. United Kingdom :fas fa-pound-sign:
+1. United States :toilet: :fas fa-beer: :fas fa-cannabis: :fas fa-flag-usa:
+2. Canada :fas fa-cannabis: :mute:
+3. Switzerland :children_crossing:
+4. Sweeden :no_smoking:
+5. Netherlands :fas fa-cannabis: :syringe:
+6. Singapore :fas fa-transgender-alt:
+7. Mexico :fas fa-pepper-hot:
+8. Finland ![Finland flag](_media/finland-flag-sm.png)
+9. Ireland ![Ireland flag](_media/ireland-flag-sm.png)
+10. United Kingdom :fas fa-pound-sign:
 
 
 You will see [Cloudflare error 1020](https://travisflix.com/help/_media/error1020.jpg) if you do not connect from these countries.
@@ -183,7 +183,7 @@ These plain-text files contain an index of all media for which it corresponds. T
 :fas fa-list: [/podcasts.txt](https://travisflix.com/podcasts.txt)<br>
 :fas fa-list: [/starcraft.txt](https://travisflix.com/starcraft.txt)
 
-This is the bash script on the cron schedule that generates the above text files:
+Bash script that generates the files:
 
 ```bash
 #!/usr/bin/env bash
