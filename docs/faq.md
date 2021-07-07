@@ -110,6 +110,42 @@ The root cause results from the server needing to retrieve the entire media file
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
+## Media Codec Information & Standards
+
+> **H.264** (AVC) video, and **AAC** 5.1CH audio
+
+Virtually all media on the site will be using the video/audio codec specs listed below.
+The actual media file itself may be in either the standard ".mp4" ([Mpeg-4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)), or ".mkv" ([Matroska](https://en.wikipedia.org/wiki/Matroska)), which are referred to as containers. Containers themselves have nothing to do with the codec used for the video and audio streams. Containers can be thought of as universally recognized digital media delivery packages. However despite this understanding, shitty media handling implementation by the major mobile OS developers (you know the ones I'm talkin' about) may force the server to strip the container off of the media before delivering it to mobile devices in a format they consume natively such as ".ts" ([Transport Stream](https://en.wikipedia.org/wiki/MPEG_transport_stream)).
+
+> A transport stream encapsulates a number of other substreams, often packetized elementary streams (PESs) which in turn wrap the main data stream using the MPEG codec or any number of non-MPEG codecs (such as AC3 or DTS audio, and MJPEG or JPEG 2000 video)
+
+**Video**
+Format	            : **AVC**
+Format/Info	        : Advanced Video Codec
+Format profile	    : High@L4.1
+Format settings	    : CABAC / 4 Ref Frames
+Codec ID/Info	    : Advanced Video Coding
+Bit rate	        : 2 500 kb/s
+Frame rate mode	    : Constant
+Frame rate          : 23.976 (23976/1000) FPS
+Color space	        : YUV
+Bit depth	        : **8 bits**
+Scan type	        : Progressive
+Writing library	    : x264 core 152 r2851M ba24899
+
+**Audio**
+Format	            : **AAC LC**
+Format/Info	        : Advanced Audio Codec Low Complexity
+Codec ID	        : mp4a-40-2
+Bit rate mode	    : Constant
+Bit rate	        : 224 kb/s
+Channel(s)	        : **6 channels**
+Channel layout	    : C L R Ls Rs LFE
+Sampling rate	    : 48.0 kHz
+Frame rate	        : 46.875 FPS (1024 SPF)
+Compression mode	: Lossy
+
+
 ## Can I Upload files?
 
 :fas fa-cloud-upload-alt: Yes, indeed young gwasshoppa.
@@ -217,19 +253,6 @@ fi
 ```
 
 
-## Media storage info?
-
-:fab fa-google-drive: **19.32 TB** as of 06-04-2021<br>
-
-![Google Drive Storage](_media/gdrive-storage.png)
-
-![Google Drive Storage](_media/gdrive-storage-front.png)
-
-Google Cloud Console API Metrics for Google Drive
-![Google Cloud API rates](_media/gcloud-01.png)
-![Google Cloud API rates](_media/gcloud-02.png)
-
-
 ## Where is the status page?
 
 :fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
@@ -303,6 +326,19 @@ The 30 day cumulative HTTP uptime for travisflix.com has on average been between
 > 
 > Here is the related QR code associated with my BTC address beginning with "bc1q690":<br>
 > ![BTC](_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
+
+
+## Media storage info?
+
+:fab fa-google-drive: **19.32 TB** as of 06/2021<br>
+
+![Google Drive Storage](_media/gdrive-storage.png)
+
+![Google Drive Storage](_media/gdrive-storage-front.png)
+
+Google Cloud Console API Metrics for Google Drive
+![Google Cloud API rates](_media/gcloud-01.png)
+![Google Cloud API rates](_media/gcloud-02.png)
 
 
 ## Still have questions?
