@@ -119,6 +119,7 @@ The actual media file itself may be in either the standard ".mp4" ([Mpeg-4](http
 
 > A transport stream encapsulates a number of other substreams, often packetized elementary streams (PESs) which in turn wrap the main data stream using the MPEG codec or any number of non-MPEG codecs (such as AC3 or DTS audio, and MJPEG or JPEG 2000 video)
 
+```
 **Video**
 Format	            : **AVC**
 Format/Info	        : Advanced Video Codec
@@ -144,7 +145,7 @@ Channel layout	    : C L R Ls Rs LFE
 Sampling rate	    : 48.0 kHz
 Frame rate	        : 46.875 FPS (1024 SPF)
 Compression mode	: Lossy
-
+```
 
 ## Can I Upload files?
 
