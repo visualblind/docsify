@@ -110,6 +110,11 @@ The root cause results from the server needing to retrieve the entire media file
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
+## Downloading Movies?
+
+Downloading media is now **limited to 3 simultaneously**. Recently the server has been getting overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver config.
+
+
 ## Media Codec Information & Standards
 
 > **H.264** (AVC) video, and **AAC** 5.1CH audio
