@@ -110,9 +110,19 @@ The root cause results from the server needing to retrieve the entire media file
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
-## Downloading Movies?
+## Downloading Movies & Shows?
 
-Downloading media is now **limited to 3 simultaneously**. Recently the server has been getting overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver config.
+Downloading media is now **limited to 3 simultaneous** downloads at a time per IP address. Recently, the server has been overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver.
+Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way.
+
+```
+location ~ ^/Items/(.*)/Download$ {
+        proxy_pass http://jellyfin_server;
+        limit_conn addr 3; # Number of simultaneous downloads per IP
+        limit_conn_status 429;
+        proxy_buffering on;
+}
+```
 
 
 ## Media Codec Information & Standards
