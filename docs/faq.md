@@ -116,6 +116,8 @@ Downloading media is now **limited to 3 simultaneous** downloads at a time per I
 Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way.
 
 ```
+limit_conn_zone $binary_remote_addr zone=addr:10m;
+
 location ~ ^/Items/(.*)/Download$ {
         proxy_pass http://jellyfin_server;
         limit_conn addr 3; # Number of simultaneous downloads per IP
