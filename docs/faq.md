@@ -110,7 +110,7 @@ The root cause results from the server needing to retrieve the entire media file
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
-## Downloading Movies & Shows?
+## Downloading movies & shows?
 
 Downloading media is now **limited to 3 simultaneous** downloads at a time per IP address. Recently, the server has been overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver.
 Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way.
@@ -162,7 +162,7 @@ Frame rate	        : 46.875 FPS (1024 SPF)
 Compression mode	: Lossy
 ```
 
-## Can I Upload files?
+## Can I upload files?
 
 :fas fa-cloud-upload-alt: Yes, indeed young gwasshoppa.
 
@@ -180,7 +180,7 @@ Compression mode	: Lossy
     ![upload email](_media/upload.travisflix.com-email.png)
 
 
-## VPN Remote Users: Allowed Countries?
+## VPN remote users: allowed countries?
 
 :triangular_flag_on_post: Countries allowed to access the site.
 > :fas fa-globe-americas: VPN users: make sure that you are connecting to one of these countries.
