@@ -136,7 +136,7 @@ The actual media file itself may be in either the standard ".mp4" ([Mpeg-4](http
 
 > A transport stream encapsulates a number of other substreams, often packetized elementary streams (PESs) which in turn wrap the main data stream using the MPEG codec or any number of non-MPEG codecs (such as AC3 or DTS audio, and MJPEG or JPEG 2000 video)
 
-| Video |
+| Video | |
 |-----|-----|
 | Format: | AVC |
 | Format/Info: | Advanced Video Codec |
@@ -150,8 +150,8 @@ The actual media file itself may be in either the standard ".mp4" ([Mpeg-4](http
 | Bit depth: | 8 bits |
 | Scan type: | Progressive |
 | Writing library: | x264 core 152 r2851M ba24899 |
-|
-| **Audio** |
+| | |
+| **Audio** | |
 | Format: | AAC LC |
 | Format/Info: | Advanced Audio Codec Low Complexity |
 | Codec ID: | mp4a-40-2 |
