@@ -98,35 +98,6 @@ Upload: 122.33 Mbit/s
 The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client. Most TV episodes are large media files and so it will take roughly 30–60 seconds to download the entire episode. In rare cases it may take even longer than 60 seconds, especially if the server is heavily loaded.
 
 
-## Supported devices or platforms?
-
-> Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
-
-* :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
-  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.x+, :fab fa-apple: MacOS 10.12–current
-* :fas fa-mobile-alt: Smartphones (:fab fa-android:/:fab fa-apple:/:fab fa-windows:) and tablets with modern browsers
-* :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
-* :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
-* :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
-
-
-## Downloading movies & shows?
-
-Downloading media is now **limited to 3 simultaneous** downloads at a time per IP address. Recently, the server has been overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver.
-Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way.
-
-```
-limit_conn_zone $binary_remote_addr zone=addr:10m;
-
-location ~ ^/Items/(.*)/Download$ {
-        proxy_pass http://jellyfin_server;
-        limit_conn addr 3; # Number of simultaneous downloads per IP
-        limit_conn_status 429;
-        proxy_buffering on;
-}
-```
-
-
 ## Media Codec Information & Standards
 
 > Video: **[H.264 (AVC)](https://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-Is-H.264-74735.aspx)** / Audio: **[AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) 5.1CH**
@@ -161,6 +132,36 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 | Sampling rate: | 48.0 kHz |
 | Frame rate: | 46.875 FPS (1024 SPF) |
 | Compression mode: | Lossy |
+
+
+## Supported devices or platforms?
+
+> Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
+
+* :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
+  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.x+, :fab fa-apple: MacOS 10.12–current
+* :fas fa-mobile-alt: Smartphones (:fab fa-android:/:fab fa-apple:/:fab fa-windows:) and tablets with modern browsers
+* :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
+* :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
+* :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
+
+
+## Downloading movies & shows?
+
+Downloading media is now **limited to 3 simultaneous** downloads at a time per IP address. Recently, the server has been overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver.
+Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way.
+
+```
+limit_conn_zone $binary_remote_addr zone=addr:10m;
+
+location ~ ^/Items/(.*)/Download$ {
+        proxy_pass http://jellyfin_server;
+        limit_conn addr 3; # Number of simultaneous downloads per IP
+        limit_conn_status 429;
+        proxy_buffering on;
+}
+```
+
 
 ## Can I upload files?
 
