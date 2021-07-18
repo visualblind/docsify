@@ -1,7 +1,7 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
 
-:far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you're using and try to login there. If that works but the normal way did not, then [clear your browser cache/cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
+:far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cache/cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
 > Make sure that you checkmark cookies from the advanced section. Be aware that **this action will delete cookies for all sites instead of only travisflix.com**.
 
@@ -15,11 +15,11 @@
 
 ### ![wifi-users](_media/wifi-20x16.png) Wireless Users
 
-:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you're a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, throw that shit away.
+:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, throw that shit away.
 
-If you insist on using WiFi, then you're going to need to ensure that you're connected to a SSID that uses **802.11ac** and is using a **wide band such as 80 or 160**.
+If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses **802.11ac** and is using a **wide band such as 80 or 160**.
 
-> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**. Just because you assume you're on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you're on 802.11ac.
+> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**. Just because you assume you are on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you are on 802.11ac.
 
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
@@ -165,11 +165,11 @@ location ~ ^/Items/(.*)/Download$ {
 
 ## Remote control of shared devices?
 
-Sorry, feature had been broken ever since I applied firewall filters. You should now be able to control your other devices as long as you're logged in with the same account. Problem was inbound UDP/1900 not open, whoopsie daisy.
+Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 not open, whoopsie daisy.
 
 1. Log in with your browser first
 2. Log in with the device you are wanting to remotely control
-3. Immediately after step 2, click the icon highlighted in the image below:
+3. Immediately after step 2, click the icon highlighted in the image below
 4. Then click on the device you are wanting to control
 
 ![Remote Control 01](_media/remote-control-01.png)
