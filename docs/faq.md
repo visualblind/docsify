@@ -163,6 +163,20 @@ location ~ ^/Items/(.*)/Download$ {
 ```
 
 
+## Remote control of shared devices?
+
+Sorry, feature had been broken ever since I applied firewall filters. You should now be able to control your other devices as long as you're logged in with the same account. Problem was inbound UDP/1900 not open, whoopsie daisy.
+
+1. Log in with your browser first
+2. Log in with the device you are wanting to remotely control
+3. Immediately after step 2, click the icon highlighted in the image below:
+4. Then click on the device you are wanting to control
+
+![Remote Control 01](_media/remote-control-01.png)
+
+![Remote Control 02](_media/remote-control-02.png)
+
+
 ## Can I upload files?
 
 :fas fa-cloud-upload-alt: Yes, indeed young gwasshoppa.
