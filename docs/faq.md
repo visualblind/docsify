@@ -168,9 +168,11 @@ location ~ ^/Items/(.*)/Download$ {
 Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 not open, whoopsie daisy.
 
 1. Log in with your browser first
-2. Log in with the device you are wanting to remotely control
+2. Log in with the device you are wanting to remotely control (must not be identicle to the controlling device, needs separate internal ID's)
 3. Immediately after step 2, click the icon highlighted in the image below
 4. Then click on the device you are wanting to control
+5. Once that icon displays the controlled device next to it, search/browse the desired media and click play like normal
+6. It should now be playing what you clicked on your remotely controlled device
 
 ![Remote Control 01](_media/remote-control-01.png)
 
