@@ -150,7 +150,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 ## Downloading movies & shows?
 
 Downloading media is now **limited to 3 simultaneous** downloads at a time per IP address. Recently, the server has been overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver.
-Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way.
+Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way. The bottleneck is the servers CPU resources available for decrypting the media from the datasource. As I have already disclosed the datasource in the [Media storage info?](#media-storage-info) section, the datasource is indeed Google Drive.
 If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
 
 ```
@@ -217,7 +217,7 @@ If you would like to help keep the site running, please go to [How to Support/Do
 10. United Kingdom :fas fa-pound-sign:
 
 
-You will see [Cloudflare error 1020](https://travisflix.com/help/_media/error1020.jpg) if you do not connect from these countries.
+You will see ![Cloudflare error 1020](https://travisflix.com/help/_media/error1020.jpg) if you do not connect from these countries.
 
 If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).
 If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
