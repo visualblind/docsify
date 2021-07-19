@@ -372,11 +372,11 @@ If you would like to help keep the site running, please go to [How to Support/Do
 
 ## Media storage info?
 
-:fab fa-google-drive: **19.32 TB** as of 06/2021<br>
+:fab fa-google-drive: **20.09 TB** as of 07/2021<br>
 
-![Google Drive Storage](_media/gdrive-storage.png)
+![GDrive Storage 01](_media/gdrive-storage-01.png)
 
-![Google Drive Storage](_media/gdrive-storage-front.png)
+![GDrive Storage 02](_media/gdrive-storage-02.png)
 
 Google Cloud Console API Metrics for Google Drive
 ![Google Cloud API rates](_media/gcloud-01.png)
