@@ -222,9 +222,11 @@ If you would like to help keep the site running, please go to [How to Support/Do
 10. United Kingdom :fas fa-pound-sign:
 
 
-You will see ![Cloudflare error 1020](https://travisflix.com/help/_media/error1020.jpg) if you do not connect from these countries.
+If you do not connect from these countries, you will see:
 
-If you would like to request another country be allowed, contact me at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix).
+![Cloudflare error 1020](https://travisflix.com/help/_media/error1020.jpg)
+
+If you would like to request another country be allowed, join the Telegram room at [t.me/travisflix](https://t.me/travisflix) or contact me directly (no promises) <travisrunyard@gmail.com>.
 
 If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
 
