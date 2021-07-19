@@ -207,8 +207,9 @@ If you would like to help keep the site running, please go to [How to Support/Do
 
 ## VPN remote users: allowed countries?
 
-:triangular_flag_on_post: Countries allowed to access the site.
-> :fas fa-globe-americas: VPN users: make sure that you are connecting to one of these countries.
+:fas fa-globe-americas: VPN users: make sure that you are **connecting from** one of these countries.
+
+:triangular_flag_on_post: Countries allowed to access the site:
 
 1. United States :toilet: :fas fa-beer: :fas fa-cannabis: :fas fa-flag-usa:
 2. Canada :fas fa-cannabis: :mute:
