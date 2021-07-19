@@ -3,7 +3,7 @@
 
 :far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cache/cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
-If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 > Make sure that you checkmark cookies from the advanced section. Be aware that **this action will delete cookies for all sites instead of only travisflix.com**.
 
@@ -50,7 +50,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 :game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
-If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 > The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under **"Play method:"** discussed further above. If it's transcoding, the play method will state **HLS** and not **DirectPlay**.
 
@@ -155,7 +155,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 Downloading media is now **limited to 3 simultaneous** downloads at a time per IP address. Recently, the server has been overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver.
 Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way. The bottleneck is the servers CPU resources available for decrypting the media from the datasource. As I have already disclosed the datasource in the [Media storage info?](#media-storage-info) section, the datasource is indeed Google Drive.
 
-If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 ```
 limit_conn_zone $binary_remote_addr zone=addr:10m;
@@ -173,7 +173,7 @@ location ~ ^/Items/(.*)/Download$ {
 
 Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [TravisFlix](https://travisflix.com) traverses two independent reverse proxies as well so things can get a little confusing and hard to keep track of for me.
 
-If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 1. Log in with your browser first
 2. Log in with the device you are wanting to remotely control (must not be identicle to the controlling device, needs separate internal ID's)
@@ -229,7 +229,7 @@ If you do not connect from these countries, you will see:
 
 If you would like to request another country be allowed, join the Telegram room at [t.me/travisflix](https://t.me/travisflix) or contact me directly (no promises) <travisrunyard@gmail.com>.
 
-If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 
 ## Video not filling the screen?
@@ -298,7 +298,7 @@ else
 fi
 ```
 
-If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 
 ## Where is the status page?
@@ -307,7 +307,7 @@ If you would like to help keep the site running, please go to [How to Support/Do
 
 The 30 day cumulative HTTP uptime for travisflix.com has on average been between **99.90%** - **99.96%**
 
-If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 > ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 > You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
@@ -323,7 +323,7 @@ If you would like to help keep the site running, please go to [How to Support/Do
 
 :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
-If you would like to help keep the site running, please go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 <iframe src="//statistics.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
