@@ -389,8 +389,7 @@ If you would like to help keep the site running, please go to [How to Support/Do
 ![GDrive Storage 02](_media/gdrive-storage-02.png)
 
 Google Cloud Console API Metrics for Google Drive
-![Google Cloud API rates](_media/gcloud-01.png)
-![Google Cloud API rates](_media/gcloud-02.png)
+![Google Cloud API rates](_media/gcloud-03.png)
 
 
 ## Still have questions?
