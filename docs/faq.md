@@ -189,7 +189,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## Can I upload files?
 
-:fas fa-cloud-upload-alt: Yes, indeed young gwasshoppa.
+:fas fa-cloud-upload-alt: Indeed.
 
 > Login with these credentials: **username = travisflix / password = upload**
 
