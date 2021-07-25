@@ -152,7 +152,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 ## Downloading movies & shows?
 
-Downloading media is now **limited to 3 simultaneous** downloads at a time per IP address. Recently, the server has been overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver.
+Downloading media is now **limited to 2 simultaneous** downloads at a time per IP address. Recently, the server has been overloaded when processing many concurrent downloads, so I didn't really have a choice but to use connection limiting on the webserver.
 Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address. Using third party download tools will also not increase the download speed. The download speed is not capped or limited in any way. The bottleneck is the servers CPU resources available for decrypting the media from the datasource. As I have already disclosed the datasource in the [Media storage info?](#media-storage-info) section, the datasource is indeed Google Drive.
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
@@ -162,7 +162,7 @@ limit_conn_zone $binary_remote_addr zone=addr:10m;
 
 location ~ ^/Items/(.*)/Download$ {
         proxy_pass http://jellyfin_server;
-        limit_conn addr 3; # Number of simultaneous downloads per IP
+        limit_conn addr 2; # Number of simultaneous downloads per IP
         limit_conn_status 429;
         proxy_buffering on;
 }
