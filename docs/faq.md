@@ -193,7 +193,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 > UPLOADING IS **TEMPORARILY DISABLED**
 
-> :fas fa-cloud-upload-alt: Login with these credentials: **username = travisflix / password = upload**
+:fas fa-cloud-upload-alt: Login with these credentials: **username = travisflix / password = upload**
 
 1. Go to [upload.travisflix.com](https://upload.travisflix.com)
 2. Either click where it says to, or use file explorer and drag-and-drop
