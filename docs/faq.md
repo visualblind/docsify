@@ -164,7 +164,7 @@ limit_conn_zone $binary_remote_addr zone=addr:10m;
 
 location ~ ^/Items/(.*)/Download$ {
         proxy_pass http://jellyfin_server;
-        limit_conn addr 2; # Number of simultaneous downloads per IP
+        limit_conn addr 1; # Number of simultaneous downloads per IP
         limit_conn_status 429;
         proxy_buffering on;
 }
