@@ -152,21 +152,27 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 ## Downloading movies & shows?
 
-* :fa fa-download: Downloading is now **limited to 1 download** at a time/per IP address
-* Logging in with multiple browsers will not give you additional download ability, because the limit is per IP address
-* The bottleneck is the servers CPU resources available for decrypting the media from the datasource
+* :fa fa-download: Downloading is now limited to **1 download** at a time/per IP address
+* Downloading is rate limited to **4MB/s (32Mbps)**
 * If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate)
 
-Nginx config:
+web config:
 
 ```
-limit_conn_zone $binary_remote_addr zone=addr:10m;
+limit_conn_zone $binary_remote_addr zone=perip:10m;
 
 location ~ ^/Items/(.*)/Download$ {
-        proxy_pass http://jellyfin_server;
-        limit_conn addr 1; # Number of simultaneous downloads per IP
-        limit_conn_status 429;
+        limit_rate 4000k; # Speed limit (kb/s)
+        limit_conn perip 1; # Simultaneous downloads per IP
+        limit_conn_status 429;      
         proxy_buffering on;
+        proxy_set_header Host $host;      
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;                                       
+        proxy_set_header X-Forwarded-Protocol $scheme;      
+        proxy_set_header X-Forwarded-Host $http_host;    
+        proxy_pass http://jellyfin_server;
 }
 ```
 
