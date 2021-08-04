@@ -197,20 +197,14 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## Can I upload files?
 
-> UPLOADING IS **TEMPORARILY DISABLED**
 
-:fas fa-cloud-upload-alt: Login with these credentials: **username = travisflix / password = upload**
-
-1. Go to [upload.travisflix.com](https://upload.travisflix.com)
-2. Either click where it says to, or use file explorer and drag-and-drop
+1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com/pwndrop](https://upload.travisflix.com/pwndrop)
+2. Login with: username — **travisflix** / password — **upload**
+3. Click the Upload button and select the media for upload
     * You can select multiple files per upload session
-    * The maximum file size **upload limit is 5 GB**
-    * All uploaded files are automatically deleted after 24 hours
-3. Have a beer and wait
-4. When the upload is complete, use the handy email form presented to you
-    * Under "*Your friend's email*" enter the email address <travisrunyard@gmail.com>
-    * In the event you have a catastrophic case of trigger-finger and have skipped the step above, send me an email to let me know what you have uploaded (date/time of upload would be helpful)<br>
-    ![upload email](_media/upload.travisflix.com-email.png)
+4. When finished, send me a message in the Telegram room [t.me/travisflix](https://t.me/travisflix)
+    * If you can not use Telegram, send me an email <travisrunyard@gmail.com>
+5. If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate)
 
 
 ## VPN remote users: allowed countries?
