@@ -153,7 +153,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 ## Downloading movies & shows?
 
 * :fa fa-download: Downloading is now limited to **1 download** at a time/per IP address
-* Downloading is rate limited to **4MB/s (32Mbps)**
+* Downloading is rate limited to **2MB/s (16Mbps)**
 * If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate)
 
 web config:
@@ -162,7 +162,7 @@ web config:
 limit_conn_zone $binary_remote_addr zone=perip:10m;
 
 location ~ ^/Items/(.*)/Download$ {
-        limit_rate 4000k; # Speed limit (kb/s)
+        limit_rate 2000k; # Speed limit (kb/s)
         limit_conn perip 1; # Simultaneous downloads per IP
         limit_conn_status 429;      
         proxy_buffering on;
