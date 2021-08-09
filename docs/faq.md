@@ -153,27 +153,28 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 ## Downloading movies & shows?
 
 * :fa fa-download: Downloading is now limited to **1 download** at a time/per IP address
-* Downloading is rate limited to **2MB/s (16Mbps)**
+* Downloading is rate limited to **1 MB/s (8 Mbps)**
 * If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate)
 
-web config:
+Config:
 
 ```
 limit_conn_zone $binary_remote_addr zone=perip:10m;
 
 location ~ ^/Items/(.*)/Download$ {
-        limit_rate 2000k; # Speed limit (kb/s)
-        limit_conn perip 1; # Simultaneous downloads per IP
-        limit_conn_status 429;      
-        proxy_buffering on;
-        proxy_set_header Host $host;      
+        limit_rate 1000k;
+        limit_conn perip 1;
+        limit_conn_status 429;
+        proxy_buffering on; # Required for limit_conn
+        proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;                                       
-        proxy_set_header X-Forwarded-Protocol $scheme;      
-        proxy_set_header X-Forwarded-Host $http_host;    
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Protocol $scheme;
+        proxy_set_header X-Forwarded-Host $http_host;
         proxy_pass http://jellyfin_server;
 }
+error_page 429 /HTTP429.html;
 ```
 
 
