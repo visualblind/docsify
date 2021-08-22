@@ -152,18 +152,16 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 ## Downloading movies & shows?
 
-* :fa fa-download: Downloading is now limited to **1 download** at a time/per IP address
-* Downloading is rate limited to **1 MB/s (8 Mbps)**
-* If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate)
+> * :fa fa-download: All downloads are rate limited to **2 MB/s (16 Mbps)** / **1 download** per IP address
 
-Config:
+If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
+
+conf:
 
 ```
-limit_conn_zone $binary_remote_addr zone=perip:10m;
-
-location ~ ^/Items/(.*)/Download$ {
-        limit_rate 1024k;
-        limit_conn perip 1;
+    location ~ ^/Items/(.*)/Download$ {
+        limit_rate 2048k; # Speed in KB/s (Kilobytes)
+        limit_conn perip 1; # Simultaneous connections per ip address
         limit_conn_status 429;
         proxy_buffering on; # Required for limit_conn
         proxy_set_header Host $host;
@@ -172,9 +170,13 @@ location ~ ^/Items/(.*)/Download$ {
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-Protocol $scheme;
         proxy_set_header X-Forwarded-Host $http_host;
+        add_header X-Nginx-IPCountry $HTTP_CF_IPCOUNTRY;
+        add_header X-Nginx-ClientIP $remote_addr;
+        add_header X-Nginx-ServerIP $server_addr;
+        add_header X-Nginx-Forwarded-For $proxy_add_x_forwarded_for;
+        add_header X-Nginx-Forwarded-Host $http_host;
         proxy_pass http://jellyfin_server;
-}
-error_page 429 /HTTP429.html;
+    }
 ```
 
 
