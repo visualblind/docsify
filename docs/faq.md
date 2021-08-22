@@ -109,7 +109,6 @@ The root cause results from the server needing to retrieve the entire media file
 Virtually all media on the site will be using the video/audio codec specs listed below.
 The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)), or "mkv" ([Matroska](https://en.wikipedia.org/wiki/Matroska)), which are referred to as containers. Containers themselves have nothing to do with the codec used for the video and audio streams. Containers can be thought of as universally recognized digital media delivery packages. However despite this understanding, shitty media handling implementation by the major mobile OS developers (you know the ones I'm talkin' about) may force the server to strip the container off of the internal media streams before repackaging and delivering it to mobile devices in a format more easily consumed, such as "ts" ([Transport Stream](https://en.wikipedia.org/wiki/MPEG_transport_stream)).
 
-> A transport stream encapsulates a number of other substreams, often packetized elementary streams (PESs) which in turn wrap the main data stream using the MPEG codec or any number of non-MPEG codecs (such as AC3 or DTS audio, and MJPEG or JPEG 2000 video)
 
 |Video||
 |-----|-----|
@@ -140,7 +139,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 ## Supported devices or platforms?
 
-> Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
+Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
 
 * :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
   * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.x+, :fab fa-apple: MacOS 10.12–current
@@ -152,11 +151,11 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 ## Downloading movies & shows?
 
-> * :fa fa-download: All downloads are rate limited to **2 MB/s (16 Mbps)** / **1 download** per IP address
+> * :fa fa-download: All downloads are rate limited to **2 MB/s (16 Mbps)** / **1 download** at a time per IP address
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-conf:
+Conf:
 
 ```
     location ~ ^/Items/(.*)/Download$ {
@@ -314,8 +313,8 @@ The 30 day cumulative HTTP uptime for travisflix.com has on average been between
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-> ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
-> You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
+![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
+You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
 
 ![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png)
 
