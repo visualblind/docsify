@@ -151,7 +151,7 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 
 ## Downloading movies & shows?
 
-> * :fa fa-download: All downloads are rate limited to **2 MB/s (16 Mbps)** / **1 download** at a time per IP address
+> :fa fa-download: All downloads are rate limited to **2 MB/s (16 Mbps)** / **1 download** at a time per IP address
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
