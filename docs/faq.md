@@ -1,11 +1,11 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
 
-:far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cache/cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
+![select-server-crop](_media/select-server-crop.png) :far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-> Make sure that you checkmark cookies from the advanced section. Be aware that **this action will delete cookies for all sites instead of only travisflix.com**.
+> Checkmark **"Cookies and other site data"** from either the Basic or Advanced tab. Cookies for all sites will be deleted.
 
 ![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
