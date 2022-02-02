@@ -1,3 +1,3 @@
 <!-- docs/_sidebar.md -->
 * [Support / FAQ](faq.md)
-* [Guide](guide.md)
+* [Media Compatibility Guide](guide.md)
