@@ -159,8 +159,8 @@ Conf:
 
 ```
     location ~ ^/Items/(.*)/Download$ {
-        limit_rate 2048k; # Speed in KB/s (Kilobytes)
-        limit_conn perip 1; # Simultaneous connections per ip address
+        limit_rate 4096k; # Speed in KB/s (Kilobytes)
+        limit_conn perip 2; # Simultaneous connections per ip address
         limit_conn_status 429;
         proxy_buffering on; # Required for limit_conn
         proxy_set_header Host $host;
