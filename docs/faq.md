@@ -151,7 +151,7 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 
 ## Downloading movies & shows?
 
-:fa fa-download: One download per IP address is allowed and is rate limited to **4 MB/s** (4096 KB = 32 Mbps).
+:fa fa-download: 1 Download/per IP and rate limited at **4,096 KiB/s** (4 MiB/s or roughly 32 Mbps).
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
