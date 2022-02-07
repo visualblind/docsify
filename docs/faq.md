@@ -66,7 +66,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 5. As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 40+ Mbps.
     * Testing has shown the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps
 
-    ```
+    ```editorconfig
     vnstat -i enp4s0 -tr 30
     44816 packets sampled in 30 seconds
     Traffic average for enp4s0
@@ -80,7 +80,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
     ![Video Stream Bandwidth Graph](_media/network-bandwidth-video-stream.png)
     ![Video Stream Bandwidth Graph 2](_media/network-bandwidth-video-stream2.png)
 
-6. General rule of thumb—if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
+6. General rule of thumb—if the content's bitrate > 10,000 Kbps it is going to require a faster connection.
 
 ```bash
 $ speedtest-cli
@@ -155,7 +155,7 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-Config:
+web config:
 
 ```nginx
     location ~ ^/Items/(.*)/Download$ {
