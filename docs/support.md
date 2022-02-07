@@ -304,7 +304,7 @@ You can view the status for Google here [google.com/appstatus](https://www.googl
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-<iframe src="//statistics.travisflix.com/netdata.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
+<iframe src="//statistics.travisflix.com/netdata-dark.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
 
 ## Status of the media sync processes?
