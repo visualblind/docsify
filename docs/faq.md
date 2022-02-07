@@ -1,16 +1,16 @@
 <!-- docs/faq.md -->
 ## Having trouble logging in?
 
-![select-server-crop](_media/select-server-crop.png) :far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
+:far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-> Checkmark **"Cookies and other site data"** from either the Basic or Advanced tab. Cookies for all sites will be deleted.
+!> **Important** Checkmark the "Cookies and other site data" option from either the Basic or Advanced tab. Cookies for all sites will be deleted :fas fa-cookie:.
 
 ![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
 
-> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+?> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
 
 ## Media stream buffering/glitching?
@@ -21,7 +21,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses **802.11ac** and is using a **wide band such as 80 or 160**.
 
-> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**. Just because you assume you are on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you are on 802.11ac.
+?> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**. Just because you assume you are on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you are on 802.11ac.
 
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
@@ -52,7 +52,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under **"Play method:"** discussed further above. If it's transcoding, the play method will state **HLS** and not **DirectPlay**.
+?> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under **"Play method:"** discussed further above. If it's transcoding, the play method will state **HLS** and not **DirectPlay**.
 
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
@@ -151,7 +151,7 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 
 ## Downloading movies & shows?
 
-:fa fa-download: 1 Download/per IP and rate limited at **4,096 KiB/s** (4 MiB/s or roughly 32 Mbps).
+!>:fa fa-download: 1 Download/per IP and rate limited at **4,096 KiB/s** (4 MiB/s or roughly 32 Mbps).
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
