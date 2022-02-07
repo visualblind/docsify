@@ -66,7 +66,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 5. As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 40+ Mbps.
     * Testing has shown the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps
 
-    ```shell-session
+    ```
     vnstat -i enp4s0 -tr 30
     44816 packets sampled in 30 seconds
     Traffic average for enp4s0
@@ -82,7 +82,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 6. General rule of thumb—if the content's bitrate > 10,000 Kbps it is going to require a faster connection. Maybe this is the time to upgrade to Frontier/Fios? 
 
-```shell-session
+```bash
 $ speedtest-cli
 Retrieving speedtest.net configuration...
 Testing from Frontier Communications.
@@ -98,8 +98,8 @@ Upload: 122.33 Mbit/s
 
 ## Subtitles not loading?
 
-:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 60 seconds and re-select the same subtitle again.
-The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client. Most TV episodes are large media files and so it will take roughly 30–60 seconds to download the entire episode. In rare cases it may take even longer than 60 seconds, especially if the server is heavily loaded.
+:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
+The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.
 
 
 ## Media Codec Information & Standards
@@ -157,7 +157,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 Config:
 
-```
+```nginx
     location ~ ^/Items/(.*)/Download$ {
         limit_rate 4096k; # Speed in KB/s (Kilobytes)
         limit_conn perip 1; # Simultaneous connections per ip address
