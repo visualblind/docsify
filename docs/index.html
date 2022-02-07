@@ -20,25 +20,14 @@
 <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" />-->
 <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css" />-->
   <!-- Docsify-themeable Theme -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <link rel="stylesheet" href="/help/assets/css/main.css">
   <!-- Prism Theme -->
   <!-- <link rel="stylesheet" href="//atelierbram.github.io/syntax-highlighting/prism/demo/assets/css/prism-base16-monokai.dark.css" />-->
   <link rel="stylesheet" href="/help/_css/prism-base16/prism-base16-monokai.dark.css" />
 <style>
 :root {
-/* Sidebar
-============================================================================= */
-    --sidebar-background                          : var(--base-background-color);
-    --sidebar-border-color                        : ;
-    --sidebar-border-width                        : 0;
-    --sidebar-padding                             : 0 25px;
-    --sidebar-width                               : 23rem;
-
-/* Base
-============================================================================= */
-    --base-background-color: #f7f7f7;
-    --base-color           : var(--mono-shade2);
-    --base-font-family     : "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --base-font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --base-font-size       : 16px;
     --base-font-weight     : normal;
     --base-letter-spacing  : ;
@@ -61,7 +50,7 @@
     --pre-line-height      : ;
 
     /* Selection */
-    --selection-color      : #b4d5fe;
+    --selection-color      : #f5d82c;
 
     /* Small */
     --small-font-size      : var(--font-size-s);
@@ -71,339 +60,185 @@
     --strong-font-weight   : 600;
 
     /* Sub/Sup */
-    --subsup-font-size     : var(--font-size-s);
-    /* Tables */
-    --table-body-border-color           : ;
-    --table-body-border-width           : ;
-    --table-cell-border-color           : ;
-    --table-cell-border-width           : ;
-    --table-cell-padding                : 0.75em 0.5em;
-    --table-head-background             : ;
-    --table-head-border-color           : var(--table-cell-border-color);
-    --table-head-border-width           : ;
-    --table-head-font-weight            : var(--strong-font-weight);
-    --table-row-even-background         : ;
-    --table-row-odd-background          : var(--mono-tint3);
+    --subsup-font-size                            : var(--font-size-s);
+    --sidebar-background                          : var(--base-background-color);
+    --sidebar-border-color                        : ;
+    --sidebar-border-width                        : 0 1px 0 0;
+    --sidebar-padding                             : 0 25px;
+    --sidebar-transition-duration                 : var(--duration-fast);
+    --sidebar-width                               : 25rem;
 
-/* App
-============================================================================= */
-    /* Color
-    ------------------------------------------------------------------------- */
-    /* Monochrome */
-    --mono-hue        : 113;
-    --mono-saturation : 0%;
+    /* Name */
+    --sidebar-name-background                     : ;
+    --sidebar-name-color                          : var(--theme-color);
+    --sidebar-name-font-family                    : ;
+    --sidebar-name-font-size                      : var(--font-size-l);
+    --sidebar-name-font-weight                    : 300;
+    --sidebar-name-margin                         : 1.5rem 0 0;
+    --sidebar-name-padding                        : ;
+    --sidebar-name-text-align                     : center;
 
-    /* Monochrome shades (darker) and tints (lighter) */
-    --mono-shade3     : hsl(var(--mono-hue), var(--mono-saturation), 20%); /* #333333 */
-    --mono-shade2     : hsl(var(--mono-hue), var(--mono-saturation), 30%); /* #4d4d4d */
-    --mono-shade1     : hsl(var(--mono-hue), var(--mono-saturation), 40%); /* #666666 */
-    --mono-base       : hsl(var(--mono-hue), var(--mono-saturation), 50%); /* #808080 */
-    --mono-tint1      : hsl(var(--mono-hue), var(--mono-saturation), 70%); /* #b3b3b3 */
-    --mono-tint2      : hsl(var(--mono-hue), var(--mono-saturation), 89%); /* #e3e3e3 */
-    --mono-tint3      : hsl(var(--mono-hue), var(--mono-saturation), 97%); /* #f7f7f7 */
+    /* Nav Headings */
+    --sidebar-nav-strong-border-color             : var(--sidebar-border-color);
+    --sidebar-nav-strong-border-width             : 0 0 1px 0;
+    --sidebar-nav-strong-color                    : var(--heading-color);
+    --sidebar-nav-strong-font-size                : smaller;
+    --sidebar-nav-strong-font-weight              : var(--strong-font-weight);
+    --sidebar-nav-strong-margin                   : 2em -25px 0.75em 0;
+    --sidebar-nav-strong-padding                  : 0.25em 0 0.75em 0;
+    --sidebar-nav-strong-text-transform           : uppercase;
 
-    /* Theme */
-    --theme-hue       : 204;
-    --theme-saturation: 90%;
-    --theme-lightness : 45%;
-    --theme-color     : hsl(var(--theme-hue), var(--theme-saturation), var(--theme-lightness));
+    /* Nav Container */
+    --sidebar-nav-background                      : ;
+    --sidebar-nav-indent                          : 1em;
+    --sidebar-nav-margin                          : 1.5rem 0 0;
+    --sidebar-nav-padding                         : ;
 
-    /* Typography
-    ------------------------------------------------------------------------- */
-    /* Modular Scale */
-    --modular-scale   : 1.333;
+    /* Nav Links */
+    --sidebar-nav-link-background-color           : ;
+    --sidebar-nav-link-background-color--active   : ;
+    --sidebar-nav-link-background-color--hover    : ;
+    --sidebar-nav-link-background-image           : ;
+    --sidebar-nav-link-background-image--active   : ;
+    --sidebar-nav-link-background-image--hover    : ;
+    --sidebar-nav-link-background-position        : ;
+    --sidebar-nav-link-background-position--active: ;
+    --sidebar-nav-link-background-position--hover : ;
+    --sidebar-nav-link-background-repeat          : ;
+    --sidebar-nav-link-background-size            : ;
+    --sidebar-nav-link-background-size--active    : ;
+    --sidebar-nav-link-background-size--hover     : ;
+    --sidebar-nav-link-border-color               : ;
+    --sidebar-nav-link-border-color--active       : var(--theme-color);
+    --sidebar-nav-link-border-color--hover        : var(--theme-color);
+    --sidebar-nav-link-border-radius              : ;
+    --sidebar-nav-link-border-style               : solid;
+    --sidebar-nav-link-border-style--active       : ;
+    --sidebar-nav-link-border-style--hover        : ;
+    --sidebar-nav-link-border-width               : 0 4px 0 0;
+    --sidebar-nav-link-border-width--active       : ;
+    --sidebar-nav-link-border-width--hover        : ;
+    --sidebar-nav-link-color                      : ;
+    --sidebar-nav-link-color--active              : var(--theme-color);
+    --sidebar-nav-link-color--hover               : ;
+    --sidebar-nav-link-font-weight                : normal;
+    --sidebar-nav-link-font-weight--active        : ;
+    --sidebar-nav-link-font-weight--hover         : ; 
+    --sidebar-nav-link-margin                     : 0 -25px 0 0;
+    --sidebar-nav-link-padding                    : 0.25em 0;
+    --sidebar-nav-link-text-decoration            : none;
+    --sidebar-nav-link-text-decoration--active    : none;
+    --sidebar-nav-link-text-decoration--hover     : underline;
+    --sidebar-nav-link-text-decoration-color      : ;
+    --sidebar-nav-link-transition                 : ;
 
-    /* Module Scale Calculations (do not edit these) */
-    --modular-scale--2: calc(var(--modular-scale--1) / var(--modular-scale));
-    --modular-scale--1: calc(var(--modular-scale-1) / var(--modular-scale));
-    --modular-scale-1 : 1rem;
-    --modular-scale-2 : calc(var(--modular-scale-1) * var(--modular-scale));
-    --modular-scale-3 : calc(var(--modular-scale-2) * var(--modular-scale));
-    --modular-scale-4 : calc(var(--modular-scale-3) * var(--modular-scale));
-    --modular-scale-5 : calc(var(--modular-scale-4) * var(--modular-scale));
+    /* Nav Links - Pseudo Content */
+    --sidebar-nav-link-before-content             : ;
+    --sidebar-nav-link-before-content--active     : ;
+    --sidebar-nav-link-before-content-l1          : ;
+    --sidebar-nav-link-before-content-l1--active  : ;
+    --sidebar-nav-link-before-content-l2          : ;
+    --sidebar-nav-link-before-content-l2--active  : ;
+    --sidebar-nav-link-before-content-l3          : ;
+    --sidebar-nav-link-before-content-l3--active  : ;
+    --sidebar-nav-link-before-content-l4          : ;
+    --sidebar-nav-link-before-content-l4--active  : ;
 
-    /* Font size */
-    --font-size-xxxl  : var(--modular-scale-5);
-    --font-size-xxl   : var(--modular-scale-4);
-    --font-size-xl    : var(--modular-scale-3);
-    --font-size-l     : var(--modular-scale-2);
-    --font-size-m     : var(--modular-scale-1);
-    --font-size-s     : var(--modular-scale--1);
-    --font-size-xs    : var(--modular-scale--2);
+    /* Nav Links - Pseudo Style */
+    --sidebar-nav-link-before-color               : ;
+    --sidebar-nav-link-before-color--active       : ;
+    --sidebar-nav-link-before-color-l1            : ;
+    --sidebar-nav-link-before-color-l1--active    : ;
+    --sidebar-nav-link-before-color-l2            : ;
+    --sidebar-nav-link-before-color-l2--active    : ;
+    --sidebar-nav-link-before-color-l3            : ;
+    --sidebar-nav-link-before-color-l3--active    : ;
+    --sidebar-nav-link-before-color-l4            : ;
+    --sidebar-nav-link-before-color-l4--active    : ;
+    --sidebar-nav-link-before-margin              : 0 0.35em 0 0;
+    --sidebar-nav-link-before-margin-l1           : ;
+    --sidebar-nav-link-before-margin-l2           : ;
+    --sidebar-nav-link-before-margin-l3           : ;
+    --sidebar-nav-link-before-margin-l4           : ;
 
-    /* Utility
-    ------------------------------------------------------------------------- */
-    /* Borders */
-    --border-radius-s : ;
-    --border-radius-m : ;
-    --border-radius-l : ;
+    /* Nav Page Links */
+    --sidebar-nav-pagelink-background-image             : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11.2' viewBox='0 0 7 11.2'%3E%3Cpath d='M1.5 1.5l4 4.1 -4 4.1' stroke-width='1.5' stroke='rgb%2873, 93, 104%29' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+    --sidebar-nav-pagelink-background-image--active     : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.2' height='7' viewBox='0 0 11.2 7'%3E%3Cpath d='M1.5 1.5l4.1 4 4.1-4' stroke-width='1.5' stroke='rgb%2811, 135, 218%29' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+    --sidebar-nav-pagelink-background-image--collapse   : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11.2' viewBox='0 0 7 11.2'%3E%3Cpath d='M1.5 1.5l4 4.1 -4 4.1' stroke-width='1.5' stroke='rgb%2811, 135, 218%29' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+    --sidebar-nav-pagelink-background-image--loaded     : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.2' height='7' viewBox='0 0 11.2 7'%3E%3Cpath d='M1.5 1.5l4.1 4 4.1-4' stroke-width='1.5' stroke='rgb%2811, 135, 218%29' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+    --sidebar-nav-pagelink-background-position          : 3px center;
+    --sidebar-nav-pagelink-background-position--active  : left center;
+    --sidebar-nav-pagelink-background-position--collapse: var(--sidebar-nav-pagelink-background-position);
+    --sidebar-nav-pagelink-background-position--loaded  : var(--sidebar-nav-pagelink-background-position--active);
+    --sidebar-nav-pagelink-background-repeat            : no-repeat;
+    --sidebar-nav-pagelink-background-size              : ;
+    --sidebar-nav-pagelink-padding                      : 0.25em 0 0.25em 20px;
+    --sidebar-nav-pagelink-transition                   : var(--sidebar-nav-link-transition);
 
-    /* Animations and transitions */
-    --duration-slow   : 1s;
-    --duration-medium : 0.5s;
-    --duration-fast   : 0.25s;
-
-    /* Misc
-    ------------------------------------------------------------------------- */
-    /* Spinner */
-    --spinner-size               : 60px;
-    --spinner-track-width        : 4px;
-    --spinner-track-color        : rgba(0, 0, 0, 0.15);
-    --spinner-transition-duration: var(--duration-medium);
-
-/* Plugin: Search
-============================================================================= */
-    --search-background                      : ;
-    --search-margin                          : 1.5rem 0 0;
-    --search-padding                         : ;
-
-    /* Input */
-    --search-input-background-color          : ;
-    --search-input-background-color--focus   : ;
-    --search-input-background-image          : ;
-    --search-input-background-image--focus   : ;
-    --search-input-background-position       : ;
-    --search-input-background-position--focus: ;
-    --search-input-background-repeat         : no-repeat;
-    --search-input-background-size           : ;
-    --search-input-background-size--focus    : ;
-    --search-input-border-color              : var(--mono-tint1);
-    --search-input-border-radius             : ;
-    --search-input-border-width              : 1px;
-    --search-input-color                     : ;
-    --search-input-font-size                 : ;
-    --search-input-margin                    : ;
-    --search-input-padding                   : 0.5em;
-    --search-input-placeholder-color         : ;
-    --search-input-transition                : ;
-
-    /* Order */
-    --search-flex-order                      : 1;
-
-    /* Results */
-    --search-result-heading-color            : var(--heading-color);
-    --search-result-heading-font-size        : var(--base-font-size);
-    --search-result-heading-font-weight      : normal;
-    --search-result-heading-margin           : 0 0 0.25em;
-    --search-result-item-border-color        : var(--mono-tint2);
-    --search-result-item-border-style        : solid;
-    --search-result-item-border-width        : 0 0 1px 0;
-    --search-result-item-color               : ;
-    --search-result-item-font-size           : ;
-    --search-result-item-font-weight         : normal;
-    --search-result-item-margin              : ;
-    --search-result-item-padding             : 5px 0;
-    --search-result-keyword-background       : var(--mark-background);
-    --search-result-keyword-border-radius    : var(--border-radius-s);
-    --search-result-keyword-color            : var(--mark-color);
-    --search-result-keyword-font-weight      : normal;
-    --search-result-keyword-margin           : 0 0.1em;
-    --search-result-keyword-padding          : 0.2em 0;
-
-/* Content
-============================================================================= */
-    --content-max-width                 : 70em;
-
-    /* Headings */
-    --heading-color                     : var(--mono-shade3);
-    --heading-font-family               : ;
-    --heading-font-weight               : ;
-    --heading-margin                    : 2.5rem 0 0;
-    --heading-padding                   : ;
-    --heading-h1-border-color           : ;
-    --heading-h1-border-style           : ;
-    --heading-h1-border-width           : ;
-    --heading-h1-color                  : ;
-    --heading-h1-font-family            : ;
-    --heading-h1-font-size              : var(--font-size-xxl);
-    --heading-h1-font-weight            : ;
-    --heading-h1-margin                 : ;
-    --heading-h1-padding                : ;
-    --heading-h2-border-color           : ;
-    --heading-h2-border-style           : ;
-    --heading-h2-border-width           : ;
-    --heading-h2-color                  : ;
-    --heading-h2-font-family            : ;
-    --heading-h2-font-size              : var(--font-size-xl);
-    --heading-h2-font-weight            : ;
-    --heading-h2-margin                 : ;
-    --heading-h2-padding                : ;
-    --heading-h3-border-color           : ;
-    --heading-h3-border-style           : ;
-    --heading-h3-border-width           : ;
-    --heading-h3-color                  : ;
-    --heading-h3-font-family            : ;
-    --heading-h3-font-size              : var(--font-size-l);
-    --heading-h3-font-weight            : ;
-    --heading-h3-margin                 : ;
-    --heading-h3-padding                : ;
-    --heading-h4-border-color           : ;
-    --heading-h4-border-style           : ;
-    --heading-h4-border-width           : ;
-    --heading-h4-color                  : ;
-    --heading-h4-font-family            : ;
-    --heading-h4-font-size              : var(--font-size-m);
-    --heading-h4-font-weight            : ;
-    --heading-h4-margin                 : ;
-    --heading-h4-padding                : ;
-
-    --heading-h5-border-color           : ;
-    --heading-h5-border-style           : ;
-    --heading-h5-border-width           : ;
-    --heading-h5-color                  : ;
-    --heading-h5-font-family            : ;
-    --heading-h5-font-size              : var(--font-size-s);
-    --heading-h5-font-weight            : ;
-    --heading-h5-margin                 : ;
-    --heading-h5-padding                : ;
-
-    --heading-h6-border-color           : ;
-    --heading-h6-border-style           : ;
-    --heading-h6-border-width           : ;
-    --heading-h6-color                  : ;
-    --heading-h6-font-family            : ;
-    --heading-h6-font-size              : var(--font-size-xs);
-    --heading-h6-font-weight            : ;
-    --heading-h6-margin                 : ;
-    --heading-h6-padding                : ;
-
-    /* Keyboard */
-    --kbd-background                    : var(--mono-tint3);
-    --kbd-border                        : ;
-    --kbd-border-radius                 : var(--border-radius-m);
-    --kbd-color                         : ;
-    --kbd-font-size                     : ;
-    --kbd-margin                        : 0 0.3em;
-    --kbd-min-width                     : 2.5em;
-    --kbd-padding                       : 0.65em 0.5em;
-
-    /* Links */
-    --link-border-bottom                : ;
-    --link-border-bottom--hover         : ;
-    --link-color                        : #565656;
-    --link-color--hover                 : #429eff;
-    --link-text-decoration              : underline;
-    --link-text-decoration--hover       : ;
-    --link-text-decoration-color        : ;
-    --link-text-decoration-color--hover : ;
-
-
-
-/* Cover
-============================================================================= */
-    --cover-color                                      : ;
-    --cover-margin                                     : 0 auto;
-    --cover-max-width                                  : 40em;
-    --cover-text-align                                 : center;
-
-    /* Background */
-    --cover-background-blend-mode                      : ;
-    --cover-background-color                           : var(--base-background-color);
-    --cover-background-image                           : ;
-    --cover-background-mask-color                      : var(--base-background-color);
-    --cover-background-mask-opacity                    : 0.8;
-    --cover-background-mask-visibility                 : ;
-    --cover-background-position                        : center center;
-    --cover-background-repeat                          : no-repeat;
-    --cover-background-size                            : cover;
-
-    /* Blockquote (Subtitle) */
-    --cover-blockquote-color                           : ;
-    --cover-blockquote-font-size                       : var(--font-size-l);
-
-    /* Border */
-    --cover-border-inset                               : ;
-    --cover-border-color                               : var(--theme-color);
-    --cover-border-width                               : ;
-
-    /* Buttons */
-    --cover-button-background                          : ;
-    --cover-button-background--hover                   : ;
-    --cover-button-border                              : 1px solid var(--theme-color);
-    --cover-button-border--hover                       : ;
-    --cover-button-border-radius                       : var(--border-radius-m);
-    --cover-button-box-shadow                          : ;
-    --cover-button-box-shadow--hover                   : ;
-    --cover-button-color                               : var(--theme-color);
-    --cover-button-color--hover                        : ;
-    --cover-button-padding                             : 0.5em 2rem;
-    --cover-button-text-decoration                     : none;
-    --cover-button-text-decoration--hover              : ;
-    --cover-button-text-decoration-color               : ;
-    --cover-button-text-decoration-color--hover        : ;
-    --cover-button-transition                          : all var(--duration-fast) ease-in-out;
-
-    /* Buttons - Primary */
-    --cover-button-primary-background                  : var(--theme-color);
-    --cover-button-primary-background--hover           : ;
-    --cover-button-primary-border                      : 1px solid var(--theme-color);
-    --cover-button-primary-border--hover               : ;
-    --cover-button-primary-box-shadow                  : ;
-    --cover-button-primary-box-shadow--hover           : ;
-    --cover-button-primary-color                       : #fff;
-    --cover-button-primary-color--hover                : ;
-    --cover-button-primary-text-decoration             : ;
-    --cover-button-primary-text-decoration--hover      : ;
-    --cover-button-primary-text-decoration-color       : ;
-    --cover-button-primary-text-decoration-color--hover: ;
-
-    /* Heading */
-    --cover-heading-color                              : var(--theme-color);
-    --cover-heading-font-size                          : var(--font-size-xxl);
-    --cover-heading-font-size-min                      : ;
-    --cover-heading-font-size-max                      : ;
-    --cover-heading-font-weight                        : normal;
-
-    /* Links */
-    --cover-link-border-bottom                         : ;
-    --cover-link-border-bottom--hover                  : ;
-    --cover-link-color                                 : ;
-    --cover-link-color--hover                          : ;
-    --cover-link-text-decoration                       : underline;
-    --cover-link-text-decoration--hover                : ;
-    --cover-link-text-decoration-color                 : ;
-    --cover-link-text-decoration-color--hover          : ;
-
+    /* Toggle */
+    --sidebar-toggle-background                   : ;
+    --sidebar-toggle-border-color                 : ;
+    --sidebar-toggle-border-radius                : var(--border-radius-s);
+    --sidebar-toggle-border-style                 : solid;
+    --sidebar-toggle-border-width                 : 0;
+    --sidebar-toggle-height                       : 36px;
+    --sidebar-toggle-icon-color                   : var(--base-color);
+    --sidebar-toggle-icon-height                  : 10px;
+    --sidebar-toggle-icon-stroke-width            : 1px;
+    --sidebar-toggle-icon-width                   : 16px;
+    --sidebar-toggle-offset-left                  : 0;
+    --sidebar-toggle-offset-top                   : calc(35px - (var(--sidebar-toggle-height) / 2));
+    --sidebar-toggle-width                        : 44px;
 }
 </style>
 
 </head>
 <body>
   <div id="app"></div>
-  <script>
-   window.$docsify = {
-    relative: true,
-    executeScript: true,
-    themeColor: '#429eff',
-    name: 'TravisFlix Support',
-    topMargin: 5, // default: 0
-    nameLink: '/help/#/faq',
-    loadSidebar: true,
-    autoHeader: true,
-    notFoundPage: true,
-    auto2top: true,
-    logo: false,
-    formatUpdated: '{MM}/{DD} {HH}:{mm}',
-    formatUpdated: function(time) {return time;},
-    subMaxLevel: 3,
-    coverpage: false,
-    onlyCover: false,
-    hideSidebar: false,
-    search: {
-        maxAge: 86400000, // Expiration time, the default one day
-        paths: 'auto',
-        placeholder: 'Type to search',
-        noData: 'No Results!',
 
-        depth: 6, // Headline depth, 1 - 6
-        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-    },
-    themeable: {
-        readyTransition : true, // default
-        responsiveTables: true,  // default
-      }
-    }
+    <!-- JavaScript -->
+    <script>
+        window.$docsify = {
+            // GENERAL
+            // -----------------------------------------------------------------
+            name       : 'TravisFlix Support',
+            homepage   : 'support.md',
+            loadSidebar: 'sidebar.md',
+//            executeScript: true,
+            themeColor: '#429eff',
+            topMargin: 5,
+            autoHeader: true,
+            notFoundPage: true,
+            auto2top: true,
+            logo: false,
+            coverpage: false,
+            onlyCover: false,
+            // NAVIGATION
+            // -----------------------------------------------------------------
+            nameLink: '/help/',
+            auto2top   : true,
+            maxLevel   : 3,
+            subMaxLevel: 3,
+ //           relative: true,
+            formatUpdated: '{MM}/{DD} {HH}:{mm}',
+            formatUpdated: function(time) {return time;},
+            hideSidebar: false,
+            search: {
+                maxAge: 86400000, // Expiration time, the default one day
+                paths: 'auto',
+                placeholder: 'Type to search',
+                noData: 'No Results!',
+
+                depth: 6, // Headline depth, 1 - 6
+                hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+            },
+            themeable: {
+            readyTransition : true, // default
+            responsiveTables: true,  // default
+            }
+        }
   </script>
+  <script src="/help/assets/js/main.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>

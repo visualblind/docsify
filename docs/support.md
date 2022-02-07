@@ -1,4 +1,5 @@
-<!-- docs/faq.md -->
+# Support
+
 ## Having trouble logging in?
 
 :far fa-frown: Usually the cause of this is an issue with the cookies in your local browser cache. To test, bypass the browser cache by opening a new incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
