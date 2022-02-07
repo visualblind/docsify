@@ -344,18 +344,19 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
   * :heavy_dollar_sign: However I don't pay myself
   * :heavy_dollar_sign: The cost to run cloud data storage legitimately would range from $150-200/mo or $1800-2400/yr
 
+
 > **Option #1**
-> [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)<br>
-> [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)
->
-> Here is the related QR code associated with my BTC address beginning with "32Z8bRQ":<br>
-> ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
+> [bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70](bitcoin:bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70)
+> 
+> QR code for bitcoin address starting with "bc1q6rp":
+> ![BTC](_media/bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70.png)
 ---
 > **Option #2**
-> [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
-> 
-> Here is the related QR code associated with my BTC address beginning with "bc1q690":<br>
-> ![BTC](_media/bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g.png)
+> [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
+> [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
+>
+> QR code for bitcoin address starting with "32Z8bRQ":
+> ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
 
 
 ## Media storage info?
