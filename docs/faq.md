@@ -360,7 +360,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## Media storage info?
 
-?> :fab fa-google-drive: Used: **28.398 TiB** as of 02-07-2022
+!> :fab fa-google-drive: Used: **28.398 TiB** as of 02-07-2022
 
 ![GDrive Storage 01](_media/gdrive-storage-used.png)
 
