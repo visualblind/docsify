@@ -348,14 +348,14 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 > **Option #1**
 > [bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70](bitcoin:bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70)
 > 
-> QR code for bitcoin address starting with "bc1q6rp":
+> QR code for bitcoin address starting with "bc1q6rp":<br>
 > ![BTC](_media/bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70.png)
 ---
 > **Option #2**
 > [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
 > [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
 >
-> QR code for bitcoin address starting with "32Z8bRQ":
+> QR code for bitcoin address starting with "32Z8bRQ":<br>
 > ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
 
 
