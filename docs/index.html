@@ -12,15 +12,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
-  <link rel="stylesheet" href="/help/_css/prism-a11y-dark.css" />
-<!-- docsify font awesome -->
+  <!-- docsify font awesome -->
   <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css" />
   <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
   <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
   <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
-<!-- docsify-material-icons -->
+  <!-- docsify-material-icons -->
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" />
+  <link rel="stylesheet" href="/help/_css/vue.css">
+  <link rel="stylesheet" href="/help/_css/prism-a11y-dark.css" />
 </head>
 <body>
   <div id="app"></div>
@@ -36,7 +36,7 @@
     autoHeader: true,
     notFoundPage: true,
     auto2top: true,
-   // logo: '/_media/travisflix_sm.png',
+    logo: '/help/_media/travisflix_sm.png',
     formatUpdated: '{MM}/{DD} {HH}:{mm}',
     formatUpdated: function(time) {
     return time;
@@ -45,7 +45,6 @@
     coverpage: true,
     onlyCover: false,
     hideSidebar: false,
-
       search: {
       maxAge: 86400000, // Expiration time, the default one day
       paths: 'auto',
@@ -58,10 +57,10 @@
     }
   </script>
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <!-- Prism additional language-specific grammar files -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
+
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-shell-session.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-editorconfig.min.js"></script>
