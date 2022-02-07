@@ -5,7 +5,7 @@
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-!> **Important** Checkmark the "Cookies and other site data" option from either the Basic or Advanced tab. Cookies for all sites will be deleted :fas fa-cookie:.
+!> Checkmark the "Cookies and other site data" option from either the Basic or Advanced tab. Cookies for all sites will be deleted :fas fa-cookie:.
 
 ![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
@@ -360,11 +360,10 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## Media storage info?
 
-:fab fa-google-drive: **20.09 TB** as of 07/2021<br>
+?> :fab fa-google-drive: Used: **28.398 TiB** as of 02-07-2022
 
-![GDrive Storage 01](_media/gdrive-storage-01.png)
+![GDrive Storage 01](_media/gdrive-storage-used.png)
 
-![GDrive Storage 02](_media/gdrive-storage-02.png)
 
 Google Cloud Console API Metrics for Google Drive
 ![Google Cloud API rates](_media/gcloud-03.png)
