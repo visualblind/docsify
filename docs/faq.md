@@ -151,16 +151,16 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 
 ## Downloading movies & shows?
 
-> :fa fa-download: All downloads are rate limited to **4 MB/s (32 Mbps)** / **2 downloads** at a time per IP address
+> :fa fa-download: One download per IP address is allowed and is rate limited to **4 MB/s** (4096 KB = 32 Mbps).
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-Conf:
+Config:
 
 ```
     location ~ ^/Items/(.*)/Download$ {
         limit_rate 4096k; # Speed in KB/s (Kilobytes)
-        limit_conn perip 2; # Simultaneous connections per ip address
+        limit_conn perip 1; # Simultaneous connections per ip address
         limit_conn_status 429;
         proxy_buffering on; # Required for limit_conn
         proxy_set_header Host $host;
@@ -264,6 +264,7 @@ These plain-text files contain an index of all media for which it corresponds. T
 :fas fa-list: [/shows.txt](https://travisflix.com/shows.txt)<br>
 :fas fa-list: [/standup.txt](https://travisflix.com/standup.txt)<br>
 :fas fa-list: [/motogp.txt](https://travisflix.com/motogp.txt)<br>
+:fas fa-list: [/formula1.txt](https://travisflix.com/formula1.txt)<br>
 :fas fa-list: [/tech.txt](https://travisflix.com/tech.txt)<br>
 :fas fa-list: [/tennis.txt](https://travisflix.com/tennis.txt)<br>
 :fas fa-list: [/podcasts.txt](https://travisflix.com/podcasts.txt)<br>
@@ -275,30 +276,30 @@ Bash script that generates the files:
 #!/usr/bin/env bash
 
 nginx_www='/usr/local/linuxserver-nginx/config/www'
+jf_media='/usr/local/jellyfin/media'
 
 if [[ -d /usr/local/jellyfin/media && -f /usr/local/jellyfin/media/scriptcheck ]]; then
-    # rclone mount exists, no need to remount
+    # Rclone mount exists, no need to remount
 
-    # exit script if variable is empty
+    # Exit script if variable is empty
     [ -z "$nginx_www" ] && { echo "Error: variable nginx_www is not set or empty"; exit 1; }
 
-    # refresh public text files with media index
+    # Refresh public text files with media index
     cd /usr/local/jellyfin/media
     find /usr/local/jellyfin/media/video-movies -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/movies.txt
     find /usr/local/jellyfin/media/video-shows -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/shows.txt
-    tree --noreport -d --charset=en_US.utf8 video-shows >> $nginx_www/shows.txt
+    tree --noreport -d --charset=en_US.utf8 /usr/local/jellyfin/media/video-shows >> $nginx_www/shows.txt
     find /usr/local/jellyfin/media/video-standup -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/standup.txt
-    find /usr/local/jellyfin/media/video-tennis -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/tennis.txt
-    find /usr/local/jellyfin/media/video-starcraft -mindepth 1 -maxdepth 1 -type f -printf '%f\n' | sort > $nginx_www/starcraft.txt
+    find /usr/local/jellyfin/media/video-tennis -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort --reverse > $nginx_www/tennis.txt
+    find /usr/local/jellyfin/media/video-starcraft -mindepth 1 -maxdepth 1 -type f -printf '%f\n' | sort --reverse > $nginx_www/starcraft.txt
     find /usr/local/jellyfin/media/video-tech -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort > $nginx_www/tech.txt
     find /usr/local/jellyfin/media/podcasts -mindepth 1 -maxdepth 2 -type d -printf '%f\n' | sort > $nginx_www/podcasts.txt
-    tree --noreport --charset=en_US.utf8 podcasts >> $nginx_www/podcasts.txt
-    # following two sort reversed
-    find /usr/local/jellyfin/media/video-uncategorized -mindepth 1 -maxdepth 2 -type d -printf '%f\n' | sort --reverse > $nginx_www/motogp.txt
-    tree --noreport --charset=en_US.utf8 -r video-uncategorized >> $nginx_www/motogp.txt
+    tree --noreport --charset=en_US.utf8 /usr/local/jellyfin/media/podcasts >> $nginx_www/podcasts.txt
+    # Sort reversed
+    find /usr/local/jellyfin/media/video-motogp -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort --reverse > $nginx_www/motogp.txt
+    find /usr/local/jellyfin/media/video-formula1 -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort --reverse > $nginx_www/formula1.txt
 else
     exit 1
-
 fi
 ```
 
