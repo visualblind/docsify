@@ -209,33 +209,6 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 5. If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate)
 
 
-## VPN remote users: allowed countries?
-
-:fas fa-globe-americas: VPN users: make sure that you are **connecting from** one of these countries.
-
-:triangular_flag_on_post: Countries allowed to access the site:
-
-1. United States :toilet: :fas fa-beer: :fas fa-cannabis: :fas fa-flag-usa:
-2. Canada :fas fa-cannabis: :mute:
-3. Switzerland :children_crossing:
-4. Sweeden :no_smoking:
-5. Netherlands :fas fa-cannabis: :syringe:
-6. Singapore :fas fa-transgender-alt:
-7. Mexico :fas fa-pepper-hot:
-8. Finland ![Finland flag](_media/finland-flag-sm.png)
-9. Ireland ![Ireland flag](_media/ireland-flag-sm.png)
-10. United Kingdom :fas fa-pound-sign:
-
-
-If you do not connect from these countries, you will see:
-
-![Cloudflare error 1020](https://travisflix.com/help/_media/error1020.jpg)
-
-If you would like to request another country be allowed, join the Telegram room at [t.me/travisflix](https://t.me/travisflix) or contact me directly (no promises) <travisrunyard@gmail.com>.
-
-If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
-
-
 ## Video not filling the screen?
 
 * :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
