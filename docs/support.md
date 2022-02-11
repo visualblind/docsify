@@ -373,6 +373,6 @@ Google Cloud Console API Metrics for Google Drive
 
 ## Still have questions?
 
-:incoming_envelope: Send me an email at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix). My contact information is also available online at [travisyard.run](https://travisyard.run/).
+:incoming_envelope: Send me an email at <travisrunyard@gmail.com> or join the Telegram room at [t.me/travisflix](https://t.me/travisflix). My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/).
 
 ---
