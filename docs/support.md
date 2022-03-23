@@ -1,3 +1,12 @@
+<script>
+var frame = document.getElementById('iframebtc');
+    frame.onload = function () {
+        var body = frame.contentWindow.document.querySelector('body');
+        body.style.color = 'red';
+        body.style.fontSize = '20px';
+        body.style.lineHeight = '20px';
+    };
+</script>
 # Support
 
 ## Having trouble logging in?
@@ -340,7 +349,8 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 :fa-brands fa-bitcoin fa-lg: Bitcoin (:fa-solid fa-bitcoin-sign:) is the preferred cryptocurrency because we are both not tring to hide the transfer. If you have a reason for needing secure anonymity, then we can use Monero or ZCash.
 If you do not know how to use Bitcoin, I will provide a couple alternative methods below.
 
-###### REALTIME BITCOIN PRICE: **<iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>**
+#### REALTIME BITCOIN PRICE:
+<iframe id="iframebtc" src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
 
 
 * :fab fa-linode: Linode virtual server operating cost is $20/mo
