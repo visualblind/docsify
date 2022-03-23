@@ -16,7 +16,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## Media stream buffering/glitching?
 
-### ![wifi-users](_media/wifi-20x16.png) Wireless Users
+### :fa-regular fa-signal-bars fa-xl: Wireless Users
 
 :performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, throw that shit away.
 
@@ -27,7 +27,7 @@ If you insist on using WiFi, then you are going to need to ensure that you are c
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
 
-### ![wired-users](_media/network-wired-20x16.png) Hardwire Users
+### :fa-regular fa-ethernet fa-xl: Hardwire Users
 
 1) During video playback—In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
 2) Ensure **QUALITY** is set to **AUTO**
@@ -337,20 +337,20 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## How to Support/Donate?
 
-![₿](_media/BTC-20px.png) Bitcoin (₿) is my preferred unit and medium of currency transfer. However if you do not have or know how to use Bitcoin, I'll provide a couple alternative methods below.
+:fa-brands fa-bitcoin fa-lg: Bitcoin (:fa-solid fa-bitcoin-sign:) is the preferred cryptocurrency because we are both not tring to hide the transfer. If you have a reason for needing secure anonymity, then we can use Monero or ZCash.
+If you do not know how to use Bitcoin, I will provide a couple alternative methods below.
 
 ###### REALTIME BITCOIN PRICE: **<iframe src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>**
 
-* :fa fa-linode: Linode Platform-as-a-Service (PaaS) operating cost is $10/mo
-  * :heavy_dollar_sign: However I don't pay myself
-  * :heavy_dollar_sign: The cost to run cloud data storage legitimately would range from $150-200/mo or $1800-2400/yr
+
+* :fab fa-linode: Linode virtual server operating cost is $20/mo
+* :fa-regular fa-face-tongue-money: I do not get paid for anything related to travisflix.com
+* :fa-regular fa-hard-drive: The cost to run cloud data storage legitimately would range from $150-200/mo or $1800-2400/yr
 
 
 > **Option #1**
-> [bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70](bitcoin:bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70)
+> [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
 > 
-> QR code for bitcoin address starting with "bc1q6rp":<br>
-> ![BTC](_media/bc1q6rp5av7swen4gjfm3s3aanzyr6t405lp9sfr70.png)
 ---
 > **Option #2**
 > [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
@@ -374,7 +374,7 @@ Google Cloud Console API Metrics for Google Drive
 ## Still have questions?
 
 * :incoming_envelope: Send me an email at <travis@travisflix.com>
-* :fab fa-telegram: Join the Telegram room at [t.me/travisflixdotcom](https://t.me/travisflixdotcom)
+* :fab fa-telegram: Join the Telegram room at [t.me/travisflix](https://t.me/travisflix)
 * :fa-solid fa-comments: Join the Matrix Chatroom at [https://matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)
 * :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/)
 
