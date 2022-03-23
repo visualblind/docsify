@@ -1,12 +1,3 @@
-<script>
-var frame = document.getElementById('iframebtc');
-    frame.onload = function () {
-        var body = frame.contentWindow.document.querySelector('body');
-        body.style.color = 'red';
-        body.style.fontSize = '20px';
-        body.style.lineHeight = '20px';
-    };
-</script>
 # Support
 
 ## Having trouble logging in?
@@ -25,7 +16,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## Media stream buffering/glitching?
 
-### :fa-regular fa-signal-bars: Wireless Users
+### :fa-solid fa-wifi: Wireless Users
 
 :performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, throw that shit away.
 
@@ -346,16 +337,16 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## How to Support/Donate?
 
-:fa-brands fa-bitcoin fa-lg: Bitcoin (:fa-solid fa-bitcoin-sign:) is the preferred cryptocurrency because we are both not tring to hide the transfer. If you have a reason for needing secure anonymity, then we can use Monero or ZCash.
+:fa-brands fa-bitcoin: Please donate if you are able to, which will help ensure TravisFlix stays online with daily updated media. Bitcoin is the preferred cryptocurrency because we are both not tring to hide the transfer. If you have a reason for needing secure anonymity, then we can use Monero or ZCash.
 If you do not know how to use Bitcoin, I will provide a couple alternative methods below.
 
-#### REALTIME BITCOIN PRICE:
+#### Real-time Bitcoin Price (USD):
 <iframe id="iframebtc" src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
 
 
-* :fab fa-linode: Linode virtual server operating cost is $20/mo
-* :fa-regular fa-face-tongue-money: I do not get paid for anything related to travisflix.com
-* :fa-regular fa-hard-drive: The cost to run cloud data storage legitimately would range from $150-200/mo or $1800-2400/yr
+* :fab fa-linode: Linode virtual server operating cost is $20/mo.
+* :fa-regular fa-face-tongue-money: travisflix.com does not have any available methods of generating income.
+* :fa-regular fa-hard-drive: Cloud data storage costs alone would run into the multi-thousands per year.
 
 
 > **Option #1**
