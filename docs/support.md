@@ -16,7 +16,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## Media stream buffering/glitching?
 
-### :fa-regular fa-signal-bars fa-xl: Wireless Users
+### :fa-regular fa-signal-bars: Wireless Users
 
 :performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, throw that shit away.
 
@@ -27,7 +27,7 @@ If you insist on using WiFi, then you are going to need to ensure that you are c
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
 
-### :fa-regular fa-ethernet fa-xl: Hardwire Users
+### :fa-solid fa-ethernet: Hardwire Users
 
 1) During video playback—In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
 2) Ensure **QUALITY** is set to **AUTO**
