@@ -363,9 +363,12 @@ If you do not know how to use Bitcoin, I will provide a couple alternative metho
 
 ## Media storage info?
 
-!> :fab fa-google-drive: Used: **28.398 TiB** as of 02-07-2022
+* :fab fa-google-drive: Used Space: **33.340 TiB** updated 07-07-2022.
+* Storage backend is currently Google Drive (not Cloud Drive, or Team/Shared Drive).
+* I am using an unlimited storage plan, but it wont last forever. If you dont want to lose any movies/shows on the site, please help support TravisFlix by going to [How to Support/Donate?](#how-to-supportdonate).
+* Your donation would make a direct impact by helping purchase additional mfr-refurbished [HUH721010AL4200/42C0 HGST Ultrastar He10 10TB 7200RPM SAS 12Gbps hard drives](https://www.ebay.com/itm/224604910631) which are going for $100/ea on eBay.
+* I have already purchased 4 out of pocket.
 
-![GDrive Storage 01](_media/gdrive-storage-used.png)
 
 
 Google Cloud Console API Metrics for Google Drive
