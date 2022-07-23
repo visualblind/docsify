@@ -347,9 +347,11 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ### Cash App
 
-$visualblind
+Cash App ID: **$visualblind**
 
-![CashApp](_media/cashapp.png =450x)
+<p align="center">
+<img src="_media/cashapp.png" width=450px>
+</p>
 
 ### Venmo
 
