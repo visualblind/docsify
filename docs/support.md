@@ -154,9 +154,9 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 
 ## Downloading movies & shows
 
-:fa-solid fa-download: You can download anything that you see. Click on the ellipsis of the media you want to download and then click DOWNLOAD.
+:fa-solid fa-download: You can download anything that you see. Click on the ellipsis :fa-solid fa-ellipsis-vertical: of the media you want to download and then click DOWNLOAD.
 
-!> :fa-regular fa-face-frown: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
+!> :fa-regular fa-face-frown fa-lg: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
