@@ -3,47 +3,46 @@
 ## Having trouble logging in
 
 :far fa-frown: The cause of this is usually an issue with the cookies in your local browser cache.
-You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivilent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
+You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
-If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
 !> Checkmark the "Cookies and other site data" option from either the Basic or Advanced tab. Cookies for all sites will be deleted :fas fa-cookie:.
 
 ![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
 
-?> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+!> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
 
 ## Media stream buffering/glitching
 
 ### :fa-solid fa-wifi: Wireless Users
 
-:performing_arts: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, throw that shit away.
+:fa-regular fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, **throw that shit away**.
 
-If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses **802.11ac** and is using a **wide band such as 80 or 160**.
+If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses 802.11AC and is using a channel frequency width of 80 or 160 MHz. Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices.
 
-?> The **802.11n wireless standard can utilize both 2.4 and 5 Ghz frequencies**. Just because you assume you are on 5 Ghz (*by connecting to a SSID with "-5G" appended*), that doesn't technically indicate you are on 802.11ac.
+?> The 802.11N wireless standard can utilize both 2.4 and 5 Ghz frequencies. Just because you assume you are on 5 Ghz (by connecting to a SSID with "-5G" appended), that technically does not indicate you are on 802.11AC.
 
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
 
 ### :fa-solid fa-ethernet: Hardwire Users
 
-1) During video playback—In your browser click the settings/cog (:fa fa-cog:) button underneith the progress bar to the right of the video controls
-2) Ensure **QUALITY** is set to **AUTO**
-3) Click `PLAYBACK DATA`
-4) Under Playback Info—Determine the play type displayed next to **Play method:**
-5) If it's **"DirectPlay"**, this means the server is streaming the direct media file to your computer without a problem, however the cause of intermittent buffering/glitching could be due to you not having enough bandwidth to support the playback of the media file. This doesn't necessarily mean your ISP connection doesn't have enough bandwidth, but could mean:
+1. During video playback—In your browser click the settings/cog :fa fa-cog: button underneath the progress bar to the right of the video controls
+2. Ensure `QUALITY` is set to `AUTO`
+3. Click `PLAYBACK DATA`
+4. Under `Playback Info`, determine the play type displayed next to `Play method:`
+5. If it is `DirectPlay`, this means the server is streaming the direct media file to your computer without a problem, however the cause of intermittent buffering/glitching could be due to you not having enough bandwidth to support the playback of the media file. This does not necessarily mean your ISP connection does not have enough bandwidth, but could mean:
     * Your connection to your home router or switch has an issue
-    * The available bandwidth is being consumed by another user (ie. Bittorrent without speed limits defined)
-    * Your internet traffic is being shaped by your ISP with observable negative impact on its customers
-    * There's probably many more, I just can't think of any right now
-    * See [Video not streaming?](#video-not-streaming) below for help running a bandwidth test
+    * The available bandwidth is being consumed by another user
+    * Your internet traffic is being shaped by your ISP with observable negative impact
+    * Go to [video not streaming](#video-not-streaming) to run a bandwidth test directly against the travisflix.com server
 
 ![Playback](_media/playbackdata.png)
 
-You can also get a sense for how much bandwidth is required by looking at the video's bitrate info which is available by clicking on the ellipsis of the media's image poster, then clicking Media Info.
+You can also get a sense for how much bandwidth is required by looking at the videos bitrate info which is available by clicking on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the medias image poster, then clicking `Media Info`.
 
 ![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
@@ -52,13 +51,13 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 :game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
-If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [how to Support/Donate](#how-to-supportdonate).
 
-?> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under **"Play method:"** discussed further above. If it's transcoding, the play method will state **HLS** and not **DirectPlay**.
+?> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under `Play method:` discussed further above. If it is transcoding, the play method will state `HLS` and not `DirectPlay`.
 
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
-    * Versions with **RARBG** in the suffix is recommended if the other is not working for you.
+    * Versions with `RARBG` in the suffix is recommended if the other is not working for you.
     
     ![multiple versions](_media/multiple-vers.png)
     
@@ -154,11 +153,11 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 
 ## Downloading movies & shows
 
-:fa-solid fa-download: You can download anything that you see. Click on the ellipsis :fa-solid fa-ellipsis-vertical: of the media you want to download and then click DOWNLOAD.
+:fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD.
 
 !> :fa-regular fa-face-frown fa-lg: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
 
-If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
 server conf:
 
@@ -188,7 +187,7 @@ server conf:
 
 Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [TravisFlix](https://travisflix.com) traverses two independent reverse proxies as well so things can get a little confusing and hard to keep track of for me.
 
-If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
 1. Log in with your browser first
 2. Log in with the device you are wanting to remotely control (must not be identicle to the controlling device, needs separate internal ID's)
@@ -204,21 +203,20 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 ## Can I upload files
 
-
 1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com/pwndrop](https://upload.travisflix.com/pwndrop)
 2. Credentials: **username** — travisflix | **password** — upload
 3. Click the Upload button and select the media for upload
     * You can select multiple files per upload session
 4. When finished, send me a message in the Telegram room [t.me/travisflix](https://t.me/travisflix)
     * If you can not use Telegram, send me an email <travis@travisflix.com>
-5. If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate)
+5. If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate)
 
 
 ## Video not filling the screen
 
 * :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
 * A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
-* Films with an **aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom.** :left_right_arrow:
+* Films with an aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom. :left_right_arrow:
 
 
 ## How to stream multiple versions of a film
@@ -281,7 +279,7 @@ else
 fi
 ```
 
-If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
 
 ## Where is the status page
@@ -290,7 +288,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 
 The 30 day cumulative HTTP uptime for travisflix.com has on average been between **99.90%** - **99.96%**
 
-If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
 ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
@@ -306,7 +304,7 @@ You can view the status for Google here [google.com/appstatus](https://www.googl
 
 :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
-If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
+If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
 <iframe src="//statistics.travisflix.com/netdata-dark.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
@@ -329,19 +327,19 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
       4. rclone-servercopy | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj%2Frclone-servercopy.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj-2%2Frclone-servercopy.shields) |
       5. rclone-servercopy-media | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3%2Frclone-servercopy-media.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3-2%2Frclone-servercopy-media.shields) |
 
-      ~~~ json
-      Overall status:
-      https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8.json
-      rclone-video-sync:
-      https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/gp7x30yH/rclone-sync-video.json
-      rclone-sync-p0ds0smb:
-      https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json
-      ~~~
+
+      **Overall status:**
+      [https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8.json)
+      **rclone-video-sync:**
+      [https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/gp7x30yH/rclone-sync-video.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/gp7x30yH/rclone-sync-video.json)
+      **rclone-sync-p0ds0smb:**
+      [https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json)
+
 
 
 ## How to Support/Donate
 
-:fa-brands fa-bitcoin: Please donate if you are able to, which will help ensure TravisFlix stays online.
+Please donate if you are able to, which will help ensure TravisFlix stays online.
 
 * :fab fa-linode: Linode virtual server operating cost is $20/mo.
 * :fa-regular fa-face-tongue-money: travisflix.com does not have any available methods of generating income.
@@ -359,9 +357,9 @@ Cash App ID: **$visualblind**
 
 I am currently trying to recover my account and will update this page with my info when it is recovered.
 
-### Bitcoin
+### Bitcoin :fa-brands fa-bitcoin:
 
-Bitcoin is the preferred cryptocurrency because it is the easiest to use and most common. If you would rather use a different crypto, just let me know and we can arrange it.
+Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#still-have-questions) and we can arrange it.
 
 > **Option #1**
 > [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
@@ -383,8 +381,8 @@ Bitcoin is the preferred cryptocurrency because it is the easiest to use and mos
 ## Media storage info
 
 * :fab fa-google-drive: Used Space: **33.340 TiB** updated 07-07-2022.
-* Storage backend is currently Google Drive (not Cloud Drive, or Team/Shared Drive).
-* I am using an unlimited storage plan, but it wont last forever. If you dont want to lose any movies/shows on the site, please help support TravisFlix by going to [How to Support/Donate?](#how-to-supportdonate).
+* Storage is currently Google Drive.
+* I am using an unlimited storage plan, but it wont last forever. If you dont want to lose any movies/shows on the site, please help support TravisFlix by going to [How to Support/Donate](#how-to-supportdonate).
 * Your donation would make a direct impact by helping purchase additional mfr-refurbished [HUH721010AL4200/42C0 HGST Ultrastar He10 10TB 7200RPM SAS 12Gbps hard drives](https://www.ebay.com/itm/224604910631) which are going for $100/ea on eBay.
 * I have already purchased 4 out of pocket.
 
@@ -398,7 +396,7 @@ Google Cloud Console API Metrics for Google Drive
 
 * :incoming_envelope: Send me an email at <travis@travisflix.com>
 * :fab fa-telegram: Join the Telegram room at [t.me/travisflix](https://t.me/travisflix)
-* :fa-solid fa-comments: Join the Matrix Chatroom at [https://matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)
-* :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/)
+* :fa-solid fa-comments: Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)
+* :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/) and [4kib.com/about]{https://4kib.com/about/}
 
 ---
