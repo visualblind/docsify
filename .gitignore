@@ -1,0 +1,5 @@
+**/*.zip
+
+docs/.obsidian/
+
+*.backup
