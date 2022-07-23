@@ -208,7 +208,7 @@ This is <sup>superscript</sup>
 - [ ] Task 2
   - [x] Subtask A
   - [ ] Subtask B
-- [ ] Task 3
+- [x] Task 3
 
 #### **Markdown**
 
