@@ -15,7 +15,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 ?> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
 
-## Media stream buffering/glitching?
+## Media stream buffering/glitching
 
 ### :fa-solid fa-wifi: Wireless Users
 
@@ -48,7 +48,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 ![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
 
-## Video not streaming?
+## Video is not streaming
 
 :game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
@@ -98,13 +98,13 @@ Upload: 122.33 Mbit/s
 ```
 
 
-## Subtitles not loading?
+## Subtitles not loading
 
 :far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
 The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.
 
 
-## Media Codec Information & Standards
+## Codec Information & Standards
 
 > Video: **[H.264 (AVC)](https://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-Is-H.264-74735.aspx)** / Audio: **[AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) 5.1CH**
 
@@ -140,7 +140,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 | Compression mode: | Lossy |
 
 
-## Supported devices or platforms?
+## Supported devices or platforms
 
 Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
 
@@ -152,13 +152,15 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 * :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
 
 
-## Downloading movies & shows?
+## Downloading movies & shows
 
-!>:fa fa-download: 1 Download/per IP and rate limited at **4,096 KiB/s** (4 MiB/s or roughly 32 Mbps).
+:fa-solid fa-download: You can download anything that you see. Right click on the ellipsis of the media you want to download and click DOWNLOAD.
+
+!> :fa-regular fa-face-frown: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
 
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
-web config:
+server conf:
 
 ```nginx
     location ~ ^/Items/(.*)/Download$ {
@@ -182,7 +184,7 @@ web config:
 ```
 
 
-## Remote control of shared devices?
+## Remote control of shared devices
 
 Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [TravisFlix](https://travisflix.com) traverses two independent reverse proxies as well so things can get a little confusing and hard to keep track of for me.
 
@@ -200,7 +202,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 ![Remote Control 02](_media/remote-control-02.png)
 
 
-## Can I upload files?
+## Can I upload files
 
 
 1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com/pwndrop](https://upload.travisflix.com/pwndrop)
@@ -212,14 +214,14 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 5. If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate)
 
 
-## Video not filling the screen?
+## Video not filling the screen
 
 * :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
 * A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
 * Films with an **aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom.** :left_right_arrow:
 
 
-## How to stream multiple versions of a film?
+## How to stream multiple versions of a film
 
 :fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
 
@@ -282,7 +284,7 @@ fi
 If you would like to help keep the site running, go to [How to Support/Donate?](#how-to-supportdonate).
 
 
-## Where is the status page?
+## Where is the status page
 
 :fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
 
@@ -300,7 +302,7 @@ You can view the status for Google here [google.com/appstatus](https://www.googl
 ![TravisFlix Uptime](_media/travisflix-status-all-06042021.png)
 
 
-## Do you have server statistics?
+## Do you have server statistics
 
 :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
@@ -309,7 +311,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
 <iframe src="//statistics.travisflix.com/netdata-dark.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
 
-## Status of the media sync processes?
+## Status of the media sync processes
 
 :black_joker: The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
 
@@ -337,7 +339,7 @@ If you would like to help keep the site running, go to [How to Support/Donate?](
       ~~~
 
 
-## How to Support/Donate?
+## How to Support/Donate
 
 :fa-brands fa-bitcoin: Please donate if you are able to, which will help ensure TravisFlix stays online.
 
@@ -378,7 +380,7 @@ Bitcoin is the preferred cryptocurrency because it is the easiest to use and mos
 <iframe id="iframebtc" src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
 
 
-## Media storage info?
+## Media storage info
 
 * :fab fa-google-drive: Used Space: **33.340 TiB** updated 07-07-2022.
 * Storage backend is currently Google Drive (not Cloud Drive, or Team/Shared Drive).
