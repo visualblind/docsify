@@ -410,6 +410,6 @@ Google Cloud Console API Metrics for Google Drive
 * :incoming_envelope: Send me an email at <travis@travisflix.com>
 * :fab fa-telegram: Join the Telegram room at [t.me/travisflix](https://t.me/travisflix)
 * :fa-solid fa-comments: Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)
-* :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/) and [4kib.com/about]{https://4kib.com/about/}
+* :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/) and [4kib.com/about](https://4kib.com/about/)
 
 ---
