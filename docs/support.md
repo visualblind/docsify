@@ -7,9 +7,8 @@ You can test/bypass the browser cache by opening an incognito window :fas fa-use
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
-!> Checkmark the "Cookies and other site data" option from either the Basic or Advanced tab. Cookies for all sites will be deleted :fas fa-cookie:.
+!> Check the `Cookies and other site data` option from either the Basic or Advanced tab. Note this is different than cache. Cookies :fas fa-cookie: for all sites will be deleted.
 
-![browser-cache-01](_media/browser-cache-01.png)
 ![browser-cache-02](_media/browser-cache-02.png)
 
 !> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
