@@ -19,7 +19,7 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 ### :fa-solid fa-wifi: Wireless Users
 
-:fa-solid fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, **throw that shit away**.
+:fa-solid fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5e/6 ethernet cable :fas fa-ethernet:. If you only have CAT 5, do yourself a favor **throw that shit away**.
 
 If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses 802.11AC and is using a channel frequency width of 80 or 160 MHz. Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices.
 
@@ -153,7 +153,7 @@ Official documentation: [jellyfin.org/docs/general/clients/index.html](https://j
 
 ## Downloading movies & shows
 
-:fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD.
+:fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD :fa-regular fa-floppy-disk:.
 
 !> :fa-regular fa-face-frown fa-lg: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
 
@@ -185,12 +185,12 @@ server conf:
 
 ## Remote control of shared devices
 
-Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [TravisFlix](https://travisflix.com) traverses two independent reverse proxies as well so things can get a little confusing and hard to keep track of for me.
+:fa-brands fa-slideshare: Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [travisflix.com](https://travisflix.com/) ~~traverses two independent reverse proxies as well~~ so things can get a little confusing and hard to keep track of for me.
 
-If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
+If you would like to help keep the site running, go to [how to support/donate](#how-to-supportdonate).
 
 1. Log in with your browser first
-2. Log in with the device you are wanting to remotely control (must not be identicle to the controlling device, needs separate internal ID's)
+2. Log in with the device you are wanting to remotely control (must not be identical to the controlling device, needs separate internal ID's)
 3. Immediately after step 2, click the icon highlighted in the image below
 4. Then click on the device you are wanting to control
 5. Once that icon displays the controlled device next to it, search/browse the desired media and click play like normal
@@ -201,7 +201,7 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 ![Remote Control 02](_media/remote-control-02.png)
 
 
-## Can I upload files
+## Uploading files
 
 1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com/pwndrop](https://upload.travisflix.com/pwndrop)
 2. Credentials: **username** — travisflix | **password** — upload
@@ -313,28 +313,25 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 :black_joker: The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
 
-  1) OVERALL STATUS
-  2) `rclone-sync-video`: Rclone media sync operation which encrypts media and pushes to Google Drive aka--"GCrypt"
-  3) `rclone-sync-p0ds0smb`: Rclone data sync operation to push/pull encrypted **NON**-media data to GCrypt (FreeNAS pools > Encrypt > Google Drive)
-  4) `rclone-servercopy`: Rclone server-side sync job from gdrive-usmba:gcrypt to gdrive-gdrive01dvecs:gcrypt and gdrive-gdrive02dvecs:gcrypt
-  5) `rclone-servercopy-media`: Server-side media-only rclone sync operation which pushes changes to multiple GDrive accounts for redundancy
+| Type | Up, late, or down | Up, down |
+|---|---|---|
+| **Overall Status** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields) | ![Custom badge](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8-2.svg) | 
+| **rclone-sync-video** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fgp7x30yH%2Frclone-sync-video.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fgp7x30yH-2%2Frclone-sync-video.shields) |
+| **rclone-sync-p0ds0smb** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FF-VXXpPQ%2Frclone%25252Ffreenas.shields) | ![Custom badge](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ-2/rclone%252Ffreenas.svg) |
+| **rclone-servercopy** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj%2Frclone-servercopy.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj-2%2Frclone-servercopy.shields) |
+| **rclone-servercopy-media** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3%2Frclone-servercopy-media.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3-2%2Frclone-servercopy-media.shields) |
 
-      | Type    | Up, late, or down | Up, down |
-      |------------------------|------------------------|------------------------|
-      | 1. Overall status | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields) | ![Custom badge](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8-2.svg) | 
-      | 2. rclone-sync-video | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fgp7x30yH%2Frclone-sync-video.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fgp7x30yH-2%2Frclone-sync-video.shields) |
-      | 3. rclone-sync-p0ds0smb | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FF-VXXpPQ%2Frclone%25252Ffreenas.shields) | ![Custom badge](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ-2/rclone%252Ffreenas.svg) |
-      4. rclone-servercopy | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj%2Frclone-servercopy.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj-2%2Frclone-servercopy.shields) |
-      5. rclone-servercopy-media | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3%2Frclone-servercopy-media.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3-2%2Frclone-servercopy-media.shields) |
+- **rclone-sync-video**: Rclone media sync operation which encrypts media and pushes to Google Drive aka--"GCrypt"
+- **rclone-sync-p0ds0smb**: Rclone data sync operation to push/pull encrypted NON-media data to GCrypt (FreeNAS pools > Encrypt > Google Drive)
+- **rclone-servercopy**: Rclone server-side sync job from gdrive-usmba:gcrypt to gdrive-gdrive01dvecs:gcrypt and gdrive-gdrive02dvecs:gcrypt
+- **rclone-servercopy-media**: Server-side media-only rclone sync operation which pushes changes to multiple GDrive accounts for redundancy
 
-
-      **Overall status:**
-      [https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8.json)
-      **rclone-video-sync:**
-      [https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/gp7x30yH/rclone-sync-video.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/gp7x30yH/rclone-sync-video.json)
-      **rclone-sync-p0ds0smb:**
-      [https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json)
-
+**Overall status:**
+[healthchecks.io/badge/bd39864f.../dc1ecPD8.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8.json)
+**rclone-video-sync:**
+[healthchecks.io/badge/bd39864f.../gp7x30yH/rclone-sync-video.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/gp7x30yH/rclone-sync-video.json)
+**rclone-sync-p0ds0smb:**
+[healthchecks.io/badge/bd39864f.../F-VXXpPQ/rclone%252Ffreenas.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json)
 
 
 ## How to Support/Donate
@@ -359,9 +356,13 @@ I am currently trying to recover my account and will update this page with my in
 
 ### Open Collective Donation
 
+:fa-solid fa-credit-card: Credit cards accepted, use the button below to donate any amount you want.
+
 [![Open Collective](https://opencollective.com/webpack/donate/button.png?color=blue)](https://opencollective.com/travisflix/donate)
 
-### Stripe (credit cards accepted)
+### :fa-brands fa-cc-stripe: Stripe
+
+:fa-solid fa-credit-card: Credit cards accepted, use the link below to donate any amount you want.
 
 Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stripe.com/9AQfZJ9plfKi7io000)
 
@@ -369,15 +370,15 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 ![Stripe](_media/stripe-payment-card-logo-bg.png)
 
 
-### Bitcoin :fa-brands fa-bitcoin:
+### :fa-brands fa-bitcoin: Bitcoin 
 
 Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#still-have-questions) and we can arrange it.
 
-> **Option #1**
+> :fa-brands fa-bitcoin: **Option #1**
 > [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
 > 
 > ---
-> **Option #2**
+> :fa-brands fa-bitcoin: **Option #2**
 > [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
 > [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
 >
