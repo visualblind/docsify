@@ -357,6 +357,18 @@ Cash App ID: **$visualblind**
 
 I am currently trying to recover my account and will update this page with my info when it is recovered.
 
+### Open Collective Donation
+
+[![Open Collective](https://opencollective.com/webpack/donate/button.png?color=blue)](https://opencollective.com/travisflix/donate)
+
+### Stripe (credit cards accepted)
+
+Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stripe.com/9AQfZJ9plfKi7io000)
+
+
+![Stripe](_media/stripe-payment-card-logo-bg.png)
+
+
 ### Bitcoin :fa-brands fa-bitcoin:
 
 Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#still-have-questions) and we can arrange it.
