@@ -19,7 +19,7 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 ### :fa-solid fa-wifi: Wireless Users
 
-:fa-regular fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, **throw that shit away**.
+:fa-solid fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5E/6 :fas fa-ethernet: ethernet cable. If you only have CAT 5, **throw that shit away**.
 
 If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses 802.11AC and is using a channel frequency width of 80 or 160 MHz. Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices.
 
