@@ -140,7 +140,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 ## Supported devices or platforms
 
-Official documentation: [jellyfin.org/docs/general/clients/index.html](https://jellyfin.org/docs/general/clients/index.html).
+Go to the Jellyfin site for the [official documentation](https://jellyfin.org/docs/) of all [supported clients](https://jellyfin.org/docs/general/clients/) and user streaming devices.
 
 * :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
   * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.x+, :fab fa-apple: MacOS 10.12–current
