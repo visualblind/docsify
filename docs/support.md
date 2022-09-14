@@ -202,12 +202,12 @@ If you would like to help keep the site running, go to [how to support/donate](#
 
 ## Uploading files
 
-1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com/pwndrop](https://upload.travisflix.com/pwndrop)
+1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com](https://upload.travisflix.com/)
 2. Credentials: **username** — travisflix | **password** — upload
 3. Click the Upload button and select the media for upload
-    * You can select multiple files per upload session
-4. When finished, send me a message in the Telegram room [t.me/travisflix](https://t.me/travisflix)
-    * If you can not use Telegram, send me an email <travis@travisflix.com>
+    * You can select multiple files/folders per upload session
+4. ~~When finished, send me a message in the Telegram room [t.me/travisflix](https://t.me/travisflix)~~
+    * ~~If you can not use Telegram, send me an email <travis@travisflix.com>~~
 5. If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate)
 
 
