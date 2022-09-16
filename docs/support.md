@@ -2,6 +2,8 @@
 
 ## Having trouble logging in
 
+### For Error Message:
+
 :far fa-frown: The cause of this is usually an issue with the cookies in your local browser cache.
 You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
@@ -12,6 +14,31 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 ![browser-cache-02](_media/browser-cache-02.png)
 
 !> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+
+### For No Error Message:
+
+:fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at a white screen.
+
+You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the clock.
+
+Fail2ban config file:
+
+```editorconfig
+[jellyfin]
+
+backend = pyinotify
+enabled = true
+port = 80,443
+protocol = tcp
+filter = jellyfin
+maxretry = 5
+bantime = 14400
+findtime = 900
+logpath = /usr/local/jellyfin/config/log/log_*
+action = iptables-allports[name=jellyin, chain=DOCKER-USER]
+ignoreself = true
+ignoreip = 47.150.254.140,172.18.0.1,172.18.0.2,172.18.0.3
+```
 
 
 ## Media stream buffering/glitching
