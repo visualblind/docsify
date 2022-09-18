@@ -312,25 +312,27 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 :fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
 
-The 30 day cumulative HTTP uptime for travisflix.com has on average been between **99.90%** - **99.96%**
+The cumulative 30-day HTTPS uptime for the travisflix.com web service has on average been between **99.95%** - **99.99%**
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
-![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
-You can view the status for Google here [google.com/appstatus](https://www.google.com/appsstatus).
+?> ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
+You can view the status for Google [here](https://www.google.com/appsstatus).
 
-![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png)
+<!-- ![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png) -->
 
-![TravisFlix Uptime](_media/travisflix-status-06042021.png)
+![TravisFlix Uptime](_media/travisflix-status-09182022.png)
 
 ![TravisFlix Uptime](_media/travisflix-status-all-06042021.png)
 
 
 ## Do you have server statistics
 
-:fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
+> :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
+
+The following iframe represents the same data as on [statistics.travisflix.com](https://statistics.travisflix.com/).
 
 <iframe src="//statistics.travisflix.com/netdata-dark.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
 
