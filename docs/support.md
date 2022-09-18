@@ -316,7 +316,7 @@ The cumulative 30-day HTTPS uptime for the travisflix.com web service has on ave
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
-?> ![info-circle](_media/info-circle_22x22.png) This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
+?> This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 You can view the status for Google [here](https://www.google.com/appsstatus).
 
 <!-- ![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png) -->
