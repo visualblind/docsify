@@ -206,7 +206,7 @@ The goal is to provide support for the two most recent versions of these browser
 * :fa-brands fa-safari: Safari for MacOS and iOS
 * :fa-brands fa-edge: Edge
 
-#### :fab fa-android: Android
+### :fab fa-android: Android
 
 **Jellyfin for Android**
 
