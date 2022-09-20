@@ -373,7 +373,7 @@ Please donate if you are able to, which will help ensure TravisFlix stays online
 * :fa-regular fa-face-tongue-money: travisflix.com does not have any available methods of generating income.
 * :fa-regular fa-hard-drive: Cloud data storage costs alone would run into the multi-thousands per year.
 
-### :fa fa-money: Cash App
+### :fa-solid fa-money-bill: Cash App
 
 Cash App ID: **$visualblind**
 
@@ -381,11 +381,11 @@ Cash App ID: **$visualblind**
 <img src="_media/cashapp.png" width=450px>
 </p>
 
-### :fa-brands fa-square-vimeo: Venmo
+### :fa-solid fa-credit-card: Venmo
 
 I am currently trying to recover my account and will update this page with my info when it is recovered.
 
-### Open Collective Donation
+### :fa-solid fa-hand-holding-dollar: Open Collective Donation
 
 :fa-solid fa-credit-card: Credit cards accepted, use the button below to donate any amount you want.
 
