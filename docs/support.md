@@ -2,7 +2,7 @@
 
 ## Having trouble logging in
 
-### For Error Message:
+### :fa-regular fa-face-meh: For Error Message:
 
 :far fa-frown: The cause of this is usually an issue with the cookies in your local browser cache.
 You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
@@ -15,13 +15,13 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 !> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
-### For No Error Message:
+### :fas fa-spinner: For No Error Message:
 
-:fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at a white screen.
+:fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a white screen.
 
-You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the clock.
+You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you.
 
-Fail2ban config file:
+Conf:
 
 ```editorconfig
 [jellyfin]
