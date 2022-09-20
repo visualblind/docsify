@@ -266,7 +266,7 @@ Links:
 
 **Jellyfin for iOS**
 
-:fa-brands fa-apple: The official Jellyfin :fa-brands fa-apple: iOS client.
+The official Jellyfin iOS client.
 
 Status: :fa-solid fa-star: Active
 
