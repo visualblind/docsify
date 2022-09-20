@@ -4,7 +4,7 @@
 
 ### :fa-regular fa-face-meh: For Error Message:
 
-:far fa-frown: The cause of this is usually an issue with the cookies in your local browser cache.
+The cause of this is usually an issue with the cookies in your local browser cache.
 You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
@@ -67,7 +67,7 @@ The 802.11N standard can utilize both 2.4 + 5 Ghz frequencies. Just because you 
     * Your connection to your home router or switch has an issue
     * The available bandwidth is being consumed by another user
     * Your internet traffic is being shaped by your ISP with observable negative impact
-    * Go to [video not streaming](#video-not-streaming) to run a bandwidth test directly against the travisflix.com server
+    * Go to [run a speed test](#run-a-speed-test) to run a bandwidth test directly against the travisflix.com server
 
 ![Playback](_media/playbackdata.png)
 
@@ -124,6 +124,11 @@ Download: 79.41 Mbit/s
 Testing upload speed ........................................................................................
 Upload: 122.33 Mbit/s
 ```
+
+
+## Run a Speed Test
+
+:fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
 
 
 ## Subtitles not loading
