@@ -19,7 +19,7 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 :fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a white screen.
 
-You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you. Click [here](_media/support-noicon.pdf) to download this support site as a pdf.
+You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you. Click [here](https://travisflix.com/help/_media/support-noicon.pdf) to download this support site as a pdf.
 
 ![site-cant-be-reached](_media/site-cant-be-reached.png)
 
