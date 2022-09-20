@@ -126,6 +126,24 @@ Upload: 122.33 Mbit/s
 ```
 
 
+## How to use Quick Connect
+
+Starting with Jellyfin server version 10.7.0 and supported clients, you can use Quick Connect to sign in to your account without the need of a password. You need to previously be logged into a supported client, like the default Jellyfin Web Client.
+
+**Using Quick Connect**
+
+To sign in to a supported client, you have to enter the Quick Connect code in your user settings.
+<br>
+Settings > Quick Connect
+
+![using-quick-connect](_media/using-quick-connect.png)
+
+If the code is validated successfully, your new device will be signed in without entering your Jellyfin username or password on the new device.
+<br>
+The client will generate a 6 digit code, which you have to enter in the already signed in client in your user settings.
+
+![quick-connect](_media/quick-connect.png)
+
 ## Run a Speed Test
 
 :fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
@@ -175,14 +193,203 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 ## Supported devices or platforms
 
-Go to the Jellyfin site for the [official documentation](https://jellyfin.org/docs/) of all [supported clients](https://jellyfin.org/docs/general/clients/) and user streaming devices.
+Go to the Jellyfin site for the [official documentation](https://jellyfin.org/docs/) of all [supported clients](https://jellyfin.org/docs/general/clients/index.html) and user streaming devices.
 
-* :fas fa-desktop: PC/Mac/Linux with modern browser such as Chrome/Firefox/Edge/Safari
-  * :fab fa-windows: Windows 7-10, :fab fa-linux: Linux kernel 2.x+, :fab fa-apple: MacOS 10.12–current
-* :fas fa-mobile-alt: Smartphones (:fab fa-android:/:fab fa-apple:/:fab fa-windows:) and tablets with modern browsers
-* :fab fa-amazon: Amazon Fire TV Stick ([native Jellyfin app](https://www.amazon.com/Jellyfin/dp/B081RFTTQ9/))
-* :fas fa-tablet-alt: Roku ([native Jellyfin app](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin))
-* :fas fa-tablet: Kodi 19+ ([native Jellyfin plugin](https://jellyfin.org/posts/kodi-0-5-0/))
+### :fa-solid fa-desktop: Browsers
+
+The goal is to provide support for the two most recent versions of these browsers.
+
+* :fa-brands fa-firefox: Firefox
+* :fa-brands fa-firefox: Firefox ESR
+* :fa-brands fa-chrome: Chrome
+* :fa-brands fa-chrome: :fab fa-android: Chrome for Android
+* :fa-brands fa-safari: Safari for MacOS and iOS
+* :fa-brands fa-edge: Edge
+
+#### :fab fa-android: Android
+
+**Jellyfin for Android**
+
+The official Jellyfin Android app, which supports Android 5 and above.
+
+Status: :fa-solid fa-star: Active
+
+Links:
+
+[![google-play](_media/google-play.png)](https://play.google.com/store/apps/details?id=org.jellyfin.mobile)
+[![amazon](_media/amazon.png)](https://www.amazon.com/gp/aw/d/B081RFTTQ9)
+[![fdroid](_media/fdroid.png)](https://f-droid.org/en/packages/org.jellyfin.mobile/)
+
+* [Github.com/jellyfin/jellyfin-android](https://github.com/jellyfin/jellyfin-android)
+* [jellyfin.org/clients/#android](https://jellyfin.org/clients/#android)
+
+#### :fa-brands fa-amazon: Amazon FireTV Stick & AndroidTV
+
+Jellyfin Android TV is the official Jellyfin client for Android TV, NVIDIA Shield, and Amazon Fire TV devices.
+
+Status: :fa-solid fa-star: Active
+
+Links:
+
+[![google-play](_media/google-play.png)](https://play.google.com/store/apps/details?id=org.jellyfin.androidtv)
+[![amazon](_media/amazon.png)](https://www.amazon.com/gp/aw/d/B07TX7Z725)
+
+* [github.com/jellyfin/jellyfin-androidtv](https://github.com/jellyfin/jellyfin-androidtv)
+* [jellyfin.org/clients/#androidtv](https://jellyfin.org/clients/#androidtv)
+
+### Roku
+
+Jellyfin for Roku
+
+Status: :fa-solid fa-star: Active
+
+Links:
+
+[![Roku](_media/Roku-logo-200px.png)](https://channelstore.roku.com/details/592369/jellyfin)
+
+* [github.com/jellyfin/jellyfin-roku](https://github.com/jellyfin/jellyfin-roku)
+
+### Findroid
+
+Findroid is a third-party Android application for Jellyfin that provides a native user interface to browse and play movies and series.
+
+Status: :fa-solid fa-star: Active, 3rd-Party
+
+Links:
+
+[![google-play](_media/google-play.png)](https://play.google.com/store/apps/details?id=dev.jdtech.jellyfin)
+[![IzzyOnDroid](_media/IzzyOnDroid-200px.png)](https://apt.izzysoft.de/fdroid/index/apk/dev.jdtech.jellyfin)
+
+* [github.com/jarnedemeulemeester/findroid](https://github.com/jarnedemeulemeester/findroid)
+
+### :fa-brands fa-apple: Apple
+
+**Jellyfin for iOS**
+
+:fa-brands fa-apple: The official Jellyfin :fa-brands fa-apple: iOS client.
+
+Status: :fa-solid fa-star: Active
+
+Links:
+
+[![Apple](_media/apple.png)](https://apps.apple.com/us/app/jellyfin-mobile/id1480192618)
+
+* [github.com/jellyfin/jellyfin-expo](https://github.com/jellyfin/jellyfin-expo)
+
+**SwiftFin for iOS/tvOS**
+
+:fa-brands fa-apple: The Jellyfin app rewritten in Swift in order to support HDR and direct play capabilities for multiple formats.
+
+Status: :fa-solid fa-star-half-stroke: In-Development
+
+Links:
+
+[![Apple](_media/testflight-badge.png)](https://testflight.apple.com/join/oZd0QzWv)
+
+* [github.com/jellyfin/SwiftFin](https://github.com/jellyfin/SwiftFin)
+
+**Infuse for iOS/Apple TV**
+
+:fa-brands fa-apple: A third party client with HDR support and direct play capabilities for multiple formats.
+
+Status: :fa-solid fa-star: Active, 3rd-Party
+
+Links:
+
+[![Apple](_media/apple.png)](https://apps.apple.com/app/id1136220934?mt=8)
+
+* [firecore.com/infuse](https://firecore.com/infuse)
+
+**MrMC for iOS/Apple TV**
+
+:fa-brands fa-apple: A third party app with direct play and HDR support. Available on iOS and Apple TV.
+
+Status: :fa-solid fa-star: Active, 3rd-Party
+
+Links:
+
+* [mrmc.tv](https://mrmc.tv/)
+
+### :fa-solid fa-tv: LG WebOS
+
+The official Jellyfin WebOS app.
+
+Status: :fa-solid fa-star-half-stroke: In-Development
+
+Links:
+
+* [github.com/jellyfin/jellyfin-webos](https://github.com/jellyfin/jellyfin-webos)
+
+### :fa-solid fa-tv: Samsung TV
+
+The official Jellyfin Samsung TV client for TVs running Tizen (2015 and above models).
+
+Status: :fa-solid fa-star-half-stroke: In-Development
+
+Links:
+
+* [github.com/jellyfin/jellyfin-tizen](https://github.com/jellyfin/jellyfin-tizen)
+
+
+
+### :fa-solid fa-terminal: Cross-Platform Clients
+
+**Kodi**
+
+Kodi thick client for Jellyfin. This add-on syncs your Jellyfin metadata into Kodi's local database for a more native feel.
+
+Status: :fa-solid fa-star: Active
+
+Links:
+
+* [github.com/jellyfin/jellyfin-kodi](https://github.com/jellyfin/jellyfin-kodi)
+* [Installing](https://jellyfin.org/docs/general/clients/kodi.html)
+
+**JellyCon**
+
+Kodi thin client for Jellyfin. This add-on is fully dynamic and allows for fast user switching and is compatible with other Kodi sources.
+
+Status: :fa-solid fa-star: Active
+
+Links:
+
+* [github.com/jellyfin/jellycon](https://github.com/jellyfin/jellycon)
+* [Installing](https://jellyfin.org/docs/general/clients/kodi.html)
+
+
+**Jellyfin Media Player**
+
+Desktop client using jellyfin-web with embedded MPV player. Supports direct play of most file formats on Windows, Mac OS, and Linux. Media plays within the same window using the jellyfin-web interface unlike Jellyfin Desktop. Supports audio passthrough. Based on Plex Media Player.
+
+Status: :fa-solid fa-star: Active
+
+Links:
+
+* [github.com/jellyfin/jellyfin-media-player](https://github.com/jellyfin/jellyfin-media-player)
+* [Binary Releases](https://github.com/jellyfin/jellyfin-media-player/releases)
+* [Flathub](https://flathub.org/apps/details/com.github.iwalton3.jellyfin-media-player)
+
+**Jellyfin MPV Shim**
+
+Provides background cast client using MPV. The client has support for direct play of advanced codecs such as 10 bit HEVC with subtitles, many customizable options, and whole-season subtitle preference support.
+
+Status: :fa-solid fa-star: Active
+
+Links:
+
+* [github.com/jellyfin/jellyfin-mpv-shim](https://github.com/jellyfin/jellyfin-mpv-shim)
+* [Windows Release](https://github.com/jellyfin/jellyfin-mpv-shim/releases)
+* [Flathub](https://flathub.org/apps/details/com.github.iwalton3.jellyfin-mpv-shim)
+
+**jftui**
+
+:fa-brands fa-linux: A terminal client for Jellyfin built as a REPL interface, that uses mpv for multimedia playback.
+
+Status: :fa-solid fa-star: Active, 3rd-Party
+
+Links:
+
+* [github.com/Aanok/jftui](https://github.com/Aanok/jftui)
 
 
 ## Downloading movies & shows
