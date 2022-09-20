@@ -223,7 +223,7 @@ Links:
 * [Github.com/jellyfin/jellyfin-android](https://github.com/jellyfin/jellyfin-android)
 * [jellyfin.org/clients/#android](https://jellyfin.org/clients/#android)
 
-#### :fa-brands fa-amazon: Amazon FireTV Stick & AndroidTV
+### :fa-brands fa-amazon: Amazon FireTV Stick & AndroidTV
 
 Jellyfin Android TV is the official Jellyfin client for Android TV, NVIDIA Shield, and Amazon Fire TV devices.
 
