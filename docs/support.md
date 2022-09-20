@@ -373,7 +373,7 @@ Please donate if you are able to, which will help ensure TravisFlix stays online
 * :fa-regular fa-face-tongue-money: travisflix.com does not have any available methods of generating income.
 * :fa-regular fa-hard-drive: Cloud data storage costs alone would run into the multi-thousands per year.
 
-### Cash App
+### :fa fa-money: Cash App
 
 Cash App ID: **$visualblind**
 
@@ -381,7 +381,7 @@ Cash App ID: **$visualblind**
 <img src="_media/cashapp.png" width=450px>
 </p>
 
-### Venmo
+### :fa-brands fa-square-vimeo: Venmo
 
 I am currently trying to recover my account and will update this page with my info when it is recovered.
 
