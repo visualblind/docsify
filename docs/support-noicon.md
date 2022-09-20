@@ -2,24 +2,24 @@
 
 ## Having trouble logging in
 
-### :fa-regular fa-face-meh: For Error Message:
+### For Error Message:
 
 The cause of this is usually an issue with the cookies in your local browser cache.
-You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
+You can test/bypass the browser cache by opening an incognito window or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en).
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
-!> Check the `Cookies and other site data` option from either the Basic or Advanced tab. Note this is different than cache. Cookies :fas fa-cookie: for all sites will be deleted.
+> Check the `Cookies and other site data` option from either the Basic or Advanced tab. Note this is different than cache. Cookies for all sites will be deleted.
 
 ![browser-cache-02](_media/browser-cache-02.png)
 
-!> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
-### :fas fa-spinner: For No Error Message:
+### For No Error Message:
 
-:fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a white screen.
+If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner or a white screen.
 
-You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you. Click [here](_media/support-noicon.pdf) to download this support site as a pdf.
+You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you.
 
 ![site-cant-be-reached](_media/site-cant-be-reached.png)
 
@@ -45,21 +45,21 @@ ignoreip = 47.150.254.140,172.18.0.1,172.18.0.2,172.18.0.3
 
 ## Media stream buffering/glitching
 
-### :fa-solid fa-wifi: Wireless Users
+### Wireless Users
 
-:fa-solid fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5e/6 ethernet cable :fas fa-ethernet:. If you only have CAT 5, do yourself a favor **throw that shit away**.
+I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5e/6 ethernet cable. If you only have CAT 5, do yourself a favor **throw that shit away**.
 
 If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses 802.11AC (or the newer 802.11AX aka WiFi6) and is using a channel width of 80, or 160 MHz. 
 
-?> Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices.
+> Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices.
 The 802.11N standard can utilize both 2.4 + 5 Ghz frequencies. Just because you assume you are on 5 Ghz (by connecting to a SSID with "-5G" appended), that technically does not indicate you are on 802.11AC. If you need help to do simple verification, contact your nearest tech-savvy family relative instead of me.
 
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
 
-### :fa-solid fa-ethernet: Hardwire Users
+### Hardwire Users
 
-1. During video playback—In your browser click the settings/cog :fa fa-cog: button underneath the progress bar to the right of the video controls
+1. During video playback—In your browser click the settings/cog button underneath the progress bar to the right of the video controls
 2. Ensure `QUALITY` is set to `AUTO`
 3. Click `PLAYBACK DATA`
 4. Under `Playback Info`, determine the play type displayed next to `Play method:`
@@ -71,18 +71,18 @@ The 802.11N standard can utilize both 2.4 + 5 Ghz frequencies. Just because you 
 
 ![Playback](_media/playbackdata.png)
 
-You can also get a sense for how much bandwidth is required by looking at the videos bitrate info which is available by clicking on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the medias image poster, then clicking `Media Info`.
+You can also get a sense for how much bandwidth is required by looking at the videos bitrate info which is available by clicking on the ellipsis of the medias image poster, then clicking `Media Info`.
 
 ![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
 
 ## Video is not streaming
 
-:game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
+First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
 If you would like to help keep the site running, go to [how to Support/Donate](#how-to-supportdonate).
 
-?> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under `Play method:` discussed further above. If it is transcoding, the play method will state `HLS` and not `DirectPlay`.
+> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under `Play method:` discussed further above. If it is transcoding, the play method will state `HLS` and not `DirectPlay`.
 
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
@@ -146,12 +146,12 @@ The client will generate a 6 digit code, which you have to enter in the already 
 
 ## Run a Speed Test
 
-:fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
+Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
 
 
 ## Subtitles not loading
 
-:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
+This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
 The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.
 
 
@@ -195,24 +195,24 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 Go to the Jellyfin site for the [official documentation](https://jellyfin.org/docs/) of all [supported clients](https://jellyfin.org/docs/general/clients/index.html) and user streaming devices.
 
-### :fa-solid fa-desktop: Browsers
+### Browsers
 
 The goal is to provide support for the two most recent versions of these browsers.
 
-* :fa-brands fa-firefox: Firefox
-* :fa-brands fa-firefox: Firefox ESR
-* :fa-brands fa-chrome: Chrome
-* :fa-brands fa-chrome: :fab fa-android: Chrome for Android
-* :fa-brands fa-safari: Safari for MacOS and iOS
-* :fa-brands fa-edge: Edge
+* Firefox
+* Firefox ESR
+* Chrome
+* Chrome for Android
+* Safari for MacOS and iOS
+* Edge
 
-### :fab fa-android: Android
+### Android
 
 **Jellyfin for Android**
 
 The official Jellyfin Android app, which supports Android 5 and above.
 
-Status: :fa-solid fa-star: Active
+Status: Active
 
 Links:
 
@@ -223,11 +223,11 @@ Links:
 * [Github.com/jellyfin/jellyfin-android](https://github.com/jellyfin/jellyfin-android)
 * [jellyfin.org/clients/#android](https://jellyfin.org/clients/#android)
 
-### :fa-brands fa-amazon: Amazon FireTV Stick & AndroidTV
+### Amazon FireTV Stick & AndroidTV
 
 Jellyfin Android TV is the official Jellyfin client for Android TV, NVIDIA Shield, and Amazon Fire TV devices.
 
-Status: :fa-solid fa-star: Active
+Status: Active
 
 Links:
 
@@ -241,7 +241,7 @@ Links:
 
 Jellyfin for Roku
 
-Status: :fa-solid fa-star: Active
+Status: Active
 
 Links:
 
@@ -253,7 +253,7 @@ Links:
 
 Findroid is a third-party Android application for Jellyfin that provides a native user interface to browse and play movies and series.
 
-Status: :fa-solid fa-star: Active, 3rd-Party
+Status: Active, 3rd-Party
 
 Links:
 
@@ -262,13 +262,13 @@ Links:
 
 * [github.com/jarnedemeulemeester/findroid](https://github.com/jarnedemeulemeester/findroid)
 
-### :fa-brands fa-apple: Apple
+### Apple
 
 **Jellyfin for iOS**
 
 The official Jellyfin iOS client.
 
-Status: :fa-solid fa-star: Active
+Status: Active
 
 Links:
 
@@ -278,9 +278,9 @@ Links:
 
 **SwiftFin for iOS/tvOS**
 
-:fa-brands fa-apple: The Jellyfin app rewritten in Swift in order to support HDR and direct play capabilities for multiple formats.
+The Jellyfin app rewritten in Swift in order to support HDR and direct play capabilities for multiple formats.
 
-Status: :fa-solid fa-star-half-stroke: In-Development
+Status: In-Development
 
 Links:
 
@@ -290,9 +290,9 @@ Links:
 
 **Infuse for iOS/Apple TV**
 
-:fa-brands fa-apple: A third party client with HDR support and direct play capabilities for multiple formats.
+A third party client with HDR support and direct play capabilities for multiple formats.
 
-Status: :fa-solid fa-star: Active, 3rd-Party
+Status: Active, 3rd-Party
 
 Links:
 
@@ -302,29 +302,29 @@ Links:
 
 **MrMC for iOS/Apple TV**
 
-:fa-brands fa-apple: A third party app with direct play and HDR support. Available on iOS and Apple TV.
+A third party app with direct play and HDR support. Available on iOS and Apple TV.
 
-Status: :fa-solid fa-star: Active, 3rd-Party
+Status: Active, 3rd-Party
 
 Links:
 
 * [mrmc.tv](https://mrmc.tv/)
 
-### :fa-solid fa-tv: LG WebOS
+### LG WebOS
 
 The official Jellyfin WebOS app.
 
-Status: :fa-solid fa-star-half-stroke: In-Development
+Status: In-Development
 
 Links:
 
 * [github.com/jellyfin/jellyfin-webos](https://github.com/jellyfin/jellyfin-webos)
 
-### :fa-solid fa-tv: Samsung TV
+### Samsung TV
 
 The official Jellyfin Samsung TV client for TVs running Tizen (2015 and above models).
 
-Status: :fa-solid fa-star-half-stroke: In-Development
+Status: In-Development
 
 Links:
 
@@ -332,13 +332,13 @@ Links:
 
 
 
-### :fa-solid fa-terminal: Cross-Platform Clients
+### Cross-Platform Clients
 
 **Kodi**
 
 Kodi thick client for Jellyfin. This add-on syncs your Jellyfin metadata into Kodi's local database for a more native feel.
 
-Status: :fa-solid fa-star: Active
+Status: Active
 
 Links:
 
@@ -349,7 +349,7 @@ Links:
 
 Kodi thin client for Jellyfin. This add-on is fully dynamic and allows for fast user switching and is compatible with other Kodi sources.
 
-Status: :fa-solid fa-star: Active
+Status: Active
 
 Links:
 
@@ -361,7 +361,7 @@ Links:
 
 Desktop client using jellyfin-web with embedded MPV player. Supports direct play of most file formats on Windows, Mac OS, and Linux. Media plays within the same window using the jellyfin-web interface unlike Jellyfin Desktop. Supports audio passthrough. Based on Plex Media Player.
 
-Status: :fa-solid fa-star: Active
+Status: Active
 
 Links:
 
@@ -373,7 +373,7 @@ Links:
 
 Provides background cast client using MPV. The client has support for direct play of advanced codecs such as 10 bit HEVC with subtitles, many customizable options, and whole-season subtitle preference support.
 
-Status: :fa-solid fa-star: Active
+Status: Active
 
 Links:
 
@@ -383,9 +383,9 @@ Links:
 
 **jftui**
 
-:fa-brands fa-linux: A terminal client for Jellyfin built as a REPL interface, that uses mpv for multimedia playback.
+A terminal client for Jellyfin built as a REPL interface, that uses mpv for multimedia playback.
 
-Status: :fa-solid fa-star: Active, 3rd-Party
+Status: Active, 3rd-Party
 
 Links:
 
@@ -394,9 +394,9 @@ Links:
 
 ## Downloading movies & shows
 
-:fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD :fa-regular fa-floppy-disk:.
+You can download anything that you see. Click on the ellipsis   of the media you want to download and then click DOWNLOAD.
 
-!> :fa-regular fa-face-frown fa-lg: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
+> Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
@@ -426,7 +426,7 @@ server conf:
 
 ## Remote control of shared devices
 
-:fa-brands fa-slideshare: Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [travisflix.com](https://travisflix.com/) ~~traverses two independent reverse proxies as well~~ so things can get a little confusing and hard to keep track of for me.
+Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [travisflix.com](https://travisflix.com/) ~~traverses two independent reverse proxies as well~~ so things can get a little confusing and hard to keep track of for me.
 
 If you would like to help keep the site running, go to [how to support/donate](#how-to-supportdonate).
 
@@ -444,7 +444,7 @@ If you would like to help keep the site running, go to [how to support/donate](#
 
 ## Uploading files
 
-1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com](https://upload.travisflix.com/)
+1. Go to [upload.travisflix.com](https://upload.travisflix.com/)
 2. Credentials: **username** — travisflix | **password** — upload
 3. Click the Upload button and select the media for upload
     * You can select multiple files/folders per upload session
@@ -455,16 +455,16 @@ If you would like to help keep the site running, go to [how to support/donate](#
 
 ## Video not filling the screen
 
-* :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
+* Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
 * A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
 * Films with an aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom. :left_right_arrow:
 
 
 ## How to stream multiple versions of a film
 
-:fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
+Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
 
-:fas fa-info-circle: *Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.*
+*Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.*
 
 ![Avatar](_media/avatar3.png)
 
@@ -477,15 +477,15 @@ Apocolypse Now has 3 distinct editions available:
 
 These plain-text files contain an index of all media for which it corresponds. The files are regenerated every hour 24/7/365 for the most up-to-date media info.
 
-:fas fa-list: [/movies.txt](https://travisflix.com/movies.txt)<br>
-:fas fa-list: [/shows.txt](https://travisflix.com/shows.txt)<br>
-:fas fa-list: [/standup.txt](https://travisflix.com/standup.txt)<br>
-:fas fa-list: [/motogp.txt](https://travisflix.com/motogp.txt)<br>
-:fas fa-list: [/formula1.txt](https://travisflix.com/formula1.txt)<br>
-:fas fa-list: [/tech.txt](https://travisflix.com/tech.txt)<br>
-:fas fa-list: [/tennis.txt](https://travisflix.com/tennis.txt)<br>
-:fas fa-list: [/podcasts.txt](https://travisflix.com/podcasts.txt)<br>
-:fas fa-list: [/starcraft.txt](https://travisflix.com/starcraft.txt)
+[/movies.txt](https://travisflix.com/movies.txt)<br>
+[/shows.txt](https://travisflix.com/shows.txt)<br>
+[/standup.txt](https://travisflix.com/standup.txt)<br>
+[/motogp.txt](https://travisflix.com/motogp.txt)<br>
+[/formula1.txt](https://travisflix.com/formula1.txt)<br>
+[/tech.txt](https://travisflix.com/tech.txt)<br>
+[/tennis.txt](https://travisflix.com/tennis.txt)<br>
+[/podcasts.txt](https://travisflix.com/podcasts.txt)<br>
+[/starcraft.txt](https://travisflix.com/starcraft.txt)
 
 Bash script that generates the files:
 
@@ -525,13 +525,13 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 ## Where is the status page
 
-:fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
+[status.travisflix.com](https://status.travisflix.com/)
 
 The cumulative 30-day HTTPS uptime for the travisflix.com web service has on average been between **99.95%** - **99.99%**
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
-?> This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
+> This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 You can view the status for Google [here](https://www.google.com/appsstatus).
 
 <!-- ![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png) -->
@@ -543,7 +543,7 @@ You can view the status for Google [here](https://www.google.com/appsstatus).
 
 ## Do you have server statistics
 
-> :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
+> [statistics.travisflix.com](https://statistics.travisflix.com/)
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
@@ -554,7 +554,7 @@ The following iframe represents the same data as on [statistics.travisflix.com](
 
 ## Status of the media sync processes
 
-:black_joker: The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
+The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
 
 | Type | Up, late, or down | Up, down |
 |---|---|---|
@@ -581,10 +581,11 @@ The following iframe represents the same data as on [statistics.travisflix.com](
 
 Please donate if you are able to, which will help ensure TravisFlix stays online.
 
-* :fab fa-linode: Linode virtual server operating cost is $20/mo.
-* :fa-regular fa-face-tongue-money: travisflix.com does not have any available methods of generating income.
+* Linode virtual server operating cost is $20/mo.
+* travisflix.com does not have any available methods of generating income.
+* Cloud data storage costs alone would run into the multi-thousands per year.
 
-### :fa-solid fa-money-bill: Cash App
+### Cash App
 
 Cash App ID: **$visualblind**
 
@@ -592,19 +593,19 @@ Cash App ID: **$visualblind**
 <img src="_media/cashapp.png" width=450px>
 </p>
 
-### :fa-solid fa-credit-card: Venmo
+### Venmo
 
 I am currently trying to recover my account and will update this page with my info when it is recovered.
 
-### :fa-solid fa-hand-holding-dollar: Open Collective Donation
+### Open Collective Donation
 
-:fa-solid fa-credit-card: Credit cards accepted, use the button below to donate any amount you want.
+Credit cards accepted, use the button below to donate any amount you want.
 
 [![Open Collective](https://opencollective.com/webpack/donate/button.png?color=blue)](https://opencollective.com/travisflix/donate)
 
-### :fa-brands fa-cc-stripe: Stripe
+### Stripe
 
-:fa-solid fa-credit-card: Credit cards accepted, use the link below to donate any amount you want.
+Credit cards accepted, use the link below to donate any amount you want.
 
 Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stripe.com/9AQfZJ9plfKi7io000)
 
@@ -612,15 +613,15 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 ![Stripe](_media/stripe-payment-card-logo-bg.png)
 
 
-### :fa-brands fa-bitcoin: Bitcoin 
+### Bitcoin 
 
 Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#still-have-questions) and we can arrange it.
 
-> :fa-brands fa-bitcoin: **Option #1**
+> **Option #1**
 > [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
 > 
 > ---
-> :fa-brands fa-bitcoin: **Option #2**
+> **Option #2**
 > [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
 > [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
 >
@@ -635,7 +636,7 @@ Bitcoin is the preferred cryptocurrency but if you would rather use a different 
 
 ## Media storage info
 
-* :fab fa-google-drive: Used Space: **33.340 TiB** updated 07-07-2022.
+* Used Space: **33.340 TiB** updated 07-07-2022.
 * Storage is currently Google Drive.
 * I am using an unlimited storage plan, but it wont last forever. If you dont want to lose any movies/shows on the site, please help support TravisFlix by going to [How to Support/Donate](#how-to-supportdonate).
 * Your donation would make a direct impact by helping purchase additional mfr-refurbished [HUH721010AL4200/42C0 HGST Ultrastar He10 10TB 7200RPM SAS 12Gbps hard drives](https://www.ebay.com/itm/224604910631) which are going for $100/ea on eBay.
@@ -649,9 +650,9 @@ Google Cloud Console API Metrics for Google Drive
 
 ## Still have questions?
 
-* :incoming_envelope: Send me an email at <travis@travisflix.com>
-* :fab fa-telegram: Join the Telegram room at [t.me/travisflix](https://t.me/travisflix)
-* :fa-solid fa-comments: Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)
-* :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/) and [4kib.com/about](https://4kib.com/about/)
+* Send me an email at <travis@travisflix.com>
+* Join the Telegram room at [t.me/travisflix](https://t.me/travisflix)
+* Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)
+* My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/) and [4kib.com/about](https://4kib.com/about/)
 
 ---
