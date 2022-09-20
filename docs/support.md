@@ -21,6 +21,8 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you.
 
+![site-cant-be-reached](_media/site-cant-be-reached.png)
+
 Conf:
 
 ```editorconfig
