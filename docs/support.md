@@ -126,71 +126,6 @@ Upload: 122.33 Mbit/s
 ```
 
 
-## How to use Quick Connect
-
-Starting with Jellyfin server version 10.7.0 and supported clients, you can use Quick Connect to sign in to your account without the need of a password. You need to previously be logged into a supported client, like the default Jellyfin Web Client.
-
-**Using Quick Connect**
-
-To sign in to a supported client, you have to enter the Quick Connect code in your user settings.
-<br>
-Settings > Quick Connect
-
-![using-quick-connect](_media/using-quick-connect.png)
-
-If the code is validated successfully, your new device will be signed in without entering your Jellyfin username or password on the new device.
-<br>
-The client will generate a 6 digit code, which you have to enter in the already signed in client in your user settings.
-
-![quick-connect](_media/quick-connect.png)
-
-## Run a Speed Test
-
-:fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
-
-
-## Subtitles not loading
-
-:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
-The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.
-
-
-## Codec Information & Standards
-
-> Video: **[H.264 (AVC)](https://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-Is-H.264-74735.aspx)** / Audio: **[AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) 5.1CH**
-
-Virtually all media on the site will be using the video/audio codec specs listed below.
-The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)), or "mkv" ([Matroska](https://en.wikipedia.org/wiki/Matroska)), which are referred to as containers. Containers themselves have nothing to do with the codec used for the video and audio streams. Containers can be thought of as universally recognized digital media delivery packages. However despite this understanding, shitty media handling implementation by the major mobile OS developers (you know the ones I'm talkin' about) may force the server to strip the container off of the internal media streams before repackaging and delivering it to mobile devices in a format more easily consumed, such as "ts" ([Transport Stream](https://en.wikipedia.org/wiki/MPEG_transport_stream)).
-
-
-| **Video**||
-|---|---|
-| Format: | AVC |
-| Format/Info: | Advanced Video Codec |
-| Format profile: | High@L4.1 |
-| Format settings: | CABAC / 4 Ref Frames |
-| Codec ID/Info: | Advanced Video Coding |
-| Bit rate: | 2 500 kb/s |
-| Frame rate mode: | Constant |
-| Frame rate: | 23.976 (23976/1000) FPS |
-| Color space: | YUV |
-| Bit depth: | 8 bits |
-| Scan type: | Progressive |
-| Writing library: | x264 core 152 r2851M ba24899 |
-|  ||
-|**Audio**||
-| Format: | AAC LC |
-| Format/Info: | Advanced Audio Codec Low Complexity |
-| Codec ID: | mp4a-40-2 |
-| Bit rate mode: | Constant |
-| Bit rate: | 224 kb/s |
-| Channel(s): | 6 channels |
-| Channel layout: | C L R Ls Rs LFE |
-| Sampling rate: | 48.0 kHz |
-| Frame rate: | 46.875 FPS (1024 SPF) |
-| Compression mode: | Lossy |
-
-
 ## Supported devices or platforms
 
 Go to the Jellyfin site for the [official documentation](https://jellyfin.org/docs/) of all [supported clients](https://jellyfin.org/docs/general/clients/index.html) and user streaming devices.
@@ -392,11 +327,90 @@ Links:
 * [github.com/Aanok/jftui](https://github.com/Aanok/jftui)
 
 
+## How to use Quick Connect
+
+Starting with Jellyfin server version 10.7.0 and supported clients, you can use Quick Connect to sign in to your account without the need of a password. You need to previously be logged into a supported client, like the default Jellyfin Web Client.
+
+**Using Quick Connect**
+
+To sign in to a supported client, you have to enter the Quick Connect code in your user settings.
+<br>
+Settings > Quick Connect
+
+![using-quick-connect](_media/using-quick-connect.png)
+
+If the code is validated successfully, your new device will be signed in without entering your Jellyfin username or password on the new device.
+<br>
+The client will generate a 6 digit code, which you have to enter in the already signed in client in your user settings.
+
+![quick-connect](_media/quick-connect.png)
+
+## Run a Speed Test
+
+:fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
+
+
+## Subtitles not loading
+
+:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
+The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.
+
+
+## Codec Information & Standards
+
+> Video: **[H.264 (AVC)](https://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-Is-H.264-74735.aspx)** / Audio: **[AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) 5.1CH**
+
+Virtually all media on the site will be using the video/audio codec specs listed below.
+The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)), or "mkv" ([Matroska](https://en.wikipedia.org/wiki/Matroska)), which are referred to as containers. Containers themselves have nothing to do with the codec used for the video and audio streams. Containers can be thought of as universally recognized digital media delivery packages. However despite this understanding, shitty media handling implementation by the major mobile OS developers (you know the ones I'm talkin' about) may force the server to strip the container off of the internal media streams before repackaging and delivering it to mobile devices in a format more easily consumed, such as "ts" ([Transport Stream](https://en.wikipedia.org/wiki/MPEG_transport_stream)).
+
+
+| **Video**||
+|---|---|
+| Format: | AVC |
+| Format/Info: | Advanced Video Codec |
+| Format profile: | High@L4.1 |
+| Format settings: | CABAC / 4 Ref Frames |
+| Codec ID/Info: | Advanced Video Coding |
+| Bit rate: | 2 500 kb/s |
+| Frame rate mode: | Constant |
+| Frame rate: | 23.976 (23976/1000) FPS |
+| Color space: | YUV |
+| Bit depth: | 8 bits |
+| Scan type: | Progressive |
+| Writing library: | x264 core 152 r2851M ba24899 |
+|  ||
+|**Audio**||
+| Format: | AAC LC |
+| Format/Info: | Advanced Audio Codec Low Complexity |
+| Codec ID: | mp4a-40-2 |
+| Bit rate mode: | Constant |
+| Bit rate: | 224 kb/s |
+| Channel(s): | 6 channels |
+| Channel layout: | C L R Ls Rs LFE |
+| Sampling rate: | 48.0 kHz |
+| Frame rate: | 46.875 FPS (1024 SPF) |
+| Compression mode: | Lossy |
+
+
+## Connecting over Tor Network
+
+?> 🧅 Onion address: [zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion](http://zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion)
+
+If you visit [travisflix.com](https://travisflix.com) using the [Tor Browser](https://www.torproject.org/download/), you will automatically be redirected to the onion address.
+
+!> As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB)
+
+
+![tor-browser](_media/tor-browser.jpg)
+
+
 ## Downloading movies & shows
 
 :fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD :fa-regular fa-floppy-disk:.
 
 !> :fa-regular fa-face-frown fa-lg: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
+
+?> As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor [onion address](#connecting-over-tor-network) as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB)
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
