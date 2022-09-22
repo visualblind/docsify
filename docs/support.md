@@ -2,7 +2,7 @@
 
 ## Having trouble logging in
 
-### :fa-regular fa-face-meh: For Error Message:
+### :fa-solid fa-triangle-exclamation: For Error Message:
 
 The cause of this is usually an issue with the cookies in your local browser cache.
 You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
@@ -13,13 +13,13 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 ![browser-cache-02](_media/browser-cache-02.png)
 
-!> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+!> :fa-regular fa-face-meh: If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
-### :fas fa-spinner: For No Error Message:
+### :fa-solid fa-heart-crack: Invalid Username/Password:
 
 :fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a white screen.
 
-You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you. Click [here](https://travisflix.com/help/_media/support-noicon.pdf) to download this support site as a pdf.
+:fa-solid fa-hourglass-end: You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you. Click [here](https://travisflix.com/help/_media/support-noicon.pdf) to download this support site as a :fa-regular fa-file-pdf: pdf.
 
 ![site-cant-be-reached](_media/site-cant-be-reached.png)
 
@@ -398,7 +398,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 If you visit [travisflix.com](https://travisflix.com) using the [Tor Browser](https://www.torproject.org/download/), you will automatically be redirected to the onion address.
 
-!> As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB)
+!> As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
 
 
 ![tor-browser](_media/tor-browser.jpg)
@@ -410,7 +410,7 @@ If you visit [travisflix.com](https://travisflix.com) using the [Tor Browser](ht
 
 !> :fa-regular fa-face-frown fa-lg: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
 
-?> As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor [onion address](#connecting-over-tor-network) as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB)
+?> As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor [onion address](#connecting-over-tor-network) as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
 
 If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
