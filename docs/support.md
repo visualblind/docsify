@@ -78,7 +78,7 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 :game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
-?> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under `Play method:` discussed further above. If it is transcoding, the play method will state `HLS` and not `DirectPlay`.
+?> ~~The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds).~~ The reason for the striked-out text is because I have disabled the ability for video codec transcoding. Efforts in video codec standardization across the site is more than sufficient for any device type to playback without issues. Additional reasons for transcoding can be found under `Play method:` discussed further above. If it is transcoding, the play method will state `HLS` and not `DirectPlay`.
 
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
@@ -552,6 +552,64 @@ You can view the status for Google [here](https://www.google.com/appsstatus).
 The following iframe represents the same data as on [statistics.travisflix.com](https://statistics.travisflix.com/).
 
 <iframe src="//statistics.travisflix.com/netdata-dark.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
+
+
+## How to Support/Donate
+
+Please donate if you are able to spare a few dollars. All donations will help ensure this site stays up and running, and the content library continues to increase in size and variety.
+
+> For proof of my out-of-pocket expenses, below is a screenshot of my invoice history
+
+![linode-invoices](_media/linode-invoices.png)
+
+* :fab fa-linode: Linode cloud operating expense: $20/per month.
+* :fa-regular fa-face-tongue-money: This site does not have any available methods of monetization nor do I have plans to.
+* :fa-solid fa-hourglass-end: As time goes on, the feeling that unless I am able to start reclaiming a portion of the costs, it will only shift the balance in the direction of shutting down the site.
+
+### :fa-solid fa-money-bill: Cash App
+
+Cash App ID: **$visualblind**
+
+<p align="center">
+<img src="_media/cashapp.png" width=450px>
+</p>
+
+### :fa-solid fa-credit-card: Venmo
+
+I am currently trying to recover my account and will update this page with my info when it is recovered.
+
+### :fa-solid fa-hand-holding-dollar: Open Collective Donation
+
+:fa-solid fa-credit-card: Credit cards accepted, use the button below to donate any amount you want.
+
+[![Open Collective](https://opencollective.com/webpack/donate/button.png?color=blue)](https://opencollective.com/travisflix/donate)
+
+### :fa-brands fa-cc-stripe: Stripe
+
+:fa-solid fa-credit-card: Credit cards accepted, use the link below to donate any amount you want.
+
+Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stripe.com/9AQfZJ9plfKi7io000)
+
+
+![Stripe](_media/stripe-payment-card-logo-bg.png)
+
+### :fa-brands fa-bitcoin: Bitcoin 
+
+Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#still-have-questions) and we can arrange it.
+
+> :fa-brands fa-bitcoin: **Option #1**
+> [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
+> 
+> ---
+> :fa-brands fa-bitcoin: **Option #2**
+> [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
+> [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
+>
+> QR Code:<br>
+> ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
+
+#### Real-time Bitcoin Price (USD):
+<iframe id="iframebtc" src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
 
 
 ## Still have questions?
