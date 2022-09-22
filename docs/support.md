@@ -1,6 +1,6 @@
 # Support FAQ
 
-## Having trouble logging in
+## Having Trouble Logging In
 
 ### :fa-solid fa-triangle-exclamation: For Error Message:
 
@@ -41,7 +41,7 @@ ignoreip = 47.150.254.140,172.18.0.1,172.18.0.2,172.18.0.3
 ```
 
 
-## Media stream buffering/glitching
+## Media Stream Playback Problems
 
 ### :fa-solid fa-wifi: Wireless Users
 
@@ -74,7 +74,13 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 ![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
 
-## Video is not streaming
+### Video Not Filling The Screen
+
+* :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
+* A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
+* Films with an aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom. :left_right_arrow:
+
+### Video is Not Streaming
 
 :game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
@@ -122,7 +128,13 @@ Upload: 122.33 Mbit/s
 ```
 
 
-## Supported devices or platforms
+### Subtitles Not Loading
+
+:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
+The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.
+
+
+## Supported Devices or Platforms
 
 Go to the Jellyfin site for the [official documentation](https://jellyfin.org/docs/) of all [supported clients](https://jellyfin.org/docs/general/clients/index.html) and user streaming devices.
 
@@ -341,15 +353,23 @@ The client will generate a 6 digit code, which you have to enter in the already 
 
 ![quick-connect](_media/quick-connect.png)
 
+
+## How to Stream Multiple Versions of a Film
+
+:fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
+
+:fas fa-info-circle: *Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.*
+
+![Avatar](_media/avatar3.png)
+
+Apocolypse Now has 3 distinct editions available:
+
+![versions](_media/versions.png)
+
+
 ## Run a Speed Test
 
 :fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
-
-
-## Subtitles not loading
-
-:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
-The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.
 
 
 ## Codec Information & Standards
@@ -400,7 +420,7 @@ If you visit [travisflix.com](https://travisflix.com) using the [Tor Browser](ht
 ![tor-browser](_media/tor-browser.jpg)
 
 
-## Downloading movies & shows
+## Downloading Movies & Shows
 
 :fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD :fa-regular fa-floppy-disk:.
 
@@ -432,7 +452,7 @@ conf:
 ```
 
 
-## Remote control of shared devices
+## Remote Control of Shared Devices
 
 :fa-brands fa-slideshare: Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [travisflix.com](https://travisflix.com/) ~~traverses two independent reverse proxies as well~~ so things can get a little confusing and hard to keep track of for me.
 
@@ -449,7 +469,7 @@ conf:
 ![Remote Control 02](_media/remote-control-02.png)
 
 
-## Uploading files
+## Uploading Files
 
 1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com](https://upload.travisflix.com/)
 2. Credentials: **username** — travisflix | **password** — upload
@@ -457,26 +477,6 @@ conf:
     * You can select multiple files/folders per upload session
 4. ~~When finished, send me a message in the Telegram room [t.me/travisflix](https://t.me/travisflix)~~
     * ~~If you can not use Telegram, send me an email <travis@travisflix.com>~~
-
-
-## Video not filling the screen
-
-* :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
-* A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
-* Films with an aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom. :left_right_arrow:
-
-
-## How to stream multiple versions of a film
-
-:fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
-
-:fas fa-info-circle: *Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.*
-
-![Avatar](_media/avatar3.png)
-
-Apocolypse Now has 3 distinct editions available:
-
-![versions](_media/versions.png)
 
 
 ## Plain-text media list/index
