@@ -576,7 +576,9 @@ Cash App ID: **$visualblind**
 
 ### :fa-solid fa-credit-card: Venmo
 
-I am currently trying to recover my account and will update this page with my info when it is recovered.
+![venmo-logo-blue](_media/venmo-logo-blue.png)<br>
+![profile-helmet](_media/profile-helmet.jpg) @visualblind
+
 
 ### :fa-solid fa-hand-holding-dollar: Open Collective Donation
 
