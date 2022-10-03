@@ -576,8 +576,9 @@ Cash App ID: **$visualblind**
 
 ### :fa-solid fa-credit-card: Venmo
 
-![venmo-logo-blue](_media/venmo-logo-blue.png)<br>
-![profile-helmet](_media/profile-helmet.jpg) @visualblind
+> @visualblind
+
+![profile-helmet](_media/profile-helmet.jpg) This is my profile picture on Venmo.
 
 
 ### :fa-solid fa-hand-holding-dollar: Open Collective Donation
