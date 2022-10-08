@@ -2,7 +2,7 @@
 
 ## Having Trouble Logging In
 
-### :fa-solid fa-triangle-exclamation: For Error Message:
+### :fa-solid fa-triangle-exclamation: If You Receive an Error MSG:
 
 The cause of this is usually an issue with the cookies in your local browser cache.
 You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
@@ -13,7 +13,11 @@ You can test/bypass the browser cache by opening an incognito window :fas fa-use
 
 !> :fa-regular fa-face-meh: If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
-### :fa-solid fa-heart-crack: Invalid Username/Password:
+### :fa-solid fa-triangle-exclamation fa-stack-1x fa-solid fa-ban fa-stack-2x: If You DO NOT Receive an Error MSG:
+
+Most likely your IP address has been banned for entering an invalid username or password. See below for more info.
+
+### :fa-solid fa-bong: Invalid Username/Password:
 
 :fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a white screen.
 
