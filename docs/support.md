@@ -13,7 +13,7 @@ You can test/bypass the browser cache by opening an incognito window :fas fa-use
 
 !> :fa-regular fa-face-meh: If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
-### :fa-solid fa-triangle-exclamation fa-stack-1x fa-solid fa-ban fa-stack-2x: If You DO NOT Receive an Error MSG:
+### :fa-solid fa-toilet-paper-slash: If You DO NOT Receive an Error MSG:
 
 Most likely your IP address has been banned for entering an invalid username or password. See below for more info.
 
