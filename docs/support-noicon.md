@@ -1,25 +1,27 @@
 # Support FAQ
 
-## Having trouble logging in
+## Having Trouble Logging In
 
-### For Error Message:
+### If You Receive an Error MSG:
 
 The cause of this is usually an issue with the cookies in your local browser cache.
 You can test/bypass the browser cache by opening an incognito window or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en).
 
-If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
-
-> Check the `Cookies and other site data` option from either the Basic or Advanced tab. Note this is different than cache. Cookies for all sites will be deleted.
+Check the `Cookies and other site data` option from either the Basic or Advanced tab. Note this is different than cache. Cookies for all sites will be deleted.
 
 ![browser-cache-02](_media/browser-cache-02.png)
 
-> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
-### For No Error Message:
+### If You DO NOT Receive an Error MSG:
+
+Most likely your IP address has been banned for entering an invalid username or password. See below for more info.
+
+### Invalid Username/Password:
 
 If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner or a white screen.
 
-You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you.
+You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you. Click [here](https://travisflix.com/help/_media/support-noicon.pdf) to download this support site as a pdf.
 
 ![site-cant-be-reached](_media/site-cant-be-reached.png)
 
@@ -43,7 +45,7 @@ ignoreip = 47.150.254.140,172.18.0.1,172.18.0.2,172.18.0.3
 ```
 
 
-## Media stream buffering/glitching
+## Media Stream Playback Problems
 
 ### Wireless Users
 
@@ -51,7 +53,7 @@ I wanted to include the following tip at the very top of this section because I 
 
 If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses 802.11AC (or the newer 802.11AX aka WiFi6) and is using a channel width of 80, or 160 MHz. 
 
-> Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices.
+Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices.
 The 802.11N standard can utilize both 2.4 + 5 Ghz frequencies. Just because you assume you are on 5 Ghz (by connecting to a SSID with "-5G" appended), that technically does not indicate you are on 802.11AC. If you need help to do simple verification, contact your nearest tech-savvy family relative instead of me.
 
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
@@ -76,13 +78,17 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 ![ellipsis](_media/ellipsis.png) ... ![bitrate](_media/bitrate.png)
 
 
-## Video is not streaming
+### Video Not Filling The Screen
+
+* Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
+* A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
+* Films with an aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom.
+
+### Video is Not Streaming
 
 First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
-If you would like to help keep the site running, go to [how to Support/Donate](#how-to-supportdonate).
-
-> The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds). Additional reasons for transcoding can be found under `Play method:` discussed further above. If it is transcoding, the play method will state `HLS` and not `DirectPlay`.
+~~The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds).~~ The reason for the striked-out text is because I have disabled the ability for video codec transcoding. Efforts in video codec standardization across the site is more than sufficient for any device type to playback without issues. Additional reasons for transcoding can be found under `Play method:` discussed further above. If it is transcoding, the play method will state `HLS` and not `DirectPlay`.
 
 1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
@@ -126,72 +132,13 @@ Upload: 122.33 Mbit/s
 ```
 
 
-## How to use Quick Connect
-
-Starting with Jellyfin server version 10.7.0 and supported clients, you can use Quick Connect to sign in to your account without the need of a password. You need to previously be logged into a supported client, like the default Jellyfin Web Client.
-
-**Using Quick Connect**
-
-To sign in to a supported client, you have to enter the Quick Connect code in your user settings.
-<br>
-Settings > Quick Connect
-
-![using-quick-connect](_media/using-quick-connect.png)
-
-If the code is validated successfully, your new device will be signed in without entering your Jellyfin username or password on the new device.
-<br>
-The client will generate a 6 digit code, which you have to enter in the already signed in client in your user settings.
-
-![quick-connect](_media/quick-connect.png)
-
-## Run a Speed Test
-
-Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
-
-
-## Subtitles not loading
+### Subtitles Not Loading
 
 This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again.
 The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.
 
 
-## Codec Information & Standards
-
-> Video: **[H.264 (AVC)](https://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-Is-H.264-74735.aspx)** / Audio: **[AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) 5.1CH**
-
-Virtually all media on the site will be using the video/audio codec specs listed below.
-The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)), or "mkv" ([Matroska](https://en.wikipedia.org/wiki/Matroska)), which are referred to as containers. Containers themselves have nothing to do with the codec used for the video and audio streams. Containers can be thought of as universally recognized digital media delivery packages. However despite this understanding, shitty media handling implementation by the major mobile OS developers (you know the ones I'm talkin' about) may force the server to strip the container off of the internal media streams before repackaging and delivering it to mobile devices in a format more easily consumed, such as "ts" ([Transport Stream](https://en.wikipedia.org/wiki/MPEG_transport_stream)).
-
-
-| **Video**||
-|---|---|
-| Format: | AVC |
-| Format/Info: | Advanced Video Codec |
-| Format profile: | High@L4.1 |
-| Format settings: | CABAC / 4 Ref Frames |
-| Codec ID/Info: | Advanced Video Coding |
-| Bit rate: | 2 500 kb/s |
-| Frame rate mode: | Constant |
-| Frame rate: | 23.976 (23976/1000) FPS |
-| Color space: | YUV |
-| Bit depth: | 8 bits |
-| Scan type: | Progressive |
-| Writing library: | x264 core 152 r2851M ba24899 |
-|  ||
-|**Audio**||
-| Format: | AAC LC |
-| Format/Info: | Advanced Audio Codec Low Complexity |
-| Codec ID: | mp4a-40-2 |
-| Bit rate mode: | Constant |
-| Bit rate: | 224 kb/s |
-| Channel(s): | 6 channels |
-| Channel layout: | C L R Ls Rs LFE |
-| Sampling rate: | 48.0 kHz |
-| Frame rate: | 46.875 FPS (1024 SPF) |
-| Compression mode: | Lossy |
-
-
-## Supported devices or platforms
+## Supported Devices or Platforms
 
 Go to the Jellyfin site for the [official documentation](https://jellyfin.org/docs/) of all [supported clients](https://jellyfin.org/docs/general/clients/index.html) and user streaming devices.
 
@@ -392,15 +339,100 @@ Links:
 * [github.com/Aanok/jftui](https://github.com/Aanok/jftui)
 
 
-## Downloading movies & shows
+## How to use Quick Connect
 
-You can download anything that you see. Click on the ellipsis   of the media you want to download and then click DOWNLOAD.
+Starting with Jellyfin server version 10.7.0 and supported clients, you can use Quick Connect to sign in to your account without the need of a password. You need to previously be logged into a supported client, like the default Jellyfin Web Client.
 
-> Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
+**Using Quick Connect**
 
-If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
+To sign in to a supported client, you have to enter the Quick Connect code in your user settings.
+<br>
+Settings > Quick Connect
 
-server conf:
+![using-quick-connect](_media/using-quick-connect.png)
+
+If the code is validated successfully, your new device will be signed in without entering your Jellyfin username or password on the new device.
+<br>
+The client will generate a 6 digit code, which you have to enter in the already signed in client in your user settings.
+
+![quick-connect](_media/quick-connect.png)
+
+
+## How to Stream Multiple Versions of a Film
+
+Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
+
+*Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.*
+
+![Avatar](_media/avatar3.png)
+
+Apocolypse Now has 3 distinct editions available:
+
+![versions](_media/versions.png)
+
+
+## Run a Speed Test
+
+Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
+
+
+## Codec Information & Standards
+
+> Video: **[H.264 (AVC)](https://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-Is-H.264-74735.aspx)** / Audio: **[AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) 5.1CH**
+
+Virtually all media on the site will be using the video/audio codec specs listed below.
+The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https://en.wikipedia.org/wiki/MPEG-4_Part_14)), or "mkv" ([Matroska](https://en.wikipedia.org/wiki/Matroska)), which are referred to as containers. Containers themselves have nothing to do with the codec used for the video and audio streams. Containers can be thought of as universally recognized digital media delivery packages. However despite this understanding, shitty media handling implementation by the major mobile OS developers (you know the ones I'm talkin' about) may force the server to strip the container off of the internal media streams before repackaging and delivering it to mobile devices in a format more easily consumed, such as "ts" ([Transport Stream](https://en.wikipedia.org/wiki/MPEG_transport_stream)).
+
+
+| **Video**||
+|---|---|
+| Format: | AVC |
+| Format/Info: | Advanced Video Codec |
+| Format profile: | High@L4.1 |
+| Format settings: | CABAC / 4 Ref Frames |
+| Codec ID/Info: | Advanced Video Coding |
+| Bit rate: | 2 500 kb/s |
+| Frame rate mode: | Constant |
+| Frame rate: | 23.976 (23976/1000) FPS |
+| Color space: | YUV |
+| Bit depth: | 8 bits |
+| Scan type: | Progressive |
+| Writing library: | x264 core 152 r2851M ba24899 |
+|  ||
+|**Audio**||
+| Format: | AAC LC |
+| Format/Info: | Advanced Audio Codec Low Complexity |
+| Codec ID: | mp4a-40-2 |
+| Bit rate mode: | Constant |
+| Bit rate: | 224 kb/s |
+| Channel(s): | 6 channels |
+| Channel layout: | C L R Ls Rs LFE |
+| Sampling rate: | 48.0 kHz |
+| Frame rate: | 46.875 FPS (1024 SPF) |
+| Compression mode: | Lossy |
+
+
+## Connecting over Tor Network
+
+🧅 Onion address: [zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion](http://zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion)
+
+If you visit [travisflix.com](https://travisflix.com) using the [Tor Browser](https://www.torproject.org/download/), you will automatically be redirected to the onion address.
+
+As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
+
+
+![tor-browser](_media/tor-browser.jpg)
+
+
+## Downloading Movies & Shows
+
+You can download anything that you see. Click on the ellipsis of the media you want to download and then click DOWNLOAD.
+
+Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
+
+As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor [onion address](#connecting-over-tor-network) as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
+
+conf:
 
 ```nginx
     location ~ ^/Items/(.*)/Download$ {
@@ -424,11 +456,10 @@ server conf:
 ```
 
 
-## Remote control of shared devices
+## Remote Control of Shared Devices
 
 Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. [travisflix.com](https://travisflix.com/) ~~traverses two independent reverse proxies as well~~ so things can get a little confusing and hard to keep track of for me.
 
-If you would like to help keep the site running, go to [how to support/donate](#how-to-supportdonate).
 
 1. Log in with your browser first
 2. Log in with the device you are wanting to remotely control (must not be identical to the controlling device, needs separate internal ID's)
@@ -442,7 +473,7 @@ If you would like to help keep the site running, go to [how to support/donate](#
 ![Remote Control 02](_media/remote-control-02.png)
 
 
-## Uploading files
+## Uploading Files
 
 1. Go to [upload.travisflix.com](https://upload.travisflix.com/)
 2. Credentials: **username** — travisflix | **password** — upload
@@ -450,27 +481,6 @@ If you would like to help keep the site running, go to [how to support/donate](#
     * You can select multiple files/folders per upload session
 4. ~~When finished, send me a message in the Telegram room [t.me/travisflix](https://t.me/travisflix)~~
     * ~~If you can not use Telegram, send me an email <travis@travisflix.com>~~
-5. If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate)
-
-
-## Video not filling the screen
-
-* Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
-* A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
-* Films with an aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom. :left_right_arrow:
-
-
-## How to stream multiple versions of a film
-
-Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
-
-*Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.*
-
-![Avatar](_media/avatar3.png)
-
-Apocolypse Now has 3 distinct editions available:
-
-![versions](_media/versions.png)
 
 
 ## Plain-text media list/index
@@ -520,8 +530,6 @@ else
 fi
 ```
 
-If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
-
 
 ## Where is the status page
 
@@ -529,9 +537,8 @@ If you would like to help keep the site running, go to [How to Support/Donate](#
 
 The cumulative 30-day HTTPS uptime for the travisflix.com web service has on average been between **99.95%** - **99.99%**
 
-If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
-> This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
+This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
 You can view the status for Google [here](https://www.google.com/appsstatus).
 
 <!-- ![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png) -->
@@ -545,45 +552,22 @@ You can view the status for Google [here](https://www.google.com/appsstatus).
 
 > [statistics.travisflix.com](https://statistics.travisflix.com/)
 
-If you would like to help keep the site running, go to [How to Support/Donate](#how-to-supportdonate).
 
 The following iframe represents the same data as on [statistics.travisflix.com](https://statistics.travisflix.com/).
 
-<iframe src="//statistics.travisflix.com/netdata-dark.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes"></iframe>
-
-
-## Status of the media sync processes
-
-The badges below show a real-time representation of the media encryption and syncing processes between the origin and destination Google Drive accounts. These GDrive accounts are what feed the video files to the server which then streams to your eyeballs.
-
-| Type | Up, late, or down | Up, down |
-|---|---|---|
-| **Overall Status** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fdc1ecPD8.shields) | ![Custom badge](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8-2.svg) | 
-| **rclone-sync-video** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fgp7x30yH%2Frclone-sync-video.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2Fgp7x30yH-2%2Frclone-sync-video.shields) |
-| **rclone-sync-p0ds0smb** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FF-VXXpPQ%2Frclone%25252Ffreenas.shields) | ![Custom badge](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ-2/rclone%252Ffreenas.svg) |
-| **rclone-servercopy** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj%2Frclone-servercopy.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FfDZmnLdj-2%2Frclone-servercopy.shields) |
-| **rclone-servercopy-media** | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3%2Frclone-servercopy-media.shields) | ![Custom badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fhealthchecks.io%2Fbadge%2Fbd39864f-49a7-4916-b223-8e2ac5%2FdF-MGYh3-2%2Frclone-servercopy-media.shields) |
-
-- **rclone-sync-video**: Rclone media sync operation which encrypts media and pushes to Google Drive aka--"GCrypt"
-- **rclone-sync-p0ds0smb**: Rclone data sync operation to push/pull encrypted NON-media data to GCrypt (FreeNAS pools > Encrypt > Google Drive)
-- **rclone-servercopy**: Rclone server-side sync job from gdrive-usmba:gcrypt to gdrive-gdrive01dvecs:gcrypt and gdrive-gdrive02dvecs:gcrypt
-- **rclone-servercopy-media**: Server-side media-only rclone sync operation which pushes changes to multiple GDrive accounts for redundancy
-
-**Overall status:**
-[healthchecks.io/badge/bd39864f.../dc1ecPD8.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/dc1ecPD8.json)
-**rclone-video-sync:**
-[healthchecks.io/badge/bd39864f.../gp7x30yH/rclone-sync-video.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/gp7x30yH/rclone-sync-video.json)
-**rclone-sync-p0ds0smb:**
-[healthchecks.io/badge/bd39864f.../F-VXXpPQ/rclone%252Ffreenas.json](https://healthchecks.io/badge/bd39864f-49a7-4916-b223-8e2ac5/F-VXXpPQ/rclone%252Ffreenas.json)
 
 
 ## How to Support/Donate
 
-Please donate if you are able to, which will help ensure TravisFlix stays online.
+Please donate if you are able to spare a few dollars. All donations will help ensure this site stays up and running, and the content library continues to increase in size and variety.
 
-* Linode virtual server operating cost is $20/mo.
-* travisflix.com does not have any available methods of generating income.
-* Cloud data storage costs alone would run into the multi-thousands per year.
+> For proof of my out-of-pocket expenses, below is a screenshot of my invoice history
+
+![linode-invoices](_media/linode-invoices.png)
+
+* Linode cloud operating expense: $20/per month.
+* This site does not have any available methods of monetization nor do I have plans to.
+* As time goes on, the feeling that unless I am able to start reclaiming a portion of the costs, it will only shift the balance in the direction of shutting down the site.
 
 ### Cash App
 
@@ -595,7 +579,10 @@ Cash App ID: **$visualblind**
 
 ### Venmo
 
-I am currently trying to recover my account and will update this page with my info when it is recovered.
+> @visualblind
+
+![profile-helmet](_media/profile-helmet.jpg) This is my profile picture on Venmo.
+
 
 ### Open Collective Donation
 
@@ -612,7 +599,6 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 
 ![Stripe](_media/stripe-payment-card-logo-bg.png)
 
-
 ### Bitcoin 
 
 Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#still-have-questions) and we can arrange it.
@@ -628,24 +614,6 @@ Bitcoin is the preferred cryptocurrency but if you would rather use a different 
 > QR Code:<br>
 > ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
 
-
-
-#### Real-time Bitcoin Price (USD):
-<iframe id="iframebtc" src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
-
-
-## Media storage info
-
-* Used Space: **33.340 TiB** updated 07-07-2022.
-* Storage is currently Google Drive.
-* I am using an unlimited storage plan, but it wont last forever. If you dont want to lose any movies/shows on the site, please help support TravisFlix by going to [How to Support/Donate](#how-to-supportdonate).
-* Your donation would make a direct impact by helping purchase additional mfr-refurbished [HUH721010AL4200/42C0 HGST Ultrastar He10 10TB 7200RPM SAS 12Gbps hard drives](https://www.ebay.com/itm/224604910631) which are going for $100/ea on eBay.
-* I have already purchased 4 out of pocket.
-
-
-
-Google Cloud Console API Metrics for Google Drive
-![Google Cloud API rates](_media/gcloud-03.png)
 
 
 ## Still have questions?

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Untitled</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1>Support FAQ</h1>
+<h2>Having Trouble Logging In</h2>
+<h3>:fa-solid fa-triangle-exclamation: If You Receive an Error MSG:</h3>
+<p>The cause of this is usually an issue with the cookies in your local browser cache. You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then <a href="https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&amp;hl=en">clear your browser cookies</a> :fas fa-cookie-bite:.</p>
+<p>!&gt; Check the <code>Cookies and other site data</code> option from either the Basic or Advanced tab. Note this is different than cache. Cookies :fas fa-cookie: for all sites will be deleted.</p>
+<p><img src="_media/browser-cache-02.png" alt="browser-cache-02" /></p>
+<p>!&gt; :fa-regular fa-face-meh: If you feel the issue resides on the server-side, <a href="#where-is-the-status-page">check the status page</a> and/or the <a href="#do-you-have-server-statistics">real-time server statistics</a>.</p>
+<h3>:fa-solid fa-toilet-paper-slash: If You DO NOT Receive an Error MSG:</h3>
+<p>Most likely your IP address has been banned for entering an invalid username or password. See below for more info.</p>
+<h3>:fa-solid fa-bong: Invalid Username/Password:</h3>
+<p>:fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a white screen.</p>
+<p>:fa-solid fa-hourglass-end: You can either wait 4 hours and try again, try from a different public IP address, or you can <a href="#still-have-questions">let me know</a> and I will reset the password/unban you. Click <a href="https://travisflix.com/help/_media/support-noicon.pdf">here</a> to download this support site as a :fa-regular fa-file-pdf: pdf.</p>
+<p><img src="_media/site-cant-be-reached.png" alt="site-cant-be-reached" /></p>
+<p>Conf:</p>
+<pre class="editorconfig"><code>[jellyfin]
+
+backend = pyinotify
+enabled = true
+port = 80,443
+protocol = tcp
+filter = jellyfin
+maxretry = 5
+bantime = 14400
+findtime = 900
+logpath = /usr/local/jellyfin/config/log/log_*
+action = iptables-allports[name=jellyin, chain=DOCKER-USER]
+ignoreself = true
+ignoreip = 47.150.254.140,172.18.0.1,172.18.0.2,172.18.0.3</code></pre>
+<h2>Media Stream Playback Problems</h2>
+<h3>:fa-solid fa-wifi: Wireless Users</h3>
+<p>:fa-solid fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5e/6 ethernet cable :fas fa-ethernet:. If you only have CAT 5, do yourself a favor <strong>throw that shit away</strong>.</p>
+<p>If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses 802.11AC (or the newer 802.11AX aka WiFi6) and is using a channel width of 80, or 160 MHz.</p>
+<p>?&gt; Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices. The 802.11N standard can utilize both 2.4 + 5 Ghz frequencies. Just because you assume you are on 5 Ghz (by connecting to a SSID with “-5G” appended), that technically does not indicate you are on 802.11AC. If you need help to do simple verification, contact your nearest tech-savvy family relative instead of me.</p>
+<p><img src="_media/wifi-standards-quick-comparison-table.jpg" alt="wifi-standards" /></p>
+<h3>:fa-solid fa-ethernet: Hardwire Users</h3>
+<ol>
+<li>During video playback—In your browser click the settings/cog :fa fa-cog: button underneath the progress bar to the right of the video controls</li>
+<li>Ensure <code>QUALITY</code> is set to <code>AUTO</code></li>
+<li>Click <code>PLAYBACK DATA</code></li>
+<li>Under <code>Playback Info</code>, determine the play type displayed next to <code>Play method:</code></li>
+<li>If it is <code>DirectPlay</code>, this means the server is streaming the direct media file to your computer without a problem, however the cause of intermittent buffering/glitching could be due to you not having enough bandwidth to support the playback of the media file. This does not necessarily mean your ISP connection does not have enough bandwidth, but could mean:
+<ul>
+<li>Your connection to your home router or switch has an issue</li>
+<li>The available bandwidth is being consumed by another user</li>
+<li>Your internet traffic is being shaped by your ISP with observable negative impact</li>
+<li>Go to <a href="#run-a-speed-test">run a speed test</a> to run a bandwidth test directly against the travisflix.com server</li>
+</ul></li>
+</ol>
+<p><img src="_media/playbackdata.png" alt="Playback" /></p>
+<p>You can also get a sense for how much bandwidth is required by looking at the videos bitrate info which is available by clicking on the ellipsis :fa-solid fa-ellipsis-vertical: of the medias image poster, then clicking <code>Media Info</code>.</p>
+<p><img src="_media/ellipsis.png" alt="ellipsis" /> … <img src="_media/bitrate.png" alt="bitrate" /></p>
+<h3>Video Not Filling The Screen</h3>
+<ul>
+<li>🎥 Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.</li>
+<li>A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.</li>
+<li>Films with an aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom. ↔️</li>
+</ul>
+<h3>Video is Not Streaming</h3>
+<p>🎲 First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.</p>
+<p>?&gt; <del>The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to <a href="https://en.wikipedia.org/wiki/Transcoding">transcode</a> the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds).</del> The reason for the striked-out text is because I have disabled the ability for video codec transcoding. Efforts in video codec standardization across the site is more than sufficient for any device type to playback without issues. Additional reasons for transcoding can be found under <code>Play method:</code> discussed further above. If it is transcoding, the play method will state <code>HLS</code> and not <code>DirectPlay</code>.</p>
+<ol>
+<li><a href="#how-to-stream-multiple-versions-of-a-film">Check if multiple versions are available</a> of the stream you are having trouble with.
+<ul>
+<li>If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.</li>
+<li>Versions with <code>RARBG</code> in the suffix is recommended if the other is not working for you.</li>
+</ul>
+<p><img src="_media/multiple-vers.png" alt="multiple versions" /></p></li>
+<li>Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.</li>
+<li>Open <a href="http://speed.travisflix.com/">speed.travisflix.com</a> (tests speed directly from streaming server), or <a href="https://fast.com/">fast.com</a> and run a few tests.</li>
+<li>Note how much bandwidth you have at your disposal dedicated to downloading (The <strong>Download</strong> bandwidth is the only important factor).</li>
+<li>As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 40+ Mbps.
+<ul>
+<li>Testing has shown the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps</li>
+</ul>
+<pre class="editorconfig"><code>vnstat -i enp4s0 -tr 30
+44816 packets sampled in 30 seconds
+Traffic average for enp4s0
+
+rx        11.74 Mbit/s           993 packets/s
+tx       337.67 kbit/s           499 packets/s</code></pre>
+<ul>
+<li>Further testing has shown that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4–7 Mbps (however about every 30s, the device downloads and buffers the video using a bandwidth of 30–50 Mbps)</li>
+</ul>
+<p><img src="_media/network-bandwidth-video-stream.png" alt="Video Stream Bandwidth Graph" /> <img src="_media/network-bandwidth-video-stream2.png" alt="Video Stream Bandwidth Graph 2" /></p></li>
+<li><p>General rule of thumb—if the content’s bitrate &gt; 10,000 Kbps it is going to require a faster connection.</p></li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" data-line-number="1">$ <span class="ex">speedtest-cli</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="ex">Retrieving</span> speedtest.net configuration...</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="ex">Testing</span> from Frontier Communications.</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="ex">Retrieving</span> speedtest.net server list...</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="ex">Selecting</span> best server based on ping...</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="ex">Hosted</span> by Whitesky Communications LLC (Los Angeles, CA) [<span class="ex">29.64</span> km]: 16.822 ms</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="ex">Testing</span> download speed ......................................................................................</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="ex">Download</span>: 79.41 Mbit/s</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="ex">Testing</span> upload speed ........................................................................................</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="ex">Upload</span>: 122.33 Mbit/s</a></code></pre></div>
+<h3>Subtitles Not Loading</h3>
+<p>:far fa-closed-captioning: This problem mostly occurs with TV show episodes, but could occur with some movies as well. After you have selected the subtitle and it fails, wait about 15 seconds and re-select the same subtitle again. The root cause results from the server needing to retrieve the entire media file from the data-source before the subtitle stream can be extracted and pushed out to the client.</p>
+<h2>Supported Devices or Platforms</h2>
+<p>Go to the Jellyfin site for the <a href="https://jellyfin.org/docs/">official documentation</a> of all <a href="https://jellyfin.org/docs/general/clients/index.html">supported clients</a> and user streaming devices.</p>
+<h3>:fa-solid fa-desktop: Browsers</h3>
+<p>The goal is to provide support for the two most recent versions of these browsers.</p>
+<ul>
+<li>:fa-brands fa-firefox: Firefox</li>
+<li>:fa-brands fa-firefox: Firefox ESR</li>
+<li>:fa-brands fa-chrome: Chrome</li>
+<li>:fa-brands fa-chrome: :fab fa-android: Chrome for Android</li>
+<li>:fa-brands fa-safari: Safari for MacOS and iOS</li>
+<li>:fa-brands fa-edge: Edge</li>
+</ul>
+<h3>:fab fa-android: Android</h3>
+<p><strong>Jellyfin for Android</strong></p>
+<p>The official Jellyfin Android app, which supports Android 5 and above.</p>
+<p>Status: :fa-solid fa-star: Active</p>
+<p>Links:</p>
+<p><a href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile"><img src="_media/google-play.png" alt="google-play" /></a> <a href="https://www.amazon.com/gp/aw/d/B081RFTTQ9"><img src="_media/amazon.png" alt="amazon" /></a> <a href="https://f-droid.org/en/packages/org.jellyfin.mobile/"><img src="_media/fdroid.png" alt="fdroid" /></a></p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-android">Github.com/jellyfin/jellyfin-android</a></li>
+<li><a href="https://jellyfin.org/clients/#android">jellyfin.org/clients/#android</a></li>
+</ul>
+<h3>:fa-brands fa-amazon: Amazon FireTV Stick &amp; AndroidTV</h3>
+<p>Jellyfin Android TV is the official Jellyfin client for Android TV, NVIDIA Shield, and Amazon Fire TV devices.</p>
+<p>Status: :fa-solid fa-star: Active</p>
+<p>Links:</p>
+<p><a href="https://play.google.com/store/apps/details?id=org.jellyfin.androidtv"><img src="_media/google-play.png" alt="google-play" /></a> <a href="https://www.amazon.com/gp/aw/d/B07TX7Z725"><img src="_media/amazon.png" alt="amazon" /></a></p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-androidtv">github.com/jellyfin/jellyfin-androidtv</a></li>
+<li><a href="https://jellyfin.org/clients/#androidtv">jellyfin.org/clients/#androidtv</a></li>
+</ul>
+<h3>Roku</h3>
+<p>Jellyfin for Roku</p>
+<p>Status: :fa-solid fa-star: Active</p>
+<p>Links:</p>
+<p><a href="https://channelstore.roku.com/details/592369/jellyfin"><img src="_media/Roku-logo-200px.png" alt="Roku" /></a></p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-roku">github.com/jellyfin/jellyfin-roku</a></li>
+</ul>
+<h3>Findroid</h3>
+<p>Findroid is a third-party Android application for Jellyfin that provides a native user interface to browse and play movies and series.</p>
+<p>Status: :fa-solid fa-star: Active, 3rd-Party</p>
+<p>Links:</p>
+<p><a href="https://play.google.com/store/apps/details?id=dev.jdtech.jellyfin"><img src="_media/google-play.png" alt="google-play" /></a> <a href="https://apt.izzysoft.de/fdroid/index/apk/dev.jdtech.jellyfin"><img src="_media/IzzyOnDroid-200px.png" alt="IzzyOnDroid" /></a></p>
+<ul>
+<li><a href="https://github.com/jarnedemeulemeester/findroid">github.com/jarnedemeulemeester/findroid</a></li>
+</ul>
+<h3>:fa-brands fa-apple: Apple</h3>
+<p><strong>Jellyfin for iOS</strong></p>
+<p>The official Jellyfin iOS client.</p>
+<p>Status: :fa-solid fa-star: Active</p>
+<p>Links:</p>
+<p><a href="https://apps.apple.com/us/app/jellyfin-mobile/id1480192618"><img src="_media/apple.png" alt="Apple" /></a></p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-expo">github.com/jellyfin/jellyfin-expo</a></li>
+</ul>
+<p><strong>SwiftFin for iOS/tvOS</strong></p>
+<p>:fa-brands fa-apple: The Jellyfin app rewritten in Swift in order to support HDR and direct play capabilities for multiple formats.</p>
+<p>Status: :fa-solid fa-star-half-stroke: In-Development</p>
+<p>Links:</p>
+<p><a href="https://testflight.apple.com/join/oZd0QzWv"><img src="_media/testflight-badge.png" alt="Apple" /></a></p>
+<ul>
+<li><a href="https://github.com/jellyfin/SwiftFin">github.com/jellyfin/SwiftFin</a></li>
+</ul>
+<p><strong>Infuse for iOS/Apple TV</strong></p>
+<p>:fa-brands fa-apple: A third party client with HDR support and direct play capabilities for multiple formats.</p>
+<p>Status: :fa-solid fa-star: Active, 3rd-Party</p>
+<p>Links:</p>
+<p><a href="https://apps.apple.com/app/id1136220934?mt=8"><img src="_media/apple.png" alt="Apple" /></a></p>
+<ul>
+<li><a href="https://firecore.com/infuse">firecore.com/infuse</a></li>
+</ul>
+<p><strong>MrMC for iOS/Apple TV</strong></p>
+<p>:fa-brands fa-apple: A third party app with direct play and HDR support. Available on iOS and Apple TV.</p>
+<p>Status: :fa-solid fa-star: Active, 3rd-Party</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://mrmc.tv/">mrmc.tv</a></li>
+</ul>
+<h3>:fa-solid fa-tv: LG WebOS</h3>
+<p>The official Jellyfin WebOS app.</p>
+<p>Status: :fa-solid fa-star-half-stroke: In-Development</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-webos">github.com/jellyfin/jellyfin-webos</a></li>
+</ul>
+<h3>:fa-solid fa-tv: Samsung TV</h3>
+<p>The official Jellyfin Samsung TV client for TVs running Tizen (2015 and above models).</p>
+<p>Status: :fa-solid fa-star-half-stroke: In-Development</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-tizen">github.com/jellyfin/jellyfin-tizen</a></li>
+</ul>
+<h3>:fa-solid fa-terminal: Cross-Platform Clients</h3>
+<p><strong>Kodi</strong></p>
+<p>Kodi thick client for Jellyfin. This add-on syncs your Jellyfin metadata into Kodi’s local database for a more native feel.</p>
+<p>Status: :fa-solid fa-star: Active</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-kodi">github.com/jellyfin/jellyfin-kodi</a></li>
+<li><a href="https://jellyfin.org/docs/general/clients/kodi.html">Installing</a></li>
+</ul>
+<p><strong>JellyCon</strong></p>
+<p>Kodi thin client for Jellyfin. This add-on is fully dynamic and allows for fast user switching and is compatible with other Kodi sources.</p>
+<p>Status: :fa-solid fa-star: Active</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellycon">github.com/jellyfin/jellycon</a></li>
+<li><a href="https://jellyfin.org/docs/general/clients/kodi.html">Installing</a></li>
+</ul>
+<p><strong>Jellyfin Media Player</strong></p>
+<p>Desktop client using jellyfin-web with embedded MPV player. Supports direct play of most file formats on Windows, Mac OS, and Linux. Media plays within the same window using the jellyfin-web interface unlike Jellyfin Desktop. Supports audio passthrough. Based on Plex Media Player.</p>
+<p>Status: :fa-solid fa-star: Active</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-media-player">github.com/jellyfin/jellyfin-media-player</a></li>
+<li><a href="https://github.com/jellyfin/jellyfin-media-player/releases">Binary Releases</a></li>
+<li><a href="https://flathub.org/apps/details/com.github.iwalton3.jellyfin-media-player">Flathub</a></li>
+</ul>
+<p><strong>Jellyfin MPV Shim</strong></p>
+<p>Provides background cast client using MPV. The client has support for direct play of advanced codecs such as 10 bit HEVC with subtitles, many customizable options, and whole-season subtitle preference support.</p>
+<p>Status: :fa-solid fa-star: Active</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin-mpv-shim">github.com/jellyfin/jellyfin-mpv-shim</a></li>
+<li><a href="https://github.com/jellyfin/jellyfin-mpv-shim/releases">Windows Release</a></li>
+<li><a href="https://flathub.org/apps/details/com.github.iwalton3.jellyfin-mpv-shim">Flathub</a></li>
+</ul>
+<p><strong>jftui</strong></p>
+<p>:fa-brands fa-linux: A terminal client for Jellyfin built as a REPL interface, that uses mpv for multimedia playback.</p>
+<p>Status: :fa-solid fa-star: Active, 3rd-Party</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/Aanok/jftui">github.com/Aanok/jftui</a></li>
+</ul>
+<h2>How to use Quick Connect</h2>
+<p>Starting with Jellyfin server version 10.7.0 and supported clients, you can use Quick Connect to sign in to your account without the need of a password. You need to previously be logged into a supported client, like the default Jellyfin Web Client.</p>
+<p><strong>Using Quick Connect</strong></p>
+<p>To sign in to a supported client, you have to enter the Quick Connect code in your user settings. <br> Settings &gt; Quick Connect</p>
+<p><img src="_media/using-quick-connect.png" alt="using-quick-connect" /></p>
+<p>If the code is validated successfully, your new device will be signed in without entering your Jellyfin username or password on the new device. <br> The client will generate a 6 digit code, which you have to enter in the already signed in client in your user settings.</p>
+<p><img src="_media/quick-connect.png" alt="quick-connect" /></p>
+<h2>How to Stream Multiple Versions of a Film</h2>
+<p>:fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.</p>
+<p>:fas fa-info-circle: <em>Notice for the movie “Avatar” there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.</em></p>
+<p><img src="_media/avatar3.png" alt="Avatar" /></p>
+<p>Apocolypse Now has 3 distinct editions available:</p>
+<p><img src="_media/versions.png" alt="versions" /></p>
+<h2>Run a Speed Test</h2>
+<p>:fa-solid fa-gauge-high: Go to <a href="http://speed.travisflix.com/">speed.travisflix.com</a> to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.</p>
+<h2>Codec Information &amp; Standards</h2>
+<blockquote>
+<p>Video: <strong><a href="https://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-Is-H.264-74735.aspx">H.264 (AVC)</a></strong> / Audio: <strong><a href="https://en.wikipedia.org/wiki/Advanced_Audio_Coding">AAC</a> 5.1CH</strong></p>
+</blockquote>
+<p>Virtually all media on the site will be using the video/audio codec specs listed below. The actual media file itself may be in either the standard “mp4” (<a href="https://en.wikipedia.org/wiki/MPEG-4_Part_14">Mpeg-4</a>), or “mkv” (<a href="https://en.wikipedia.org/wiki/Matroska">Matroska</a>), which are referred to as containers. Containers themselves have nothing to do with the codec used for the video and audio streams. Containers can be thought of as universally recognized digital media delivery packages. However despite this understanding, shitty media handling implementation by the major mobile OS developers (you know the ones I’m talkin’ about) may force the server to strip the container off of the internal media streams before repackaging and delivering it to mobile devices in a format more easily consumed, such as “ts” (<a href="https://en.wikipedia.org/wiki/MPEG_transport_stream">Transport Stream</a>).</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Video</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Format:</td>
+<td>AVC</td>
+</tr>
+<tr class="even">
+<td>Format/Info:</td>
+<td>Advanced Video Codec</td>
+</tr>
+<tr class="odd">
+<td>Format profile:</td>
+<td><a href="mailto:High@L4.1">High@L4.1</a></td>
+</tr>
+<tr class="even">
+<td>Format settings:</td>
+<td>CABAC / 4 Ref Frames</td>
+</tr>
+<tr class="odd">
+<td>Codec ID/Info:</td>
+<td>Advanced Video Coding</td>
+</tr>
+<tr class="even">
+<td>Bit rate:</td>
+<td>2 500 kb/s</td>
+</tr>
+<tr class="odd">
+<td>Frame rate mode:</td>
+<td>Constant</td>
+</tr>
+<tr class="even">
+<td>Frame rate:</td>
+<td>23.976 (23976/1000) FPS</td>
+</tr>
+<tr class="odd">
+<td>Color space:</td>
+<td>YUV</td>
+</tr>
+<tr class="even">
+<td>Bit depth:</td>
+<td>8 bits</td>
+</tr>
+<tr class="odd">
+<td>Scan type:</td>
+<td>Progressive</td>
+</tr>
+<tr class="even">
+<td>Writing library:</td>
+<td>x264 core 152 r2851M ba24899</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Audio</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format:</td>
+<td>AAC LC</td>
+</tr>
+<tr class="even">
+<td>Format/Info:</td>
+<td>Advanced Audio Codec Low Complexity</td>
+</tr>
+<tr class="odd">
+<td>Codec ID:</td>
+<td>mp4a-40-2</td>
+</tr>
+<tr class="even">
+<td>Bit rate mode:</td>
+<td>Constant</td>
+</tr>
+<tr class="odd">
+<td>Bit rate:</td>
+<td>224 kb/s</td>
+</tr>
+<tr class="even">
+<td>Channel(s):</td>
+<td>6 channels</td>
+</tr>
+<tr class="odd">
+<td>Channel layout:</td>
+<td>C L R Ls Rs LFE</td>
+</tr>
+<tr class="even">
+<td>Sampling rate:</td>
+<td>48.0 kHz</td>
+</tr>
+<tr class="odd">
+<td>Frame rate:</td>
+<td>46.875 FPS (1024 SPF)</td>
+</tr>
+<tr class="even">
+<td>Compression mode:</td>
+<td>Lossy</td>
+</tr>
+</tbody>
+</table>
+<h2>Connecting over Tor Network</h2>
+<p>?&gt; 🧅 Onion address: <a href="http://zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion">zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion</a></p>
+<p>If you visit <a href="https://travisflix.com">travisflix.com</a> using the <a href="https://www.torproject.org/download/">Tor Browser</a>, you will automatically be redirected to the onion address.</p>
+<p>!&gt; As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)</p>
+<p><img src="_media/tor-browser.jpg" alt="tor-browser" /></p>
+<h2>Downloading Movies &amp; Shows</h2>
+<p>:fa-solid fa-download: You can download anything that you see. Click on the ellipsis :fa-solid fa-ellipsis-vertical: of the media you want to download and then click DOWNLOAD :fa-regular fa-floppy-disk:.</p>
+<p>!&gt; :fa-regular fa-face-frown fa-lg: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.</p>
+<p>?&gt; As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor <a href="#connecting-over-tor-network">onion address</a> as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)</p>
+<p>conf:</p>
+<pre class="nginx"><code>    location ~ ^/Items/(.*)/Download$ {
+        limit_rate 4096k; # Speed in KB/s (Kilobytes)
+        limit_conn perip 1; # Simultaneous connections per ip address
+        limit_conn_status 429;
+        proxy_buffering on; # Required for limit_conn
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Protocol $scheme;
+        proxy_set_header X-Forwarded-Host $http_host;
+        add_header X-Nginx-IPCountry $HTTP_CF_IPCOUNTRY;
+        add_header X-Nginx-ClientIP $remote_addr;
+        add_header X-Nginx-ServerIP $server_addr;
+        add_header X-Nginx-Forwarded-For $proxy_add_x_forwarded_for;
+        add_header X-Nginx-Forwarded-Host $http_host;
+        proxy_pass http://jellyfin_server;
+    }</code></pre>
+<h2>Remote Control of Shared Devices</h2>
+<p>:fa-brands fa-slideshare: Sorry, feature had been broken ever since I applied network-level firewall rules. You should now be able to control your other devices as long as you are logged in with the same account. Problem was inbound UDP/1900 for DLNA not open, whoopsie daisy. <a href="https://travisflix.com/">travisflix.com</a> <del>traverses two independent reverse proxies as well</del> so things can get a little confusing and hard to keep track of for me.</p>
+<ol>
+<li>Log in with your browser first</li>
+<li>Log in with the device you are wanting to remotely control (must not be identical to the controlling device, needs separate internal ID’s)</li>
+<li>Immediately after step 2, click the icon highlighted in the image below</li>
+<li>Then click on the device you are wanting to control</li>
+<li>Once that icon displays the controlled device next to it, search/browse the desired media and click play like normal</li>
+<li>It should now be playing what you clicked on your remotely controlled device</li>
+</ol>
+<p><img src="_media/remote-control-01.png" alt="Remote Control 01" /></p>
+<p><img src="_media/remote-control-02.png" alt="Remote Control 02" /></p>
+<h2>Uploading Files</h2>
+<ol>
+<li>:fas fa-cloud-upload-alt: Go to <a href="https://upload.travisflix.com/">upload.travisflix.com</a></li>
+<li>Credentials: <strong>username</strong> — travisflix | <strong>password</strong> — upload</li>
+<li>Click the Upload button and select the media for upload
+<ul>
+<li>You can select multiple files/folders per upload session</li>
+</ul></li>
+<li><del>When finished, send me a message in the Telegram room <a href="https://t.me/travisflix">t.me/travisflix</a></del>
+<ul>
+<li><del>If you can not use Telegram, send me an email <a href="mailto:travis@travisflix.com">travis@travisflix.com</a></del></li>
+</ul></li>
+</ol>
+<h2>Plain-text media list/index</h2>
+<p>These plain-text files contain an index of all media for which it corresponds. The files are regenerated every hour 24/7/365 for the most up-to-date media info.</p>
+<p>:fas fa-list: <a href="https://travisflix.com/movies.txt">/movies.txt</a><br> :fas fa-list: <a href="https://travisflix.com/shows.txt">/shows.txt</a><br> :fas fa-list: <a href="https://travisflix.com/standup.txt">/standup.txt</a><br> :fas fa-list: <a href="https://travisflix.com/motogp.txt">/motogp.txt</a><br> :fas fa-list: <a href="https://travisflix.com/formula1.txt">/formula1.txt</a><br> :fas fa-list: <a href="https://travisflix.com/tech.txt">/tech.txt</a><br> :fas fa-list: <a href="https://travisflix.com/tennis.txt">/tennis.txt</a><br> :fas fa-list: <a href="https://travisflix.com/podcasts.txt">/podcasts.txt</a><br> :fas fa-list: <a href="https://travisflix.com/starcraft.txt">/starcraft.txt</a></p>
+<p>Bash script that generates the files:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co">#!/usr/bin/env bash</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="va">nginx_www=</span><span class="st">&#39;/usr/local/linuxserver-nginx/config/www&#39;</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="va">jf_media=</span><span class="st">&#39;/usr/local/jellyfin/media&#39;</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="kw">if [[</span> <span class="ot">-d</span> /usr/local/jellyfin/media &amp;&amp; <span class="ot">-f</span> /usr/local/jellyfin/media/scriptcheck<span class="kw"> ]]</span>; <span class="kw">then</span></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7">    <span class="co"># Rclone mount exists, no need to remount</span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb5-9" data-line-number="9">    <span class="co"># Exit script if variable is empty</span></a>
+<a class="sourceLine" id="cb5-10" data-line-number="10">    [ <span class="ex">-z</span> <span class="st">&quot;</span><span class="va">$nginx_www</span><span class="st">&quot;</span> ] <span class="kw">&amp;&amp;</span> <span class="kw">{</span> <span class="bu">echo</span> <span class="st">&quot;Error: variable nginx_www is not set or empty&quot;</span><span class="kw">;</span> <span class="bu">exit</span> 1<span class="kw">;</span> <span class="kw">}</span></a>
+<a class="sourceLine" id="cb5-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb5-12" data-line-number="12">    <span class="co"># Refresh public text files with media index</span></a>
+<a class="sourceLine" id="cb5-13" data-line-number="13">    <span class="bu">cd</span> /usr/local/jellyfin/media</a>
+<a class="sourceLine" id="cb5-14" data-line-number="14">    <span class="fu">find</span> /usr/local/jellyfin/media/video-movies -mindepth 1 -maxdepth 1 -type d -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="op">&gt;</span> <span class="va">$nginx_www</span>/movies.txt</a>
+<a class="sourceLine" id="cb5-15" data-line-number="15">    <span class="fu">find</span> /usr/local/jellyfin/media/video-shows -mindepth 1 -maxdepth 1 -type d -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="op">&gt;</span> <span class="va">$nginx_www</span>/shows.txt</a>
+<a class="sourceLine" id="cb5-16" data-line-number="16">    <span class="ex">tree</span> --noreport -d --charset=en_US.utf8 /usr/local/jellyfin/media/video-shows <span class="op">&gt;&gt;</span> <span class="va">$nginx_www</span>/shows.txt</a>
+<a class="sourceLine" id="cb5-17" data-line-number="17">    <span class="fu">find</span> /usr/local/jellyfin/media/video-standup -mindepth 1 -maxdepth 1 -type d -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="op">&gt;</span> <span class="va">$nginx_www</span>/standup.txt</a>
+<a class="sourceLine" id="cb5-18" data-line-number="18">    <span class="fu">find</span> /usr/local/jellyfin/media/video-tennis -mindepth 1 -maxdepth 1 -type d -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> --reverse <span class="op">&gt;</span> <span class="va">$nginx_www</span>/tennis.txt</a>
+<a class="sourceLine" id="cb5-19" data-line-number="19">    <span class="fu">find</span> /usr/local/jellyfin/media/video-starcraft -mindepth 1 -maxdepth 1 -type f -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> --reverse <span class="op">&gt;</span> <span class="va">$nginx_www</span>/starcraft.txt</a>
+<a class="sourceLine" id="cb5-20" data-line-number="20">    <span class="fu">find</span> /usr/local/jellyfin/media/video-tech -mindepth 1 -maxdepth 1 -type d -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="op">&gt;</span> <span class="va">$nginx_www</span>/tech.txt</a>
+<a class="sourceLine" id="cb5-21" data-line-number="21">    <span class="fu">find</span> /usr/local/jellyfin/media/podcasts -mindepth 1 -maxdepth 2 -type d -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="op">&gt;</span> <span class="va">$nginx_www</span>/podcasts.txt</a>
+<a class="sourceLine" id="cb5-22" data-line-number="22">    <span class="ex">tree</span> --noreport --charset=en_US.utf8 /usr/local/jellyfin/media/podcasts <span class="op">&gt;&gt;</span> <span class="va">$nginx_www</span>/podcasts.txt</a>
+<a class="sourceLine" id="cb5-23" data-line-number="23">    <span class="co"># Sort reversed</span></a>
+<a class="sourceLine" id="cb5-24" data-line-number="24">    <span class="fu">find</span> /usr/local/jellyfin/media/video-motogp -mindepth 1 -maxdepth 1 -type d -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> --reverse <span class="op">&gt;</span> <span class="va">$nginx_www</span>/motogp.txt</a>
+<a class="sourceLine" id="cb5-25" data-line-number="25">    <span class="fu">find</span> /usr/local/jellyfin/media/video-formula1 -mindepth 1 -maxdepth 1 -type d -printf <span class="st">&#39;%f\n&#39;</span> <span class="kw">|</span> <span class="fu">sort</span> --reverse <span class="op">&gt;</span> <span class="va">$nginx_www</span>/formula1.txt</a>
+<a class="sourceLine" id="cb5-26" data-line-number="26"><span class="kw">else</span></a>
+<a class="sourceLine" id="cb5-27" data-line-number="27">    <span class="bu">exit</span> 1</a>
+<a class="sourceLine" id="cb5-28" data-line-number="28"><span class="kw">fi</span></a></code></pre></div>
+<h2>Where is the status page</h2>
+<p>:fas fa-server: <a href="https://status.travisflix.com/">status.travisflix.com</a></p>
+<p>The cumulative 30-day HTTPS uptime for the travisflix.com web service has on average been between <strong>99.95%</strong> - <strong>99.99%</strong></p>
+<p>?&gt; This percentage is referred to as “SLA” (service level agreement). For instance, the <a href="https://workspace.google.com/intl/en/terms/sla.html">Google Workspace SLA</a> is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc. You can view the status for Google <a href="https://www.google.com/appsstatus">here</a>.</p>
+<!-- ![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png) -->
+<p><img src="_media/travisflix-status-09182022.png" alt="TravisFlix Uptime" /></p>
+<p><img src="_media/travisflix-status-all-06042021.png" alt="TravisFlix Uptime" /></p>
+<h2>Do you have server statistics</h2>
+<blockquote>
+<p>:fas fa-server: <a href="https://statistics.travisflix.com/">statistics.travisflix.com</a></p>
+</blockquote>
+<p>The following iframe represents the same data as on <a href="https://statistics.travisflix.com/">statistics.travisflix.com</a>.</p>
+<iframe src="//statistics.travisflix.com/netdata-dark.html" width="100%" height="870px" style="border:0px;overflow-y:visible;" scrolling="yes">
+</iframe>
+<h2>How to Support/Donate</h2>
+<p>Please donate if you are able to spare a few dollars. All donations will help ensure this site stays up and running, and the content library continues to increase in size and variety.</p>
+<blockquote>
+<p>For proof of my out-of-pocket expenses, below is a screenshot of my invoice history</p>
+</blockquote>
+<p><img src="_media/linode-invoices.png" alt="linode-invoices" /></p>
+<ul>
+<li>:fab fa-linode: Linode cloud operating expense: $20/per month.</li>
+<li>:fa-regular fa-face-tongue-money: This site does not have any available methods of monetization nor do I have plans to.</li>
+<li>:fa-solid fa-hourglass-end: As time goes on, the feeling that unless I am able to start reclaiming a portion of the costs, it will only shift the balance in the direction of shutting down the site.</li>
+</ul>
+<h3>:fa-solid fa-money-bill: Cash App</h3>
+<p>Cash App ID: <strong>$visualblind</strong></p>
+<p align="center">
+<img src="_media/cashapp.png" width=450px>
+</p>
+<h3>:fa-solid fa-credit-card: Venmo</h3>
+<blockquote>
+<p>@visualblind</p>
+</blockquote>
+<p><img src="_media/profile-helmet.jpg" alt="profile-helmet" /> This is my profile picture on Venmo.</p>
+<h3>:fa-solid fa-hand-holding-dollar: Open Collective Donation</h3>
+<p>:fa-solid fa-credit-card: Credit cards accepted, use the button below to donate any amount you want.</p>
+<p><a href="https://opencollective.com/travisflix/donate"><img src="https://opencollective.com/webpack/donate/button.png?color=blue" alt="Open Collective" /></a></p>
+<h3>:fa-brands fa-cc-stripe: Stripe</h3>
+<p>:fa-solid fa-credit-card: Credit cards accepted, use the link below to donate any amount you want.</p>
+<p>Payment link: <a href="https://donate.stripe.com/9AQfZJ9plfKi7io000" class="uri">https://donate.stripe.com/9AQfZJ9plfKi7io000</a></p>
+<p><img src="_media/stripe-payment-card-logo-bg.png" alt="Stripe" /></p>
+<h3>:fa-brands fa-bitcoin: Bitcoin</h3>
+<p>Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just <a href="#still-have-questions">let me know</a> and we can arrange it.</p>
+<blockquote>
+<p>:fa-brands fa-bitcoin: <strong>Option #1</strong> <a href="bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g">bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g</a></p>
+<hr />
+<p>:fa-brands fa-bitcoin: <strong>Option #2</strong> <a href="bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4">32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4</a><br> <a href="https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/"><img src="_media/greenaddress-donate-green.png" alt="GreenAddress Permanent Payment URL" /></a></p>
+<p>QR Code:<br> <img src="_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png" alt="BTC" /></p>
+</blockquote>
+<h4>Real-time Bitcoin Price (USD):</h4>
+<iframe id="iframebtc" src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no">
+</iframe>
+<h2>Still have questions?</h2>
+<ul>
+<li>📨 Send me an email at <a href="mailto:travis@travisflix.com">travis@travisflix.com</a></li>
+<li>:fab fa-telegram: Join the Telegram room at <a href="https://t.me/travisflix">t.me/travisflix</a></li>
+<li>:fa-solid fa-comments: Join the Matrix Chatroom at <a href="https://matrix.to/#/#travisflix.com:matrix.org">matrix.to/#/#travisflix.com:matrix.org</a></li>
+<li>:fa-regular fa-address-card: My contact information is also available online at <a href="https://travisrunyard.us/">travisrunyard.us</a> and <a href="https://4kib.com/about/">4kib.com/about</a></li>
+</ul>
+<hr />
+</body>
+</html>

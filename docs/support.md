@@ -2,7 +2,7 @@
 
 ## Having Trouble Logging In
 
-### :fa-solid fa-triangle-exclamation: If You Receive an Error MSG:
+### If You Receive an Error MSG:
 
 The cause of this is usually an issue with the cookies in your local browser cache.
 You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
@@ -11,13 +11,13 @@ You can test/bypass the browser cache by opening an incognito window :fas fa-use
 
 ![browser-cache-02](_media/browser-cache-02.png)
 
-!> :fa-regular fa-face-meh: If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+!> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
-### :fa-solid fa-toilet-paper-slash: If You DO NOT Receive an Error MSG:
+### If You DO NOT Receive an Error MSG:
 
 Most likely your IP address has been banned for entering an invalid username or password. See below for more info.
 
-### :fa-solid fa-bong: Invalid Username/Password:
+### Invalid Username/Password:
 
 :fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a white screen.
 
@@ -47,7 +47,7 @@ ignoreip = 47.150.254.140,172.18.0.1,172.18.0.2,172.18.0.3
 
 ## Media Stream Playback Problems
 
-### :fa-solid fa-wifi: Wireless Users
+### Wireless Users
 
 :fa-solid fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5e/6 ethernet cable :fas fa-ethernet:. If you only have CAT 5, do yourself a favor **throw that shit away**.
 
@@ -59,7 +59,7 @@ The 802.11N standard can utilize both 2.4 + 5 Ghz frequencies. Just because you 
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
 
-### :fa-solid fa-ethernet: Hardwire Users
+### Hardwire Users
 
 1. During video playback—In your browser click the settings/cog :fa fa-cog: button underneath the progress bar to the right of the video controls
 2. Ensure `QUALITY` is set to `AUTO`
@@ -142,7 +142,7 @@ The root cause results from the server needing to retrieve the entire media file
 
 Go to the Jellyfin site for the [official documentation](https://jellyfin.org/docs/) of all [supported clients](https://jellyfin.org/docs/general/clients/index.html) and user streaming devices.
 
-### :fa-solid fa-desktop: Browsers
+### Browsers
 
 The goal is to provide support for the two most recent versions of these browsers.
 
@@ -153,7 +153,7 @@ The goal is to provide support for the two most recent versions of these browser
 * :fa-brands fa-safari: Safari for MacOS and iOS
 * :fa-brands fa-edge: Edge
 
-### :fab fa-android: Android
+### Android
 
 **Jellyfin for Android**
 
@@ -170,7 +170,7 @@ Links:
 * [Github.com/jellyfin/jellyfin-android](https://github.com/jellyfin/jellyfin-android)
 * [jellyfin.org/clients/#android](https://jellyfin.org/clients/#android)
 
-### :fa-brands fa-amazon: Amazon FireTV Stick & AndroidTV
+### Amazon FireTV Stick & AndroidTV
 
 Jellyfin Android TV is the official Jellyfin client for Android TV, NVIDIA Shield, and Amazon Fire TV devices.
 
@@ -209,7 +209,7 @@ Links:
 
 * [github.com/jarnedemeulemeester/findroid](https://github.com/jarnedemeulemeester/findroid)
 
-### :fa-brands fa-apple: Apple
+### Apple
 
 **Jellyfin for iOS**
 
@@ -257,7 +257,7 @@ Links:
 
 * [mrmc.tv](https://mrmc.tv/)
 
-### :fa-solid fa-tv: LG WebOS
+### LG WebOS
 
 The official Jellyfin WebOS app.
 
@@ -267,7 +267,7 @@ Links:
 
 * [github.com/jellyfin/jellyfin-webos](https://github.com/jellyfin/jellyfin-webos)
 
-### :fa-solid fa-tv: Samsung TV
+### Samsung TV
 
 The official Jellyfin Samsung TV client for TVs running Tizen (2015 and above models).
 
@@ -279,7 +279,7 @@ Links:
 
 
 
-### :fa-solid fa-terminal: Cross-Platform Clients
+### Cross-Platform Clients
 
 **Kodi**
 
@@ -570,7 +570,7 @@ Please donate if you are able to spare a few dollars. All donations will help en
 * :fa-regular fa-face-tongue-money: This site does not have any available methods of monetization nor do I have plans to.
 * :fa-solid fa-hourglass-end: As time goes on, the feeling that unless I am able to start reclaiming a portion of the costs, it will only shift the balance in the direction of shutting down the site.
 
-### :fa-solid fa-money-bill: Cash App
+### Cash App
 
 Cash App ID: **$visualblind**
 
@@ -578,20 +578,20 @@ Cash App ID: **$visualblind**
 <img src="_media/cashapp.png" width=450px>
 </p>
 
-### :fa-solid fa-credit-card: Venmo
+### Venmo
 
 > @visualblind
 
 ![profile-helmet](_media/profile-helmet.jpg) This is my profile picture on Venmo.
 
 
-### :fa-solid fa-hand-holding-dollar: Open Collective Donation
+### Open Collective Donation
 
 :fa-solid fa-credit-card: Credit cards accepted, use the button below to donate any amount you want.
 
 [![Open Collective](https://opencollective.com/webpack/donate/button.png?color=blue)](https://opencollective.com/travisflix/donate)
 
-### :fa-brands fa-cc-stripe: Stripe
+### Stripe
 
 :fa-solid fa-credit-card: Credit cards accepted, use the link below to donate any amount you want.
 
@@ -600,7 +600,7 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 
 ![Stripe](_media/stripe-payment-card-logo-bg.png)
 
-### :fa-brands fa-bitcoin: Bitcoin 
+### Bitcoin 
 
 Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#still-have-questions) and we can arrange it.
 
