@@ -339,6 +339,25 @@ Links:
 * [github.com/Aanok/jftui](https://github.com/Aanok/jftui)
 
 
+## How to Stream Multiple Versions of a Film
+
+:fas fa-signal: A subset of movies will have multiple versions available for playback. The reasons usually include native language and dubbed versions or differing qualities (ie: 720p/1080p/4K) or video codecs (H.264/H.265). I tried to standardize every films default version in its original language with dubbed/alternate versions available as the secondary option. I'm not sure how many films have multiple versions but it's probably in the 100-250 range.
+
+**Examples:**
+
+Space Sweepers (2021) is configured with the films native language (Korean) as the default version, with an English dubbed version selectable for playback as the second option in the version drop-down menu.
+
+![multiple-vers-dubbed.png](_media/multiple-vers-dubbed.png)
+
+Avatar (2009) has 4 different versions available (1080p Reg/1080p High/720p BrRip/4K 2160p upscaled) as indicated by the number 4 yellow circle at the top left hand corner of the movie poster image.
+
+![Avatar](_media/avatar3.png)
+
+Apocolypse Now (1979) has 3 distinct editions available:
+
+![versions](_media/versions.png)
+
+
 ## How to use Quick Connect
 
 Starting with Jellyfin server version 10.7.0 and supported clients, you can use Quick Connect to sign in to your account without the need of a password. You need to previously be logged into a supported client, like the default Jellyfin Web Client.
@@ -356,19 +375,6 @@ If the code is validated successfully, your new device will be signed in without
 The client will generate a 6 digit code, which you have to enter in the already signed in client in your user settings.
 
 ![quick-connect](_media/quick-connect.png)
-
-
-## How to Stream Multiple Versions of a Film
-
-:fas fa-signal: Some movies/shows have multiple versions available to stream. These versions will either state different qualities (1080p vs 720), or there can be special edititions such as: remastered editions, alternate endings, directors cuts, theatrical editions etc.
-
-:fas fa-info-circle: *Notice for the movie "Avatar" there are four different versions available as indicated by the yellow circle with number 4 in the top left corner.*
-
-![Avatar](_media/avatar3.png)
-
-Apocolypse Now has 3 distinct editions available:
-
-![versions](_media/versions.png)
 
 
 ## Run a Speed Test
