@@ -416,7 +416,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 ?> 🧅 Onion address: [zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion](http://zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion)
 
-If you visit [travisflix.com](https://travisflix.com) using the [Tor Browser](https://www.torproject.org/download/), you will automatically be redirected to the onion address.
+Visiting [travisflix.com](https://travisflix.com) via the [Tor Browser](https://www.torproject.org/), you will automatically be redirected to the onion address. This is the recommended method to access the Tor site version.
 
 !> As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
 
