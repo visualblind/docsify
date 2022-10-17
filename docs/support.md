@@ -341,7 +341,7 @@ Links:
 
 ## How to Stream Multiple Versions of a Film
 
-:fas fa-signal: A subset of movies will have multiple versions available for playback. The reasons usually include native language and dubbed versions or differing qualities (ie: 720p/1080p/4K) or video codecs (H.264/H.265). I tried to standardize every films default version in its original language with dubbed/alternate versions available as the secondary option. I'm not sure how many films have multiple versions but it's probably in the 100-250 range.
+A subset of movies will have multiple versions available for playback. The reasons usually include native language and dubbed versions or differing qualities (ie: 720p/1080p/4K) or video codecs (H.264/H.265). I tried to standardize every films default version in its original language with dubbed/alternate versions available as the secondary option. I'm not sure how many films have multiple versions but it's probably in the 100-250 range.
 
 **Examples:**
 
