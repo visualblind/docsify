@@ -434,7 +434,7 @@ Visiting [travisflix.com](https://travisflix.com) via the [Tor Browser](https://
 
 :fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD :fa-regular fa-floppy-disk:.
 
-!> :fa-regular fa-face-frown fa-lg: Downloading is rate-limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
+!> :fa-regular fa-face-frown fa-lg: Downloading is rate limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
 
 ?> As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor [onion address](#connecting-over-tor-network) as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
 
