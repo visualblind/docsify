@@ -382,7 +382,7 @@ The client will generate a 6 digit code, which you have to enter in the already 
 :fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
 
 
-## Codec Information & Standards
+## Media Information & Standards
 
 > Video: **[H.264 (AVC)](https://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-Is-H.264-74735.aspx)** / Audio: **[AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) 5.1CH**
 
@@ -416,6 +416,10 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 | Sampling rate: | 48.0 kHz |
 | Frame rate: | 46.875 FPS (1024 SPF) |
 | Compression mode: | Lossy |
+
+TravisFlix is a self-curated reflection of my personal taste in film, in general. There is a heavy concentration of media in the documentary genre in both the movies and TV-series categories. 16% of the movies and 28% of the tv shows are classified as documentaries. You can easily view them by using the "GENRES" link at the top of each media type, find the genre "**DOCUMENTARY >**" and click on it.
+
+![genre-documentary](_media/genre-documentary.png)
 
 
 ## Connecting over Tor Network
