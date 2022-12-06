@@ -424,10 +424,13 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 
 Visiting [travisflix.com](https://travisflix.com) via the [Tor Browser](https://www.torproject.org/), you will automatically be redirected to the onion address. This is the recommended method to access the Tor site version.
 
-!> As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
-
-
 ![tor-browser](_media/tor-browser.jpg)
+
+As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
+
+!> Be advised that using TravisFlix over Tor will be extremely slow. So slow it is almost not worth keeping the tor-version site online. This speed test directly against the webserver proves how slow download speed is (upload speed is irrelevant):
+
+![tor-speed](_media/tor-speed.travisflix.com.jpg)
 
 
 ## Downloading Movies & Shows
