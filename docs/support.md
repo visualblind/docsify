@@ -417,7 +417,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 | Frame rate: | 46.875 FPS (1024 SPF) |
 | Compression mode: | Lossy |
 
-TravisFlix is a self-curated reflection of my personal taste in film, in general. There is a heavy concentration of media in the documentary genre in both the movies and TV-series categories. 16% of the movies and 28% of the tv shows are classified as documentaries. You can easily view them by using the "GENRES" link at the top of each media type, find the genre "**DOCUMENTARY >**" and click on it.
+TravisFlix is a self-curated reflection of my personal taste in film, in general. There is a heavy concentration of media in the documentary genre in both the movies and TV-series categories. 16% of the movies and 28% of the tv shows are classified as documentaries. You can easily view them by using the "GENRES" link at the top of each media type, find the genre "**DOCUMENTARY >**" and click on it. Another method is using the filtering feature that is 
 
 ![genre-documentary](_media/genre-documentary.png)
 
@@ -636,7 +636,8 @@ Bitcoin is the preferred cryptocurrency but if you would rather use a different 
 
 * :incoming_envelope: Send me an email at <travis@travisflix.com>
 * :fab fa-telegram: Join the Telegram room at [t.me/travisflix](https://t.me/travisflix)
+* :fab fa-telegram: You can also contact me on Telegram with the QR code below
 * :fa-solid fa-comments: Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)
-* :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/) and [4kib.com/about](https://4kib.com/about/)
+* :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/) and [4kib.com/about](https://4kib.com/about/)<br>
 
----
+![qr_tmp](_media/qr_tmp.png)
