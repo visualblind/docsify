@@ -140,7 +140,7 @@ The root cause results from the server needing to retrieve the entire media file
 
 ## Supported Devices or Platforms
 
-Go to the official Jellyfin site for the list of all [supported clients](https://jellyfin.org/downloads/clients/all) (user streaming devices such as Roku or FireStick). For a curated/compact version of the official supported clients page, you can use the sub-sections below, or visit the official Jellyfin [documentation](https://jellyfin.org/docs/) for additional in-depth information.
+Go to the official Jellyfin site for the list of all [supported clients](https://jellyfin.org/downloads/clients/all) (user streaming devices such as Roku or FireStick). For a curated/compact version of the supported clients page, you can use the sub-sections below, or visit the Jellyfin [documentation](https://jellyfin.org/docs/) for additional in-depth information.
 
 ### Browsers
 
