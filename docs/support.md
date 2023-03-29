@@ -443,16 +443,16 @@ As a workaround method for downloading multiple videos simultaneously, you may u
 
 :fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD :fa-regular fa-floppy-disk:.
 
-!> :fa-regular fa-face-frown fa-lg: Downloading is rate limited to 4,096 KiB/s (4MiB/s = ~32Mbps) and capped at 1 download at a time per ip address.
+!> :fa-regular fa-face-frown fa-lg: Downloading is rate limited to 5,120 KiB/s (5 MiB/s = ~40 Mbps) and capped at 3 downloads at a time per ip address.
 
-?> As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor [onion address](#connecting-over-tor-network) as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
+?> ~~As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor [onion address](#connecting-over-tor-network) as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)~~
 
-conf:
+web config:
 
 ```nginx
     location ~ ^/Items/(.*)/Download$ {
-        limit_rate 4096k; # Speed in KB/s (Kilobytes)
-        limit_conn perip 1; # Simultaneous connections per ip address
+        limit_rate 5120k; # Speed in KB/s (Kilobytes)
+        limit_conn perip 3; # Simultaneous connections per ip address
         limit_conn_status 429;
         proxy_buffering on; # Required for limit_conn
         proxy_set_header Host $host;
@@ -507,10 +507,8 @@ These plain-text files contain an index of all media for which it corresponds. T
 :fas fa-list: [/standup.txt](https://travisflix.com/standup.txt)<br>
 :fas fa-list: [/motogp.txt](https://travisflix.com/motogp.txt)<br>
 :fas fa-list: [/formula1.txt](https://travisflix.com/formula1.txt)<br>
-:fas fa-list: [/tech.txt](https://travisflix.com/tech.txt)<br>
 :fas fa-list: [/tennis.txt](https://travisflix.com/tennis.txt)<br>
 :fas fa-list: [/podcasts.txt](https://travisflix.com/podcasts.txt)<br>
-:fas fa-list: [/starcraft.txt](https://travisflix.com/starcraft.txt)
 
 Bash script that generates the files:
 
