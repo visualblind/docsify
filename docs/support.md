@@ -2,16 +2,39 @@
 
 ## Having Trouble Logging In
 
-### If You Receive an Error MSG:
+### SELECT SERVER Error Message:
 
-The cause of this is usually an issue with the cookies in your local browser cache.
-You can test/bypass the browser cache by opening an incognito window :fas fa-user-secret: or whatever the equivalent is called with the browser you are using and try to login there. If that works but the normal way did not, then [clear your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en) :fas fa-cookie-bite:.
+The root cause of this problem is due to the `jellyfin_credentials` key value differing from the current server identification number in your web browsers Local Storage.
+
+You will experience this problem whenever the server software has updated or changed, and thereby changing the ID number.
+
+When your browser looks for the old number, it will not be able to locate it and then display the `Select Server` interface in the browser.
+
+![jellyfin-select-server](_media/jellyfin-select-server.png)
+
+You can test/bypass the browser local storage by opening an incognito (private-mode) window :fas fa-user-secret: and login there instead. 
+
+#### Easiest Method
+
+Click the square image above the Add Server button, and click Delete and then refresh the website to resolve the issue.
+
+#### Medium Method
+
+You will need to clear your browsers Local Storage ([by clearing your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en)) :fas fa-cookie-bite:.
 
 !> Check the `Cookies and other site data` option from either the Basic or Advanced tab. Note this is different than cache. Cookies :fas fa-cookie: for all sites will be deleted.
 
 ![browser-cache-02](_media/browser-cache-02.png)
 
-!> If you feel the issue resides on the server-side, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+#### Hardest Method
+
+If you are a technical user and do not want to clear all cookies, you may clear the Local Storage for travisflix.com using the dev tools as shown in the image below:
+
+![browser-local-storage](_media/browser-local-storage.png)
+
+Right click the "https://travisflix.com" entry under Local Storage, and select `Delete All`.
+
+!> If this has not resolved the problem, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
 ### If You DO NOT Receive an Error MSG:
 
