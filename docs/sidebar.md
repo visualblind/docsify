@@ -1,3 +1,3 @@
 <!-- markdownlint-disable-next-line first-line-heading -->
 - [Support](support)
-- [Compatibility Info](compatibility-info.md)
+- [Codec Compatibility](codec-compatibility.md)
