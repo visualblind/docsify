@@ -24,7 +24,8 @@ Subtitles can be tricky because they can cause `Direct Stream` (subtitles are re
 <sup>7</sup>HEVC decoding is only supported on Windows 10 with the HEVC Video Extension from the [Microsoft store](https://www.microsoft.com/store/productId/9NMZLZ57R3T7).  
 <sup>8</sup> Chromium 104 does support HEVC decoding when launched with `--enable-features=PlatformHEVCDecoderSupport` argument. For more informations please look at [enable-chromium-hevc-hardware-decoding](https://github.com/StaZhu/enable-chromium-hevc-hardware-decoding#readme).
 
-!> [Format Cheatsheet](https://en.wikipedia.org/wiki/MPEG-4#MPEG-4_Parts)
+?> [Format Cheatsheet](https://en.wikipedia.org/wiki/MPEG-4#MPEG-4_Parts)
+
 ![Format Cheatsheet](_media/format-cheatsheet.png)
 
 
@@ -58,7 +59,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 
 Subtitles can be a subtle issue for transcoding. Containers have a limited number of subtitles that are supported. If subtitles need to be transcoded, it will happen one of two ways: they can be converted into another format that is supported, or burned into the video due to the subtitle transcoding not being supported. Burning in subtitles is the most intensive method of transcoding. This is due to two transcodings happening at once; applying the subtitle layer on top of the video layer.
 
-Here is a [breakdown](https://www.afterdawn.com/guides/archive/subtitle_formats_explained.cfm) of common subtitle formats.
+?> Here is a [breakdown](https://www.afterdawn.com/guides/archive/subtitle_formats_explained.cfm) of common subtitle formats.
 
 ![subtitle codec compatibility](_media/subtitle-codec-compatibility.png)
 
