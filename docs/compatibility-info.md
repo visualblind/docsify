@@ -1,13 +1,13 @@
-# Compatibility Info
+# Codec Compatibility
 
-## Codec Support
+**Codec Support**
 
 The goal is to `Direct Play` all media. This means the container, video, audio and subtitles are all compatible with the client. If the media is incompatible for any reason, Jellyfin will use FFmpeg to convert the media to a format that the client can process. `Direct Stream` will occur if the audio, container or subtitles happen to not be supported. **If the video codec is unsupported, this will result in video transcoding**.
 
 Subtitles can be tricky because they can cause `Direct Stream` (subtitles are remuxed) or `video transcoding` (burning in subtitles) to occur. This is the most intensive CPU component of transcoding. Decoding is less intensive than encoding.
 
 
-### Video Compatibility
+## Video Compatibility
 
 [Breakdown of video codecs.](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs)
 
@@ -29,7 +29,7 @@ Subtitles can be tricky because they can cause `Direct Stream` (subtitles are re
 ![Format Cheatsheet](_media/format-cheatsheet.png)
 
 
-### Audio Compatibility
+## Audio Compatibility
 
 If the audio codec is unsupported or incompatible (such as playing a 5.1 channel stream on a stereo device), the audio codec must be transcoded. This is not nearly as intensive as video transcoding.
 
@@ -43,7 +43,7 @@ If the audio codec is unsupported or incompatible (such as playing a 5.1 channel
 <sup>6</sup>Supported via passthrough on all devices. Native support for [AC3 & E-AC3](https://www.atsc.org/wp-content/uploads/2015/03/A52-201212-17.pdf) on Roku TVs & Ultra.
 
 
-### Container Compatibility
+## Container Compatibility
 
 If the container is unsupported, this will result in remuxing. The video and audio codec will remain intact but wrapped in a supported container. This is the least intensive process. Most video containers will be remuxed to use the HLS streaming protocol and TS containers. Remuxing shouldn't be a concern even for an RPi3.
 
@@ -55,7 +55,7 @@ If the container is unsupported, this will result in remuxing. The video and aud
 <sup>4</sup>TS is one of the primary containers for streaming for Jellyfin.  
 <sup>5</sup>WebM and OGG have limited codec support (by design), refer to this for WebM and this for OGG.
 
-### Subtitle Compatibility
+## Subtitle Compatibility
 
 Subtitles can be a subtle issue for transcoding. Containers have a limited number of subtitles that are supported. If subtitles need to be transcoded, it will happen one of two ways: they can be converted into another format that is supported, or burned into the video due to the subtitle transcoding not being supported. Burning in subtitles is the most intensive method of transcoding. This is due to two transcodings happening at once; applying the subtitle layer on top of the video layer.
 
@@ -67,7 +67,7 @@ Subtitles can be a subtle issue for transcoding. Containers have a limited numbe
 <sup>2</sup>DVB-SUB ([SUB + IDX](https://forum.videohelp.com/threads/261451-Difference-between-SUB-and-IDX-file)) is another name for VobSub files.  
 <sup>3</sup>EIA-608/708 subtitles are embedded in private channels (channel 21) in a MPEG video codec. EIA-608 are standard CC subtitles with the black bar background, while EIA-708 are typically SDH.
 
-#### Types of Subtitles
+## Types of Subtitles
 
 There are NOT many variations of subtitles. The two basic types of subtitles are plain-text based such as **SubRIP** also called **SRT** and **ASS** (file extensions), and image based subtitles which are mostly used on DVD medias called **VobSUB**.
 
@@ -77,25 +77,39 @@ Furthermore, these subtitles have whats called a disposition inside the media co
 2. **Default**
 3. **Forced**
 
-##### Soft Subs
+### Soft Subs
 
 This is the generic name for subtitles that can be turned on or off. This type of subtitle uses one or more designated subtitle streams within the media container and can only be in one of the three states described above.  
 This category includes picture-based subtitles (**VobSUB**) as well as text-based like **SRT** and **ASS**.
 
 !> These subtitles are usually normal subtitles or **SDH** (**S**ubtitles for **D**eaf and **H**ard of hearing). There is not a big difference between them other than including extra content such as background noises.
 
-##### Burned-in (Hard Subs)
+### Burned-in (Hard Subs)
 
 Burned-in subtitles are subtitles that have been permanently placed in the video and cannot be turned off. At this point I wouldn't even call them subtitles since they are in the video stream and cannot be removed.
 
-##### CC (Closed Captioning)
+### CC (Closed Captioning)
 
-CC subs are embedded inside the video stream however they can be turned on or off at will. This is counter-intuitive as there is a stream specifically for subtitles within media containers.
+CC subtitles also known as EIA-608/708 subtitles are embedded in private channels (channel 21) in a MPEG video codec, however they can be turned on or off at will. EIA-608 are standard CC subtitles with the black bar background, while EIA-708 are typically SDH
 
-?> If you wanted to remove them from the video stream, the following [ffmpeg parameters](https://trac.ffmpeg.org/wiki/HowToExtractAndRemoveClosedCaptions) can be used during remuxing or transcoding:
+This format is falling out of favor for using the designated subtitle stream with the various media containers as it provides increased configuration flexibility.
+
+?> If you wanted to remove CC subs, the following [ffmpeg parameters](https://trac.ffmpeg.org/wiki/HowToExtractAndRemoveClosedCaptions) can be used during remuxing or transcoding:
 
 
 ```
 -bsf:v "filter_units=remove_types=6"
+```
+
+The full command would look like this:
+```
+# mkv remux example:
+ffmpeg -y -i input.mkv -map 0 -c copy -bsf:v "filter_units=remove_types=6" output.mkv
+
+# mp4 remux example:
+ffmpeg -y -i input.mp4 -map 0 -movflags faststart -c copy -bsf:v "filter_units=remove_types=6" output.mp4
+
+# real world example:
+for f in *.mkv; do ffmpeg -y -i "$f" -f srt -i "${f/mkv/srt}" -map 0:v:0 -map 0:a:0 -map 1:0 -default_mode infer_no_subs -dn -map_chapters -1 -metadata:s:v:0 title= -metadata:s:a:0 title= -metadata:s:s:0 title= -metadata:s:a:0 language=eng -metadata:s:s:0 language=eng -metadata creation_time="$(date -Iseconds)" -metadata:s:v creation_time="$(date -Iseconds)" -metadata:s:a creation_time="$(date -Iseconds)" -bsf:v "filter_units=remove_types=6" -disposition:s 0 -disposition:a:0 default -disposition:v:0 default -channel_layout "5.1" -c:v copy -c:a aac -c:s srt .working/"${f/DDP/AAC}"; done
 ```
 
