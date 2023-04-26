@@ -66,7 +66,7 @@ Here is a [breakdown](https://www.afterdawn.com/guides/archive/subtitle_formats_
 
 #### Types of Subtitles
 
-There are many variations of subtitles. Closed, open, burned-in, forced, SDH, and CC are among the common types of subtitles. The format (such as SubRIP or VobSUB) does not matter for the type of subtitle.
+There are many variations of subtitles. **Closed**, **open**, **burned-in**, **forced**, **SDH**, and **CC** are among the common types of subtitles. The format (such as SubRIP or VobSUB) does not matter for the type of subtitle.
 
 **Closed Subtitles**
 
