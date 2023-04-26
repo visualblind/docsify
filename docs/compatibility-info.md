@@ -69,20 +69,33 @@ Subtitles can be a subtle issue for transcoding. Containers have a limited numbe
 
 #### Types of Subtitles
 
-There are many variations of subtitles. **Closed**, **open**, **burned-in**, **forced**, **SDH**, and **CC** are among the common types of subtitles. The format (such as SubRIP or VobSUB) does not matter for the type of subtitle.
+There are NOT many variations of subtitles. The two basic types of subtitles are plain-text based such as **SubRIP** also called **SRT** and **ASS** (file extensions), and image based subtitles which are mostly used on DVD medias called **VobSUB**.
 
-**Closed Subtitles**
+Furthermore, these subtitles have whats called a disposition inside the media container and can only be in one of three states:
 
-This is the generic name for subtitles that can be turned on or off. This can be Forced, SDH, CC or normal subtitles.
+1. **0** for Off
+2. **Default**
+3. **Forced**
 
-**Burned-in**
+##### Soft Subs
 
-Open subtitles (also known as burned-in subtitles) are subtitles that have been permanently placed in the video and cannot be turned off. Open subtitles are the most common type of subtitles, where the subtitles are part of the video stream and cannot be toggled on or off.
+This is the generic name for subtitles that can be turned on or off. This type of subtitle uses one or more designated subtitle streams within the media container and can only be in one of the three states described above.  
+This category includes picture-based subtitles (**VobSUB**) as well as text-based like **SRT** and **ASS**.
 
-**SDH and Closed Captioning**
+!> These subtitles are usually normal subtitles or **SDH** (**S**ubtitles for **D**eaf and **H**ard of hearing). There is not a big difference between them other than including extra content such as background noises.
 
-SDH and CC are subtitles for the Deaf and Hard of Hearing. They include extra content such as background noises. SDH and CC are not defined by a specific type of subtitle, just by their intent. If using an OTA Tuner and DVR, the subtitles will be embedded into the video and transcoding them before extracting the subtitles will destroy the subtitles.
+##### Burned-in (Hard Subs)
 
-**Forced**
+Burned-in subtitles are subtitles that have been permanently placed in the video and cannot be turned off. At this point I wouldn't even call them subtitles since they are in the video stream and cannot be removed.
 
-"Forced subtitles are common on movies and only provide subtitles when the characters speak a foreign or alien language, or a sign, flag, or other text in a scene is not translated in the localization and dubbing process. In some cases, foreign dialogue may be left untranslated if the movie is meant to be seen from the point of view of a particular character who does not speak the language in question." - [Wikipedia](https://en.wikipedia.org/wiki/Subtitles#Categories)
+##### CC (Closed Captioning)
+
+CC subs are embedded inside the video stream however they can be turned on or off at will. This is counter-intuitive as there is a stream specifically for subtitles within media containers.
+
+?> If you wanted to remove them from the video stream, the following [ffmpeg parameters](https://trac.ffmpeg.org/wiki/HowToExtractAndRemoveClosedCaptions) can be used during remuxing or transcoding:
+
+
+```
+-bsf:v "filter_units=remove_types=6"
+```
+
