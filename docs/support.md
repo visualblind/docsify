@@ -4,11 +4,7 @@
 
 ### SELECT SERVER Error Message:
 
-The root cause of this problem is due to the `jellyfin_credentials` key value differing from the current server identification number in your web browsers Local Storage.
-
-You will experience this problem whenever the server software has updated or changed, and thereby changing the ID number.
-
-When your browser looks for the old number, it will not be able to locate it and then display the `Select Server` interface in the browser.
+The root cause of this problem is due to the `jellyfin_credentials` key value differing from the current server identification number in your web browsers Local Storage. You will experience this problem whenever the server software has updated or changed, and thereby changing the ID number. When your browser looks for the old number, it will not be able to locate it and then display the `Select Server` interface in the browser.
 
 ![jellyfin-select-server](_media/jellyfin-select-server.png)
 
