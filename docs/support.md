@@ -558,27 +558,22 @@ The following iframe represents the same data as on [statistics.travisflix.com](
 
 Please donate if you are able to spare a few dollars. All donations will help ensure this site stays up and running, and the content library continues to increase in size and variety.
 
-> For proof of my out-of-pocket expenses, below is a screenshot of my invoice history
-
-![linode-invoices](_media/linode-invoices.png)
-
-* :fab fa-linode: Linode cloud operating expense: $20/per month.
-* :fa-regular fa-face-tongue-money: This site does not have any available methods of monetization nor do I have plans to.
-* :fa-solid fa-hourglass-end: As time goes on, the feeling that unless I am able to start reclaiming a portion of the costs, it will only shift the balance in the direction of shutting down the site.
 
 ### Cash App
 
-Cash App ID: **$visualblind**
+Cash App ID: [$visualblind](https://cash.app/$visualblind)
 
 <p align="center">
-<img src="_media/cashapp.png" width=450px>
+<img src="_media/cashapp.png" width=350px>
 </p>
 
 ### Venmo
 
-> @visualblind
+Venmo ID: [visualblind](https://venmo.com/visualblind)
 
-![profile-helmet](_media/profile-helmet.jpg) This is my profile picture on Venmo.
+This is my profile picture on Venmo:
+
+![profile-helmet](_media/profile-helmet.jpg)  
 
 
 ### Open Collective Donation
@@ -617,10 +612,11 @@ Bitcoin is the preferred cryptocurrency but if you would rather use a different 
 
 ## Still have questions?
 
-* :incoming_envelope: Send me an email at <travis@travisflix.com>
-* :fab fa-telegram: Join the Telegram room at [t.me/travisflix](https://t.me/travisflix)
-* :fab fa-telegram: You can also contact me on Telegram with the QR code below
-* :fa-solid fa-comments: Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)
-* :fa-regular fa-address-card: My contact information is also available online at [travisrunyard.us](https://travisrunyard.us/) and [4kib.com/about](https://4kib.com/about/)<br>
+* :incoming_envelope: Email address: <travis@travisflix.com>
+* :fab fa-telegram: Join the TravisFlix [Telegram Group](https://t.me/travisflix), or use the QR code below
+* :fa-regular fa-address-card: Contact info is available online at [blog.travisflix.com/about](https://blog.travisflix.com/about/) or use the [contact](https://blog.travisflix.com/about/contact/) form
+* :fa-solid fa-comments: ~~Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)~~
 
-![qr_tmp](_media/qr_tmp.png)
+<p align="center">
+<img src="_media/qr_tmp.png" width=350px>
+</p>
