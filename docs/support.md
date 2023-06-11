@@ -107,48 +107,12 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 :game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
-?> ~~The streaming software (Jellyfin) does have logic which determines that your networks ingress (download) bandwidth is insufficient to stream the video playback and will automatically start attempting to [transcode](https://en.wikipedia.org/wiki/Transcoding) the media from its original format into a format that is more compatible with your device. When this happens you will have a delay of at least a few seconds before playback (usually between 5-15 seconds).~~ The reason for the striked-out text is because I have disabled the ability for video codec transcoding. Efforts in video codec standardization across the site is more than sufficient for any device type to playback without issues. Additional reasons for transcoding can be found under `Play method:` discussed further above. If it is transcoding, the play method will state `HLS` and not `DirectPlay`.
-
-1. [Check if multiple versions are available](#how-to-stream-multiple-versions-of-a-film) of the stream you are having trouble with.
+1. Verify that you have sufficient internet download bandwidth. As a general rule of thumb you should have at least 20+ Mbps for streaming most movies and 40+ Mbps for TV Shows. Go to [speed.travisflix.com](http://speed.travisflix.com/) to test your bandwidth directly against the travisflix server.
+2. Check if [multiple versions](#how-to-stream-multiple-versions-of-a-film) are available of the stream you are having trouble with.
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
-    * Versions with `RARBG` in the suffix is recommended if the other is not working for you.
-    
+    * Versions with `RARBG` in the suffix are recommended.
     ![multiple versions](_media/multiple-vers.png)
-    
-2. Make sure that your network connection is idle (at the router WAN port, not only your PC if you have multiple devices), otherwise results will be inaccurate.
-3. Open [speed.travisflix.com](http://speed.travisflix.com/) (tests speed directly from streaming server), or [fast.com](https://fast.com/) and run a few tests.
-4. Note how much bandwidth you have at your disposal dedicated to downloading (The **Download** bandwidth is the only important factor).
-5. As a general guideline, you should have a minimum of 20 Mbps of banwdidth available at your disposal for the download stream (called ingress), however there are some large media files including 4K content which requires a faster download speed of 40+ Mbps.
-    * Testing has shown the average bandwidth required for playback of a 100MB sample video is 11.74 Mbps
-
-    ```editorconfig
-    vnstat -i enp4s0 -tr 30
-    44816 packets sampled in 30 seconds
-    Traffic average for enp4s0
-
-    rx        11.74 Mbit/s           993 packets/s
-    tx       337.67 kbit/s           499 packets/s
-    ```
-
-    * Further testing has shown that during the loading of a video stream, your device tries to download almost as much as possible probably to buffer the video more than normal, and under the remainder of the stream you really only use an average of 4–7 Mbps (however about every 30s, the device downloads and buffers the video using a bandwidth of 30–50 Mbps)
-
-    ![Video Stream Bandwidth Graph](_media/network-bandwidth-video-stream.png)
-    ![Video Stream Bandwidth Graph 2](_media/network-bandwidth-video-stream2.png)
-
-6. General rule of thumb—if the content's bitrate > 10,000 Kbps it is going to require a faster connection.
-
-```bash
-$ speedtest-cli
-Retrieving speedtest.net configuration...
-Testing from Frontier Communications.
-Retrieving speedtest.net server list...
-Selecting best server based on ping...
-Hosted by Whitesky Communications LLC (Los Angeles, CA) [29.64 km]: 16.822 ms
-Testing download speed ......................................................................................
-Download: 79.41 Mbit/s
-Testing upload speed ........................................................................................
-Upload: 122.33 Mbit/s
-```
+3. If you still have the problem, message me in the telegram group at [t.me/travisflix](https://t.me/travisflix) :fab fa-telegram: or see more [contact info](#still-have-questions).
 
 
 ### Subtitles Not Loading
