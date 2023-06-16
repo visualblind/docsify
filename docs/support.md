@@ -400,12 +400,19 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 | Frame rate: | 46.875 FPS (1024 SPF) |
 | Compression mode: | Lossy |
 
-TravisFlix is a self-curated reflection of my personal taste in film, in general. There is a heavy concentration of media in the documentary genre in both the movies and TV-series categories.
+TravisFlix is a self-curated reflection of my personal taste in film, in general. There is a heavy concentration of media in the documentary genre in both the movies and TV series categories (16% of the movies and 28% of the tv shows are documentaries).
 
-16% of the movies and 28% of the tv shows are documentaries. You can view them by using the **GENRES** link at the top of each media type, then find the genre **DOCUMENTARY** and click on it. Another method is using the filter (![filter](_media/filter.png)) feature which is directly above the media poster images on every library.
+You can view them by using the **GENRES** link at the top of each media type, then find the genre **DOCUMENTARY** and click on it. Another method is using the filter (![filter](_media/filter.png)) feature which is directly above the media poster images on every library.
 
 ![genre-documentary](_media/genre-documentary.png)
 
+
+## Movies Still in the Theater?
+
+Occasionally I will add movies that is still playing in movie theaters if the video/audio quality is sufficient for the time being.
+If the movie title includes the words HDTS, or HDCAM then you can be sure that the particular movie is not the final release quality.
+
+![hdts](_media/hdts.webp)
 
 ## Connecting over Tor Network
 
@@ -473,12 +480,11 @@ web config:
 
 ## Uploading Files
 
-1. :fas fa-cloud-upload-alt: Go to [upload.travisflix.com](https://upload.travisflix.com/)
-2. Credentials: **username** — travisflix | **password** — upload
+1. :fas fa-cloud-upload-alt: Go to [files.travisflix.com](https://files.travisflix.com/)
+2. Credentials: **username** — upload | **password** — upload
 3. Click the Upload button and select the media for upload
-    * You can select multiple files/folders per upload session
-4. ~~When finished, send me a message in the Telegram room [t.me/travisflix](https://t.me/travisflix)~~
-    * ~~If you can not use Telegram, send me an email <travis@travisflix.com>~~
+?> You can select multiple files/folders per upload session
+4. [Join](https://t.me/+bpRYE4pTaRM1MmYx) the TravisFlix [Telegram group](https://t.me/travisflix) and send me a message
 
 
 ## Plain-text media list/index
