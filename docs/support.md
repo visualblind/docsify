@@ -409,7 +409,7 @@ You can view them by using the **GENRES** link at the top of each media type, th
 
 ## Movies Still in the Theater
 
-Occasionally I will add movies that is still playing in movie theaters if the video/audio quality is sufficient for the time being.
+Occasionally I will add movies that are still playing in movie theaters if the video/audio quality is sufficient for the time being.
 If the movie title includes the words HDTS, or HDCAM then you can be sure that the particular movie is not the final release quality.
 
 ![hdts](_media/hdts.webp)
