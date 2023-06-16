@@ -619,10 +619,10 @@ Bitcoin is the preferred cryptocurrency but if you would rather use a different 
 ## Still have questions?
 
 * :incoming_envelope: Email address: <travis@travisflix.com>
-* :fab fa-telegram: Join the TravisFlix [Telegram Group](https://t.me/travisflix), or use the QR code below
+* :fab fa-telegram: [Join](https://t.me/+bpRYE4pTaRM1MmYx) the TravisFlix [Telegram Group](https://t.me/travisflix), or use the QR code below
 * :fa-regular fa-address-card: Contact info is available online at [blog.travisflix.com/about](https://blog.travisflix.com/about/) or use the [contact](https://blog.travisflix.com/about/contact/) form
 * :fa-solid fa-comments: ~~Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)~~
 
 <p align="center">
-<img src="_media/qr_tmp.png" width=350px>
+<img src="_media/telegram-qrcode.webp">
 </p>
