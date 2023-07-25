@@ -10,11 +10,11 @@ The root cause of this problem is due to the `jellyfin_credentials` key value di
 
 You can test/bypass the browser local storage by opening an incognito (private-mode) window :fas fa-user-secret: and login there instead. 
 
-#### Easiest Method
+#### FIX: Easiest Method
 
 Click the square image above the Add Server button, and click Delete and then refresh the website to resolve the issue.
 
-#### Medium Method
+#### FIX: Medium Method
 
 You will need to clear your browsers Local Storage ([by clearing your browser cookies](https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en)) :fas fa-cookie-bite:.
 
@@ -22,7 +22,7 @@ You will need to clear your browsers Local Storage ([by clearing your browser co
 
 ![browser-cache-02](_media/browser-cache-02.png)
 
-#### Hardest Method
+#### FIX: Hardest Method
 
 If you are a technical user and do not want to clear all cookies, you may clear the Local Storage for travisflix.com using the dev tools as shown in the image below:
 
