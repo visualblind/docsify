@@ -360,9 +360,11 @@ The client will generate a 6 digit code, which you have to enter in the already 
 ![quick-connect](_media/quick-connect.png)
 
 
-## Run a Speed Test
+## Running a Speed Test
 
-:fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the travisflix site. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than about 25-30 Mbps it may be time to start worrying about upgrading your internet speed.
+:fa-solid fa-gauge-high: Go to [speed.travisflix.com](http://speed.travisflix.com/) to run a bandwidth test directly against the web server. This will give you the most accurate relevant network bandwidth results vs running it against an arbitrary location. If the download test results report less than ~30 Mbps your internet bandwidth is probably inadequate for streaming on my site.
+
+![tor-speed](_media/tor-speed.travisflix.com.jpg)
 
 
 ## Media Information & Standards
@@ -414,19 +416,16 @@ If the movie title includes the words HDTS, or HDCAM then you can be sure that t
 
 ![hdts](_media/hdts.webp)
 
-## Connecting over Tor Network
 
-?> 🧅 Onion address: [zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion](http://zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion)
+## ~~Connecting over Tor Network~~
 
-Visiting [travisflix.com](https://travisflix.com) via the [Tor Browser](https://www.torproject.org/), you will automatically be redirected to the onion address. This is the recommended method to access the Tor site version.
+?> 🧅 ~~Onion address: http://zzjymusfscxydtjnhtcpabgu5eldgg3evs23esvirlznxs6luvqpecqd.onion~~
+
+~~Visiting [travisflix.com](https://travisflix.com) via the [Tor Browser](https://www.torproject.org/), you will automatically be redirected to the onion address. This is the recommended method to access the Tor site version.~~
 
 ![tor-browser](_media/tor-browser.jpg)
 
-As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)
-
-!> Be advised that using TravisFlix over Tor will be extremely slow. So slow it is almost not worth keeping the tor-version site online. This speed test directly against the webserver proves how slow download speed is (upload speed is irrelevant):
-
-![tor-speed](_media/tor-speed.travisflix.com.jpg)
+~~As a workaround method for downloading multiple videos simultaneously, you may use Tor as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)~~
 
 
 ## Downloading Movies & Shows
