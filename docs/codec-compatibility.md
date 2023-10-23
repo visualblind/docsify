@@ -13,7 +13,16 @@ Subtitles can be tricky because they can cause `Direct Stream` (subtitles are re
 
 [Test your browser's compatibility for any codec profile](https://cconcolato.github.io/media-mime-support/)
 
-![video codec compatibility](_media/video-codec-compatibility.png)
+| Sorted by efficency (excluding bit depth)| Chrome | Edge | Firefox | Safari | Anroid | Android TV | iOS | SwiftFin (iOS) | Roku | Kodi | Desktop |
+|---------------------|--------|------|---------|--------|--------|------------|-----|----------------|------|------|---------|
+| MPEG-4 Part 2/SP    | ❌      | ❌    | ❌       | ❌      | ❌      | ❌          | ❌   | ✅              | ✅    | ✅    | ✅       |
+| MPEG-4 Part 2/ASP   | ❌      | ❌    | ❌       | ❌      | ❌      | ❌          | ❌   | ✅              |      | ✅    | ✅       |
+| H.264 8Bit          | ✅      | ✅    | ✅       | ✅      | ✅      | ✅          | ✅   | ✅              | ✅    | ✅    | ✅       |
+| H.264 10Bit         | ✅      | ✅    | ❌       | ❌      | ✅      | ✅          | ❌   | ✅              | ❌    | ✅    | ✅       |
+| H.265 8Bit          | 🔶<sup>8</sup>     | ✅<sup>7</sup>   | ❌       | 🔶<sup>1</sup>     | 🔶<sup>2</sup>     | ✅<sup>5</sup>         | 🔶<sup>1</sup>  | ✅<sup>6</sup>             | 🔶<sup>9</sup>   | ✅    | ✅       |
+| H.265 10Bit         | 🔶<sup>8</sup>     | ✅<sup>7</sup>   | ❌       | 🔶<sup>1</sup>     | 🔶<sup>2</sup>     | 🔶<sup>5</sup>         | 🔶<sup>1</sup>  | ✅<sup>6</sup>             | 🔶<sup>9</sup>   | ✅    | ✅       |
+| VP9                 | ✅      | ✅    | ✅       | ❌      | ✅<sup>3</sup>     | 🔶<sup>3</sup>         | ❌   | ❌              | ✅    | ✅    | ✅       |
+| AV1                 | ✅      | ✅    | ✅       | ❌      | ✅      | 🔶<sup>4</sup>         | ❌   | ❌              | ✅    | ✅    | ✅       |
 
 <sup>1</sup>HEVC is only supported in MP4, M4V, and MOV containers.  
 <sup>2</sup>Android playback is currently broken. Client reports that HEVC is supported and attempts to Direct Stream.  
