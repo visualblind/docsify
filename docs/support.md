@@ -73,10 +73,10 @@ ignoreip = 47.157.254.159,172.18.0.1,172.18.0.2,172.18.0.3,172.18.0.4,172.18.0.5
 
 :fa-solid fa-house-signal: I wanted to include the following tip at the very top of this section because I had this exact problem. If you are a WiFi user, the first troubleshooting step you can perform on your own is to get off the wireless and hardwire yourself in with a standard CAT 5e/6 ethernet cable :fas fa-ethernet:. If you only have CAT 5, do yourself a favor **throw that shit away**.
 
-If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses 802.11AC (or the newer 802.11AX aka WiFi6) and is using a channel width of 80, or 160 MHz. 
+If you insist on using WiFi, then you are going to need to ensure that you are connected to a SSID that uses 802.11ac (or the newer 802.11ax aka WiFi6) and is using a channel width of at least 80 MHz.
 
 ?> Keep in mind larger channel widths provide higher bandwidth at the expense of additional congestion of the wireless spectrum for neighboring devices.
-The 802.11N standard can utilize both 2.4 + 5 Ghz frequencies. Just because you assume you are on 5 Ghz (by connecting to a SSID with "-5G" appended), that technically does not indicate you are on 802.11AC. If you need help to do simple verification, contact your nearest tech-savvy family relative instead of me.
+The 802.11n standard can utilize both 2.4 + 5 Ghz frequencies. Just because you assume you are on 5 Ghz (by connecting to a SSID with "-5G" appended), that technically does not indicate you are on 802.11ac. If you need help to do simple verification, contact your nearest tech-savvy family relative instead of me.
 
 ![wifi-standards](_media/wifi-standards-quick-comparison-table.jpg)
 
