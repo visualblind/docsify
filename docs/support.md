@@ -34,17 +34,21 @@ Right click the "https://travisflix.com" entry under Local Storage, and select `
 
 ### If You DO NOT Receive an Error MSG:
 
-Most likely your IP address has been banned for entering an invalid username or password. See below for more info.
+Most likely your IP address has been banned for entering an invalid username or password. See *Invalid Username/Password* below for more info.
 
 ### Invalid Username/Password:
 
-:fa-solid fa-user-slash: If you have entered an invalid username/password 5 times within 15 minutes your IP address will be banned for 4 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a white screen.
-
-:fa-solid fa-hourglass-end: You can either wait 4 hours and try again, try from a different public IP address, or you can [let me know](#still-have-questions) and I will reset the password/unban you. Click [here](https://travisflix.com/help/_media/support.pdf) to download this support site as a :fa-regular fa-file-pdf: pdf.
+:fa-solid fa-user-slash: If you entered an invalid username/password 5 times within 10 minutes, your public IP address will be banned for 2 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a screen saying the website could not be loaded.
 
 ![site-cant-be-reached](_media/site-cant-be-reached.png)
 
-Conf:
+:fa-solid fa-hourglass-end: Your options are:
+1. wait 2 hours and try again
+2. try from a different public IP address
+3. or you can contact me in the Telegram chatroom [t.me/travisflix](https://t.me/+bpRYE4pTaRM1MmYx)
+
+
+Fail2ban Conf:
 
 ```editorconfig
 [jellyfin]
