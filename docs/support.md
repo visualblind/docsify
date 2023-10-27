@@ -53,18 +53,17 @@ Fail2ban Conf:
 ```editorconfig
 [jellyfin]
 
-backend = pyinotify
+backend = auto
 enabled = true
 port = 80,443
 protocol = tcp
 filter = jellyfin
 maxretry = 5
-bantime = 14400
-findtime = 900
-logpath = /usr/local/jellyfin/config/log/log_*
-action = iptables-allports[name=jellyin, chain=DOCKER-USER]
+bantime = 7200
+findtime = 10m
+logpath = /mnt/jellyfin-log2/log_*
 ignoreself = true
-ignoreip = 47.150.254.140,172.18.0.1,172.18.0.2,172.18.0.3
+ignoreip = 47.157.254.159,172.18.0.1,172.18.0.2,172.18.0.3,172.18.0.4,172.18.0.5,10.10.10.73
 ```
 
 
