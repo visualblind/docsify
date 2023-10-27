@@ -102,13 +102,13 @@ You can also get a sense for how much bandwidth is required by looking at the vi
 
 ### Video Not Filling The Screen
 
-* :movie_camera: Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
+* Movies are composed in a variety of shapes, called aspect ratios. Most of these aspect ratios do not match the exact aspect ratio of your widescreen TV or computer monitor. Most older movies were made primarily in the 1.37:1 aspect ratio. This means that the image is 1.37 times as wide as it is high.
 * A typical widescreen HDTV set has an aspect ratio of 1.78:1. This means that it is 1.78 times as wide as it is high. This ratio was determined several years ago by looking at all the aspect ratios in use and 1.78:1 fit every aspect ratio within its borders in some way. Very few movies were ever produced in 1.78:1 (the most notable being Toy Story), so you are going to see black bars on many movies that are shown in their original aspect ratio.
 * Films with an aspect ratio of less than 1.78:1 will have black bars displayed on the sides of a widescreen HDTV. A movie with an aspect ratio greater than 1.78:1 will have black bars at the top and bottom. :left_right_arrow:
 
 ### Video is Not Streaming
 
-:game_die: First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
+First, try to eliminate the more obvious culprits such as using an old device, system, operating system, or browser.
 
 1. Verify that you have sufficient internet download bandwidth. As a general rule of thumb you should have at least 20+ Mbps for streaming most movies and 40+ Mbps for TV Shows. Go to [speed.travisflix.com](http://speed.travisflix.com/) to test your bandwidth directly against the travisflix server.
 2. Check if [multiple versions](#how-to-stream-multiple-versions-of-a-film) are available of the stream you are having trouble with.
