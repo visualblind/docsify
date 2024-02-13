@@ -46,7 +46,7 @@ Most likely your IP address has been banned for entering an invalid username or 
 
 ### Invalid Username/Password:
 
-:fa-solid fa-user-slash: If you entered an invalid username/password 5 times within 10 minutes, your public IP address will be banned for 2 hours. When this happens you will not receive an error message, the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a screen saying the website could not be loaded.
+:fa-solid fa-user-slash: If you entered an invalid username/password 5 times within 10 minutes, your public IP address will be banned for 2 hours. When this happens you might see the *Connection Failure* error shown above, or there will not be any error shown (the website will simply not load and you will be staring at either the spinner :fas fa-spinner fa-spin: or a screen saying the website could not be loaded).
 
 ![site-cant-be-reached](_media/site-cant-be-reached.png)
 
