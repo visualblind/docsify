@@ -32,6 +32,14 @@ Right click the "https://travisflix.com" entry under Local Storage, and select `
 
 !> If this has not resolved the problem, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
+### Connection Failure
+
+> **Connection Failure:** We're unable to connect to the selected server right now. Please ensure it is running and try again. 
+
+![jellyfin-fail2ban-error](_media/jellyfin-fail2ban-error.png)
+
+This error could have multiple causes, however if you have recently entered a login multiple times within a short time span then the cause is mostly likely that you have been banned for entering invalid logins. See *Invalid Username/Password* below for more info.
+
 ### If You DO NOT Receive an Error MSG:
 
 Most likely your IP address has been banned for entering an invalid username or password. See *Invalid Username/Password* below for more info.
