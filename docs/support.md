@@ -1,5 +1,14 @@
 # Support FAQ
 
+
+## Contact Me
+
+* :incoming_envelope: Email address: <travis@travisflix.com>
+* :fab fa-telegram: [Join](https://t.me/+bpRYE4pTaRM1MmYx) the [Telegram Group](https://t.me/travisflix)
+* :fa-regular fa-address-card: My blog.travisflix.com website [contact form](https://blog.travisflix.com/about/contact/)
+* :fa-solid fa-comments: ~~Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)~~
+
+
 ## Having Trouble Logging In
 
 ### SELECT SERVER Error Message:
@@ -123,7 +132,7 @@ First, try to eliminate the more obvious culprits such as using an old device, s
     * If multiple versions exist then try selecting the version in the drop-down menu which was not selected by default, then hit Play.
     * Versions with `RARBG` in the suffix are recommended.
     ![multiple versions](_media/multiple-vers.png)
-3. If you still have the problem, message me in the telegram group at [t.me/travisflix](https://t.me/travisflix) :fab fa-telegram: or see more [contact info](#still-have-questions).
+3. If you still have the problem, message me in the telegram group at [t.me/travisflix](https://t.me/travisflix) :fab fa-telegram: or see more [contact info](#contact-me).
 
 
 ### Subtitles Not Loading
@@ -609,7 +618,7 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 
 ### Bitcoin 
 
-Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#still-have-questions) and we can arrange it.
+Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#contact-me) and we can arrange it.
 
 > :fa-brands fa-bitcoin: **Option #1**
 > [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
@@ -625,14 +634,3 @@ Bitcoin is the preferred cryptocurrency but if you would rather use a different 
 #### Real-time Bitcoin Price (USD):
 <iframe id="iframebtc" src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
 
-
-## Still have questions?
-
-* :incoming_envelope: Email address: <travis@travisflix.com>
-* :fab fa-telegram: [Join](https://t.me/+bpRYE4pTaRM1MmYx) the TravisFlix [Telegram Group](https://t.me/travisflix), or use the QR code below
-* :fa-regular fa-address-card: Contact info is available online at [blog.travisflix.com/about](https://blog.travisflix.com/about/) or use the [contact](https://blog.travisflix.com/about/contact/) form
-* :fa-solid fa-comments: ~~Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)~~
-
-<p align="center">
-<img src="_media/telegram-qrcode.webp">
-</p>
