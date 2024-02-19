@@ -460,7 +460,7 @@ web config:
 
 ```nginx
     location ~ ^/Items/(.*)/Download$ {
-        limit_rate 5120k; # Speed in KB/s (Kilobytes)
+        limit_rate 10240k; # Speed in KB/s (Kilobytes)
         limit_conn perip 3; # Simultaneous connections per ip address
         limit_conn_status 429;
         proxy_buffering on; # Required for limit_conn
