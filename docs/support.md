@@ -452,7 +452,7 @@ If the movie title includes the words HDTS, or HDCAM then you can be sure that t
 
 :fa-solid fa-download: You can download anything that you see. Click on the ellipsis  :fa-solid fa-ellipsis-vertical:  of the media you want to download and then click DOWNLOAD :fa-regular fa-floppy-disk:.
 
-!> :fa-regular fa-face-frown fa-lg: Downloading is rate limited to 10,240 KiB/s (10 MiB/s = ~80 Mbps) and capped at 3 downloads at a time per ip address.
+!> Downloading is rate limited to 10,240 KiB/s and capped at 3 downloads at a time per ip address.
 
 webserver config:
 
