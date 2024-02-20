@@ -454,9 +454,7 @@ If the movie title includes the words HDTS, or HDCAM then you can be sure that t
 
 !> :fa-regular fa-face-frown fa-lg: Downloading is rate limited to 10,240 KiB/s (10 MiB/s = ~80 Mbps) and capped at 3 downloads at a time per ip address.
 
-?> ~~As a workaround method for downloading multiple videos simultaneously, you may use the 🧅 Tor [onion address](#connecting-over-tor-network) as an option for getting around the public IP download limit. If you use this option you should expect slower downloads (~250KiB/s)~~
-
-web config:
+webserver config:
 
 ```nginx
     location ~ ^/Items/(.*)/Download$ {
