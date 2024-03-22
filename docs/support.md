@@ -3,7 +3,7 @@
 
 ## Contact Me
 
-* :incoming_envelope: Email address: <travis@travisflix.com>
+* :incoming_envelope: Email address: <travis@travisflix.com> or <travisrunyard@gmail.com>
 * :fab fa-telegram: [Join](https://t.me/+bpRYE4pTaRM1MmYx) the [Telegram Group](https://t.me/travisflix)
 * :fa-regular fa-address-card: My blog.travisflix.com website [contact form](https://blog.travisflix.com/about/contact/)
 * :fa-solid fa-comments: ~~Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)~~
