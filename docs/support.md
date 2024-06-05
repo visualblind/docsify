@@ -550,15 +550,14 @@ fi
 ```
 
 
-## Where is the status page
+## TravisFlix Website Status
 
-:fas fa-server: [status.travisflix.com](https://status.travisflix.com/)
+Realtime status of travisflix.com website: ![travisflix.com](https://healthchecks.io/badge/d8631b41-3828-488d-95b0-90748a0763bd/BGcdGw7--2/travisflix.com.svg)
 
-The cumulative 30-day HTTPS uptime for the travisflix.com web service has on average been between **99.95%** - **99.99%**
+Visit :fas fa-server: [status.travisflix.com](https://status.travisflix.com/) for detailed website status information.
 
+?> The cumulative 30-day HTTPS uptime for the travisflix.com web service has on average been between **99.95%** - **99.99%**
 
-?> This percentage is referred to as "SLA" (service level agreement). For instance, the [Google Workspace SLA](https://workspace.google.com/intl/en/terms/sla.html) is 99.9% for Search, Gmail, Docs, Drive, Chat, Voice, etc.
-You can view the status for Google [here](https://www.google.com/appsstatus).
 
 <!-- ![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png) -->
 
@@ -567,7 +566,7 @@ You can view the status for Google [here](https://www.google.com/appsstatus).
 ![TravisFlix Uptime](_media/travisflix-status-all-06042021.png)
 
 
-## Do you have server statistics
+## Server Statistics
 
 > :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
@@ -629,6 +628,4 @@ Bitcoin is the preferred cryptocurrency but if you would rather use a different 
 > QR Code:<br>
 > ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
 
-#### Real-time Bitcoin Price (USD):
-<iframe id="iframebtc" src="//btc.travisflix.com" width="100%" height="35px" style="border:0px;overflow-y:hidden;" scrolling="no"></iframe>
 
