@@ -39,7 +39,7 @@ If you are a technical user and do not want to clear all cookies, you may clear 
 
 Right click the "https://travisflix.com" entry under Local Storage, and select `Delete All`.
 
-!> If this has not resolved the problem, [check the status page](#where-is-the-status-page) and/or the [real-time server statistics](#do-you-have-server-statistics).
+!> If this has not resolved the problem, [check the status page](#travisflix-website-status) and/or the [real-time server statistics](#do-you-have-server-statistics).
 
 ### Connection Failure
 
@@ -552,11 +552,11 @@ fi
 
 ## TravisFlix Website Status
 
-Realtime status of travisflix.com website: ![travisflix.com](https://healthchecks.io/badge/d8631b41-3828-488d-95b0-90748a0763bd/BGcdGw7--2/travisflix.com.svg)
+Realtime status of travisflix.com: ![travisflix.com](https://healthchecks.io/badge/d8631b41-3828-488d-95b0-90748a0763bd/BGcdGw7--2/travisflix.com.svg)
 
-Visit :fas fa-server: [status.travisflix.com](https://status.travisflix.com/) for detailed website status information.
+:fas fa-server: Visit [status.travisflix.com](https://status.travisflix.com/) for detailed website status, or see below for [server statistics](#server-statistics).
 
-?> The cumulative 30-day HTTPS uptime for the travisflix.com web service has on average been between **99.95%** - **99.99%**
+> The cumulative 30-day HTTPS uptime for the travisflix.com web service has on average been between **99.95%** - **99.99%**
 
 
 <!-- ![TravisFlix Uptime](_media/travisflix-status-metrics-06042021.png) -->
