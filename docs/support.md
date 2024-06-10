@@ -552,7 +552,10 @@ fi
 
 ## TravisFlix Website Status
 
-Realtime status of travisflix.com: ![travisflix.com](https://healthchecks.io/badge/d8631b41-3828-488d-95b0-90748a0763bd/BGcdGw7--2/travisflix.com.svg)
+Realtime status of travisflix.com monitored from healthchecks.io and cronitor.io::
+
+![travisflix.com](https://healthchecks.io/badge/d8631b41-3828-488d-95b0-90748a0763bd/BGcdGw7--2/travisflix.com.svg)
+![TravisFlix](https://cronitor.io/badges/74QpG3/production/-9gFzjCzvBNYCZVQuQmUXsKRH1M.svg)
 
 :fas fa-server: Visit [status.travisflix.com](https://status.travisflix.com/) for detailed website status, or see below for [server statistics](#server-statistics).
 
@@ -568,7 +571,7 @@ Realtime status of travisflix.com: ![travisflix.com](https://healthchecks.io/bad
 
 ## Server Statistics
 
-> :fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
+:fas fa-server: [statistics.travisflix.com](https://statistics.travisflix.com/)
 
 
 The following iframe represents the same data as on [statistics.travisflix.com](https://statistics.travisflix.com/).
