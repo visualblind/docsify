@@ -31,7 +31,7 @@ If you are a technical user and do not want to clear all cookies, you may clear 
 
 Right click the "https://travisflix.com" entry under Local Storage, and select `Delete All`.
 
-!> If this has not resolved the problem, [check the status page](#travisflix-website-status) and/or the [real-time server statistics](#do-you-have-server-statistics).
+!> If this has not resolved the problem, [check the status page](#travisflix-website-status) and/or the real time [server statistics](#server-statistics).
 
 ### Connection Failure
 
@@ -533,9 +533,9 @@ fi
 
 ## TravisFlix Website Status
 
-|**Jellyfin**|**Server**|
+|**Webserver Accessibility**|**Jellyfin Healthcheck**|
 |---|---|
-| ![travisflix.com](https://healthchecks.io/badge/d8631b41-3828-488d-95b0-90748a0763bd/BGcdGw7--2/travisflix.com.svg) | ![TravisFlix](https://cronitor.io/badges/74QpG3/production/-9gFzjCzvBNYCZVQuQmUXsKRH1M.svg) |
+| ![TravisFlix](https://cronitor.io/badges/74QpG3/production/-9gFzjCzvBNYCZVQuQmUXsKRH1M.svg) | ![jellyfin-healthcheck](https://healthchecks.io/b/2/760f374e-97d1-469f-9eb3-b0df00dd993a.svg) |
 
 :fas fa-server: See [status.travisflix.com](https://status.travisflix.com/) for a birds-eye-view status, or scroll below for detailed [server statistics](#server-statistics) (cpu/memory/hard disk/network resource utilization etc.).
 
