@@ -414,7 +414,7 @@ The actual media file itself may be in either the standard "mp4" ([Mpeg-4](https
 | Compression mode: | Lossy |
 
 TravisFlix is a self-curated reflection of my personal taste in film, in general. There is a heavy concentration of media in the documentary genre in both the movies and TV series categories (16% of the movies and 28% of the tv shows are documentaries).
-
+q
 You can view them by using the **GENRES** link at the top of each media type, then find the genre **DOCUMENTARY** and click on it. Another method is using the filter (![filter](_media/filter.png)) feature which is directly above the media poster images on every library.
 
 ![genre-documentary](_media/genre-documentary.png)
@@ -596,12 +596,13 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 
 Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#contact-me) and we can arrange it.
 
-> :fa-brands fa-bitcoin: **Option #1**
-> [bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0](bitcoin:bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0)
-> ![Primary Bitcoin QR Code](_media/bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0.png)
-> 
-> ---
-> 
+| :fa-brands fa-bitoin: Option #1 |
+|:---:|
+| [bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0](bitcoin:bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0) |
+| ![Primary Bitcoin QR Code](_media/bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0.png) |
+
+---
+
 > :fa-brands fa-bitcoin: **Option #2**
 > [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
 > [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
