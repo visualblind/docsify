@@ -597,15 +597,18 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#contact-me) and we can arrange it.
 
 > :fa-brands fa-bitcoin: **Option #1**
-> [bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g](bitcoin:bc1q690p3utevcus3mscnq5anegz7a3m7cjv4vvd6g)
+> [bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0](bitcoin:bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0)
+> ![Primary Bitcoin QR Code](_media/bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0.png)
 > 
 > ---
+> 
 > :fa-brands fa-bitcoin: **Option #2**
 > [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
 > [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
 >
 > QR Code:<br>
 > ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
+> ---
 
 
 ## Contact Me
