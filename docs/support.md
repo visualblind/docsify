@@ -559,7 +559,6 @@ The following iframe represents the same data as on [statistics.travisflix.com](
 
 Please donate if you are able to spare a few dollars. All donations will help ensure this site stays up and running, and the content library continues to increase in size and variety.
 
-
 ### Cash App
 
 Cash App ID: [$visualblind](https://cash.app/$visualblind)
@@ -575,7 +574,6 @@ Venmo ID: [visualblind](https://venmo.com/visualblind)
 This is my profile picture on Venmo:
 
 ![profile-helmet](_media/profile-helmet.jpg)  
-
 
 ### Open Collective Donation
 
@@ -594,22 +592,12 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 
 ### Bitcoin 
 
-Bitcoin is the preferred cryptocurrency but if you would rather use a different crypto just [let me know](#contact-me) and we can arrange it.
+:fa-brands fa-bitcoin: Use the following Bitcoin address or QR code
 
-| :fa-brands fa-bitoin: Option #1 |
+| |
 |:---:|
-| [bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0](bitcoin:bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0) |
-| ![Primary Bitcoin QR Code](_media/bc1q7h7n08uceg4a30snhzc6nlh4560mht0frwlwl0.png) |
-
----
-
-> :fa-brands fa-bitcoin: **Option #2**
-> [32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4](bitcoin:32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4)<br>
-> [![GreenAddress Permanent Payment URL](_media/greenaddress-donate-green.png)](https://greenaddress.it/pay/GA2GtnSV73LMTzpauEKZsJnRD1yxWf/)
->
-> QR Code:<br>
-> ![BTC](_media/bitcoin-32Z8bRQPcip4avcGWujSqLGAmDt52m1Wy4.png)
-> ---
+| [bc1q7yrxlfgj3e8xe2unx9vtup282m23f3tc0nma4l](bitcoin:bc1q7yrxlfgj3e8xe2unx9vtup282m23f3tc0nma4l) |
+| ![QR Code](_media/bc1q7yrxlfgj3e8xe2unx9vtup282m23f3tc0nma4l.png) |
 
 
 ## Contact Me
