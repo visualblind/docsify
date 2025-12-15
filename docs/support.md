@@ -333,6 +333,11 @@ Links:
 * [github.com/Aanok/jftui](https://github.com/Aanok/jftui)
 
 
+## Official Jellyfin Docs & FAQ
+
+The official Jellyfin Documentation is at [jellyfin.org/docs/](https://jellyfin.org/docs/) and the official FAQ is at [jellyfin.org/docs/general/faq](https://jellyfin.org/docs/general/faq). While I try to keep these Support docs updated the best I can, you should view the official Docs site as the most authoritative information source.
+
+
 ## How to Stream Multiple Versions of a Film
 
 A subset of movies will have multiple versions available for playback. The reasons usually include native language and dubbed versions or differing qualities (ie: 720p/1080p/4K) or video codecs (H.264/H.265). I tried to standardize every films default version in its original language with dubbed/alternate versions available as the secondary option. I'm not sure how many films have multiple versions but it's probably in the 100-250 range.
