@@ -566,7 +566,7 @@ Please donate if you are able to spare a few dollars. All donations will help en
 
 !> **NOTE:** If you do donate, please contact me via Telegram username [@visualblind](https://t.me/visualblind) or in the [TravisFlix Telegram Group](https://t.me/travisflix). If you do not let me know that you have donated, it is likely that I will never know who donated and when.
 
-[![Username visualblind](_media/telegram-username-qrcode-visualblind-400x479.webp)](_media/telegram-username-qrcode-visualblind.png)
+[![Username visualblind](_media/telegram-username-qrcode-visualblind-400x479.webp)](https://travisflix.com/help/_media/telegram-username-qrcode-visualblind.png)
 
 
 ### Cash App
