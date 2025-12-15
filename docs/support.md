@@ -616,3 +616,8 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 * :fab fa-telegram: [Join](https://t.me/+bpRYE4pTaRM1MmYx) the [Telegram Group](https://t.me/travisflix)
 * :fa-regular fa-address-card: My blog.travisflix.com website [contact form](https://blog.travisflix.com/about/contact/)
 * :fa-solid fa-comments: ~~Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)~~
+---
+Telegram QR Code @visualblind:
+
+[![Telegram username @visualblind](_media/telegram-username-qrcode-visualblind-400x479.webp)](https://travisflix.com/help/_media/telegram-username-qrcode-visualblind.png)
+
