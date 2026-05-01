@@ -181,13 +181,13 @@ Links:
 
 ### Roku
 
-Download the latest release on the [Roku Channel Store](https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin).
+Download the latest release on the [Roku Channel Store](https://channelstore.roku.com/details/4d9e526a7d972d4decf98ea6a84000f7:c617f4902629cc0bd1e1411db1775cf3/jellyfin).
 
 Status: :fa-solid fa-star: Active
 
 Links:
 
-* [Roku Channel Store](https://channelstore.roku.com/details/592369/jellyfin)
+* [Roku Channel Store](https://channelstore.roku.com/details/4d9e526a7d972d4decf98ea6a84000f7:c617f4902629cc0bd1e1411db1775cf3/jellyfin)
 * [github.com/jellyfin/jellyfin-roku](https://github.com/jellyfin/jellyfin-roku)
 
 ### Findroid
