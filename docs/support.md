@@ -563,9 +563,7 @@ Please donate if you are able to spare a few dollars.
 
 Cash App ID: [$visualblind](https://cash.app/$visualblind)
 
-<p align="center">
-<img src="_media/cashapp.png" width=350px>
-</p>
+[<img src="_media/cashapp.png" width=350px>](_media/cashapp.png)
 
 ### Venmo
 
@@ -593,6 +591,3 @@ This is my profile picture on Venmo:
 * :fa-regular fa-address-card: **Website:** [about](https://blog.travisflix.com/about/)
 * :fa-solid fa-comments: ~~Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)~~
 ---
-Telegram QR Code:
-
-[![Telegram username @visualblind](_media/telegram-username-qrcode-visualblind-400x479.webp)](https://travisflix.com/help/_media/telegram-username-qrcode-visualblind.png)
