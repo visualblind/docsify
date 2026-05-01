@@ -480,13 +480,9 @@ webserver config:
 ![Remote Control 02](_media/remote-control-02.png)
 
 
-## Uploading Files
+## Media Requests
 
-1. :fas fa-cloud-upload-alt: Go to [files.travisflix.com](https://files.travisflix.com/)
-2. Credentials: **username** — upload | **password** — upload
-3. Click the Upload button and select the media for upload
-?> You can select multiple files/folders per upload session
-4. [Join](https://t.me/+bpRYE4pTaRM1MmYx) the TravisFlix [Telegram group](https://t.me/travisflix) and send me a message
+:fas fa-cloud-upload-alt: All users who have an active account can login and request media at [request.travisflix.com](https://request.travisflix.com).
 
 
 ## Plain-text media list/index
@@ -498,8 +494,6 @@ These plain-text files contain an index of all media for which it corresponds. T
 :fas fa-list: [/standup.txt](https://travisflix.com/standup.txt)<br>
 :fas fa-list: [/motogp.txt](https://travisflix.com/motogp.txt)<br>
 :fas fa-list: [/formula1.txt](https://travisflix.com/formula1.txt)<br>
-:fas fa-list: [/tennis.txt](https://travisflix.com/tennis.txt)<br>
-:fas fa-list: [/podcasts.txt](https://travisflix.com/podcasts.txt)<br>
 
 Bash script that generates the files:
 
@@ -562,11 +556,7 @@ The following iframe represents the same data as on [statistics.travisflix.com](
 
 ## How to Support/Donate
 
-Please donate if you are able to spare a few dollars. All donations will help ensure this site stays up and running, and the content library continues to increase in size and variety.
-
-!> **NOTE:** If you do donate, please contact me via Telegram username [@visualblind](https://t.me/visualblind) or in the [TravisFlix Telegram Group](https://t.me/travisflix). If you do not let me know that you have donated, it is likely that I will never know who donated and when.
-
-[![Username visualblind](_media/telegram-username-qrcode-visualblind-400x479.webp)](https://travisflix.com/help/_media/telegram-username-qrcode-visualblind.png)
+Please donate if you are able to spare a few dollars.
 
 
 ### Cash App
@@ -585,20 +575,6 @@ This is my profile picture on Venmo:
 
 ![profile-helmet](_media/profile-helmet.jpg)  
 
-### Open Collective Donation
-
-:fa-solid fa-credit-card: Credit cards accepted, use the button below to donate any amount you want.
-
-[![Open Collective](https://opencollective.com/webpack/donate/button.png?color=blue)](https://opencollective.com/travisflix/donate)
-
-### Stripe
-
-:fa-solid fa-credit-card: Credit cards accepted, use the link below to donate any amount you want.
-
-Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stripe.com/9AQfZJ9plfKi7io000)
-
-
-![Stripe](_media/stripe-payment-card-logo-bg.png)
 
 ### Bitcoin 
 
@@ -612,12 +588,11 @@ Payment link: [https://donate.stripe.com/9AQfZJ9plfKi7io000](https://donate.stri
 
 ## Contact Me
 
-* :incoming_envelope: Email address: <travis@travisflix.com> or <travisrunyard@gmail.com>
-* :fab fa-telegram: [Join](https://t.me/+bpRYE4pTaRM1MmYx) the [Telegram Group](https://t.me/travisflix)
-* :fa-regular fa-address-card: My blog.travisflix.com website [contact form](https://blog.travisflix.com/about/contact/)
+* :incoming_envelope: **Email:** <travisrunyard@gmail.com>
+* :fab fa-telegram: **Telegram:** Join the [Group](https://t.me/+bpRYE4pTaRM1MmYx)
+* :fa-regular fa-address-card: **Website:** [about](https://blog.travisflix.com/about/)
 * :fa-solid fa-comments: ~~Join the Matrix Chatroom at [matrix.to/#/#travisflix.com:matrix.org](https://matrix.to/#/#travisflix.com:matrix.org)~~
 ---
-Telegram QR Code @visualblind:
+Telegram QR Code:
 
 [![Telegram username @visualblind](_media/telegram-username-qrcode-visualblind-400x479.webp)](https://travisflix.com/help/_media/telegram-username-qrcode-visualblind.png)
-
