@@ -563,7 +563,7 @@ Please donate if you are able to spare a few dollars.
 
 Cash App ID: [$visualblind](https://cash.app/$visualblind)
 
-[<img src="_media/cashapp.png" width=350px>](_media/cashapp.png)
+[<img src="_media/cashapp.png" width=350px>](https://travisflix.com/help/_media/cashapp.png)
 
 ### Venmo
 
